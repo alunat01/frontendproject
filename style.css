@@ -25,7 +25,7 @@ li {
     float: right;
 }
 
-li a, .dropbtn {
+li a, .dropdown {
     display: inline-block;
     color: white;
     text-align: right;
