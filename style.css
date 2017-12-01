@@ -1,15 +1,52 @@
-h2 {
-    color: deepskyblue;
-}
+/* GLOBAL AND MOBILE STYLES FIRST */
 
+/* For all screem */
+body {
+  margin:0;
+  padding:0;
+  font-family: Verdana, Geneva, sans-serif;
+}
+header {
+  background: #ccc;
+  color: #444;
+  font-family: Verdana, Geneva, sans-serif;
+}
 nav {
-    color: crimson;
+  background: #aaa;
+  width: 100%;
+  padding: 1em;
+  display: block;
 }
 
-* FIRST BREAKPOINT (MEDIUM SIZE) */
+ul {
+    list-style-type: none;
+    margin: 1em;
+    padding: 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1em;
+}
+main {
+  background: #eee;
+  padding: .5em;
+}
+section {
+  background: #888;
+}
+
+.turtlebanner {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
-    background: #444;
+    background: #de9;
     color: #ccc;
   }
   nav a {
