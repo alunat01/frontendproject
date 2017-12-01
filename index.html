@@ -6,27 +6,53 @@
   <title>Save the Turtles</title> 
   <link rel="stylesheet" type="text/css" href="style.css">.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
 
 <body>
   <header>
     <!-- Add logo and menu buttons -->
     <nav>
-        <ul>
-            <li><a href="index.html">Who are we?</a></li>
-            <li><a href="meettheturtles.html">Meet the Turtles</a></li>
-            <li><a href="involve.html">Want to get involved?</a></li>
-        </ul>
+        
+        <a href="#" class="dropdownmenu">Who are we?</a><a href="meettheturtles.html">Meet the Turtles</a><a href="involve.html">Want to get involved?</a>
+    
+          <ul>    
+            <li id="homemenu1" class="homedropdown"><a href="index.html">Who are we?</a></li>
+                <li id="homemenu1.1" class="homedropdown">Our Story</li>
+                <li id="homemenu1.2" class="homedropdown">Who are the heroes?</li>
+                <li id="homemenu1.3" class="homedropdown">Where are we now?</li>
+          </ul>
+            
+          <ul>
+                <li id="homemenu2" class="homedropdown"><a href="meettheturtles.html">Meet the Turtles</a></li>
+                <li id="homemenu2.1" class="homedropdown">Did you know?</li>
+          </ul>
+            
+          <ul>
+                <li id="homemenu3" class="homedropdown"><a href="involve.html">Want to get involved?</a></li>
+                <li id="homemenu3.1" class="homedropdown">Donate</li>
+                <li id="homemenu3.2" class="homedropdown">Adop a Turtle</li>
+                <li id="homemenu3.3" class="homedropdown">Contact Us</li>
+          </ul>
+    <ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
     </nav>
   </header>
     
  <main>
-  <div id="container">
-    
-    <section class="turtlebanner">
-    <img src="img/turtle-banner-600x250.png" alt="Turtle Banner" />
-    </section>
+     
+<!-- Image from  http://wildlifefriendly.org/sea-turtle-friendly/ --> 
+     
+    <img class="turtlebanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner" />
       
     <section class="aboutus">
       <h2>About Us</h2>
@@ -42,7 +68,7 @@
       <h2>Where are we now?</h2>
       <p>Add Google Maps</p>
     </section>
-  </div>
+     
 </main>
 
 

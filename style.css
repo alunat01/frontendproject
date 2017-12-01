@@ -2,27 +2,68 @@
 
 /* For all screem */
 body {
-  margin:0;
-  padding:0;
   font-family: Verdana, Geneva, sans-serif;
+  background-color: mediumaquamarine;
 }
 header {
-  background: #ccc;
-  color: #444;
   font-family: Verdana, Geneva, sans-serif;
+  color: mediumpurple;
+  padding: none;
+  text-align: center;
 }
-nav {
-  background: #aaa;
-  width: 100%;
-  padding: 1em;
-  display: block;
-}
+
 
 ul {
     list-style-type: none;
-    margin: 1em;
-    padding: 1em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 h1 {
   font-size: 1.5em;
@@ -30,31 +71,28 @@ h1 {
   padding: 1em;
 }
 main {
-  background: #eee;
-  padding: .5em;
-}
-section {
-  background: #888;
-}
+  background-color: mediumaquamarine;
+  }
 
 .turtlebanner {
     max-width: 100%;
     height: auto;
+    width: auto;
+    background-color: mediumaquamarine;
 }
 
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
   header {
-    background: #de9;
-    color: #ccc;
+    background-color: antiquewhite;
   }
   nav a {
     width: 44%;
     display: inline-block;
   }
   nav a:hover {
-    background: #777;
+    background-color: antiquewhite;
   }
   h1 {
     font-size: 2em;
@@ -80,8 +118,7 @@ section {
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
   header {
-    background: #222;
-    color: #ccc;
+    background-color: antiquewhite;
   }
   nav {
     display: block;
@@ -89,9 +126,6 @@ section {
   nav a {
     line-height: 3em;
     width: inherit;
-  }
-  #menu {
-    display: none;
   }
   main {
     max-width: 1000px;
@@ -103,5 +137,11 @@ section {
     border-color: #666;
     font-size: 1.5em;
   }
+    
+.turtlebanner {
+      padding: 0 6px;
+      float: left;
+      width: 100%;
+}
 }
 /* END SECOND BREAKPOINT */
