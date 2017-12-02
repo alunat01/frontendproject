@@ -121,6 +121,18 @@ section {
     width: 15%;
 }
 
+.kemp{
+    width: 20%;
+ }
+
+.leatherback {
+    width: 20%;
+}
+
+.greenturtle {
+    width: 20%;
+}
+
 
 
 
@@ -219,10 +231,21 @@ section {
   width: 50%;
 }
     
-    .seaturtle  {
-    max-width: 15%;
+.seaturtle  {
+    max-width: 400px;
+}
+    
+    .kemp{
+        max-width: 400px;
+    }
+    
+    .leatherback {
+    max-width: 20%;
 }
 
+    .greenturtle {
+        max-width: 20%;
+    }
     
 }
 
