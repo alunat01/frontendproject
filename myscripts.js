@@ -16,4 +16,7 @@ function initMap() {
     map: map,
     title: 'Release Site'
   });
+    
 }
+   
+
