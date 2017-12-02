@@ -52,13 +52,45 @@
         <!-- Image from  http://wildlifefriendly.org/sea-turtle-friendly/ --> 
       <img class="turtlebanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
   <section>
-    <h2>section 1</h2>
-    <p>some text and content</p>
+    <h2> Add Buttons to different forms</h2>
   </section>
 
   <section>
-    <h2>section 2</h2>
-    <p>some text and content</p>
+    <h2>Donation Form</h2>
+      
+      
+      <form class="donation" method="get">
+            <label>First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+        
+      <label>Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+      
+      <label for="country">Country</label>
+          
+    <select id="country" name="country">
+      <option value="choice">Choose Country</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value"uk">United Kingfom</option>
+    </select>
+          
+        <label>Contact Number</label>
+          <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
+          
+  
+    <input type="submit" value="Submit">
+      
+      
+      
+      
+      
+    
+      </form>
+
+      
+      
   </section>
 
   <section>
