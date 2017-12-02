@@ -9,7 +9,7 @@ body {
   margin: 0; /* get eid of spacing around webpage */
 }
 
-.fixedwhitebar
+.fixedtopbar
 {
     position: fixed;
     width: 100%;
@@ -88,71 +88,218 @@ section {
     width: 100%;
     margin: 2%;
     display: inline-block;
-    background: ;
-    color: ;
-    
+    background: white;
+    color: mediumaquamarine;
+}
+
+#map {
+  height: 400px;
+  width: 50%;
+}
+
+
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
 
-    li {
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0; /* get eid of spacing around webpage */
+}
+
+.fixedtopbar
+{
+    position: fixed;
+    width: 100%;
+    background-color: mediumaquamarine;
+    height: px;
+}
+
+main {
+    background-color: white;
+}
+
+li {
+    margin-top: 50px;
+    margin-right: 10px;
     float: right;
 	border: 1px solid transparent;
-    background-color: white;
-    width: 100%;
+    min-height: 60px;
+    width: 10%;
+    text-align: center;
+    background-color: mediumaquamarine;
 }
-    nav a {
-    width: 100%;
+
+li a, .dropdown {
     display: inline-block;
-  }
-  nav a:hover {
-    background-color: antiquewhite;
-  }
-  h1 {
-    font-size: 2em;
-  }
-  main {
-    width: 90%;
-    margin: 0 auto;
-  }
-  section {
-    width: 44%;
+    padding: 10px 14px ;
+    text-decoration: none; /*underline gone */
+    color: white;
+
+}
+
+.dropdown:hover {
+    background-color: #008080;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: mediumaquamarine;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+
+/* Trying to edit who are we menu 
+.dropdown-content:last-child{
+    background-color: crimson;
+want to move it down 
+}
+
+*/
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: mediumaquamarine;
+}
+
+.dropdown:hover .dropdown-content {
+    margin-top: 13px;
+    display: block;
+    text-align: center;
+    padding: 10px 14px;
+    width: 10%;
+}
+
+.turtlebanner {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-top: 8.28em;
+}
+
+section {
+    width: 100%;
     margin: 2%;
     display: inline-block;
-    background: #444;
-    color: #999;
-  }
-  section:hover {
-    background: #666;
-  }
+    background: white;
+    color: mediumaquamarine;
 }
+
+#map {
+  height: 400px;
+  width: 50%;
+}
+}
+
+
+    
 /* END FIRST BREAKPOINT */
 
 
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 @media screen and (min-width: 1000px) {
-  nav {
+
+
+    body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 0; /* get eid of spacing around webpage */
+}
+
+.fixedtopbar
+{
+    position: fixed;
+    width: 100%;
+    background-color: mediumaquamarine;
+    height: px;
+}
+
+main {
+    background-color: white;
+}
+
+li {
+    margin-top: 50px;
+    margin-right: 10px;
+    float: right;
+	border: 1px solid transparent;
+    min-height: 60px;
+    width: 10%;
+    text-align: center;
+    background-color: mediumaquamarine;
+}
+
+li a, .dropdown {
+    display: inline-block;
+    padding: 10px 14px ;
+    text-decoration: none; /*underline gone */
+    color: white;
+
+}
+
+.dropdown:hover {
+    background-color: #008080;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: mediumaquamarine;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    text-decoration: none;
     display: block;
-  }
-  nav a {
-    line-height: 3em;
-    width: inherit;
-  }
-  main {
-    max-width: 1000px;
-  }
-  section {
-    width: 22%;
-    margin: 1em 1% 1em 1%;
-    background: #222;
-    border-color: #666;
-    font-size: 1.5em;
-  }
-    
+}
+
+/* Trying to edit who are we menu 
+.dropdown-content:last-child{
+    background-color: crimson;
+want to move it down 
+}
+
+*/
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: mediumaquamarine;
+}
+
+.dropdown:hover .dropdown-content {
+    margin-top: 13px;
+    display: block;
+    text-align: center;
+    padding: 10px 14px;
+    width: 10%;
+}
+
 .turtlebanner {
-      padding: 0 6px;
-      float: left;
-      width: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-top: 8.28em;
 }
+
+section {
+    width: 100%;
+    margin: 2%;
+    display: inline-block;
+    background: white;
+    color: mediumaquamarine;
 }
+
+#map {
+  height: 400px;
+  width: 50%;
+}
+
+}
+
+
+    
 /* END SECOND BREAKPOINT */

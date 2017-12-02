@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <title>Save the Turtles</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="myscripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
  
 <body>
   <header>
-      <div class="fixedwhitebar">
+      <div class="fixedtopbar">
     <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar -->
     <!-- Labels put vice versa as I could not figure out how to put in correct order while having it aligned on right side -->
       
@@ -63,8 +64,15 @@
         
       <section class="current">
         <h2>Where are we now?</h2>
-        <p>Add Google Maps</p>
-      </section>
+        <p> Google Maps API</p>
+       
+          
+          <div id="map"></div>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC17uwqS-_UjGvXxgrvub-cCPerufVyeSk&callback=initMap"></script>
+  <script src="myscripts.js"></script>
+          
+      </section> 
           
         </article>
     </main>
