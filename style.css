@@ -138,8 +138,8 @@ section {
 
 label {
     display: inline-block;
-    padding-bottom: 5px;
-    padding-top: 16px;
+    padding-bottom: 6px;
+    padding-top: 20px;
 }
 
 
@@ -148,6 +148,23 @@ input {
 }
 
 input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -168,6 +185,12 @@ select {
     background-color: #f1f1f1;
 }
 
+input[type=checkbox] {
+    text-align: left;
+    width: 47px;
+}
+
+
 input[type=button], input[type=submit], input[type=reset] {
     background-color: mediumaquamarine;
     border: none;
@@ -180,12 +203,98 @@ input[type=button], input[type=submit], input[type=reset] {
     margin-top: 20px;
 }
 
+input[type=submit] {
+    display: block;
+    border-radius: 4px;
+}
 
 
+input[type=radio] {
+    background-color: mediumaquamarine;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 10%;
+
+}
+
+fieldset {
+    border: none;
+}
+
+.regular {
+    margin-left: -10px;
+    margin-top: -20px;
+    padding-right: 900px;
+}
 
 
+.donate-now {
+     list-style-type:none;
+     margin:5px 0 0 0;
+     padding:0;
+}
 
+.donate-now li {
+    float:left;
+    margin:0 30px 0 0;
+    width: 10%;
+    height:40px;
+    position:relative;
+    border-radius: 4px;
+    color: white;
+}
 
+.donate-now label, .donate-now input {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.donate-now input[type="radio"] {
+    opacity:0.01;
+    z-index:100;
+}
+
+.donate-now input[type="radio"]:checked + label,
+.Checked + label {
+    background-color: #ccc;
+    color: white;
+}
+
+.donate-now label {
+     cursor:pointer;
+     z-index:90;
+}
+
+.donate-now label:hover {
+     background:#DDD;
+}
+
+.carddetails{
+    display: block;
+    margin-bottom: -15px;
+    font-size: 1.5em;
+}
+
+.regular1 {
+    border-color: #008080;
+    border-style: solid;
+    margin-left: -10px;
+    padding-right: 900px;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 @media screen and (min-width: 500px) {
 

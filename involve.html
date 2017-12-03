@@ -66,31 +66,86 @@
       <label>Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
       
-      <label for="country">Country</label>
+      <label for="country">City</label>
           
-    <select id="country" name="country">
-      <option value="choice">Choose Country</option>
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-      <option value"uk">United Kingfom</option>
+    <select id="city" name="city">
+      <option value="choice">Choose City</option>
+      <option value="australia">Birmingham</option>
+      <option value="canada">Leicester</option>
+      <option value="usa">London</option>
+      <option value="uk">Nottingham</option>
     </select>
           
         <label>Contact Number</label>
           <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
           
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Enter your email address"/>
+          
+        <input type="checkbox" name="email_signup[]" value="user_emails"/>
+          <label for="emailsignup">Would you like to receive regular updates?</label>
   
-    <input type="submit" value="Submit">
-      
-      
-      
-      
-      
+<fieldset>      
+              <label for="amount">Donation Amount</label>
+
+          <ul class="donate-now">
+<li>
+    <input type="radio" id="a25" name="amount" />
+    <label for="a25">£5</label>
+</li>
+<li>
+    <input type="radio" id="a50" name="amount" />
+    <label for="a50">£10</label>
+</li>
+<li>
+    <input type="radio" id="a75" name="amount" checked="checked"/>
+    <label for="a75">£20</label>
+</li>
+                  <li>
+    <input type="radio" id="other" name="amount" checked="checked" />
+    <label for="other">Other</label>   
+</li>
+              </ul>
+<input type="text" id="lname" name="lastname" placeholder="Enter amount">
+              </fieldset>
+          
+          <fieldset class="regular">
+          
+          <input type="radio" name="payment" value="onetime" onclick="alert('You have chosen one-time payment')"/>
+        <label for="single">One-Time</label>
+          
+             <input type="radio" name="payment" value="regular" onclick="alert('You have chosen monthly payment')"/>
+        <label for="single">Monthly</label>       
+          
+          </fieldset>
+          
+          <fieldset class="regular1">
+              
+              <label for="carddetails" class="carddetails">Card Details</label>
+              <label for="cardtype" class="cardtype">Card Type:</label>
+        
+          <input type="radio" name="card" value="visa"/>
+        <label for="visa">Visa</label>
+             <input type="radio" name="card" value="regular"/>
+        <label for="single">Mastercard</label> 
+              
+              <label>Name on Card</label>
+      <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
+              
+               <label>Card Number</label>
+          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="\d{4}-d{4}-d{4}-d{4}">
+          
+              
+            <label>Security Number</label>
+          <input type="number" name="number" placeholder="xxx" pattern="\d{3}">
+          </fieldset>
+          
+
+    <input type="submit" value="Donate Now">
     
       </form>
-
-      
-      
+     
+      <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
   </section>
 
   <section>
