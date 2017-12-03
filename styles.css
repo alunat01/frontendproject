@@ -101,6 +101,7 @@ section {
   margin-left: -8px;
 }
 
+/* Page 1 Map */
 #map {
   height: 400px;
   max-width: 100%;
@@ -108,8 +109,6 @@ section {
 
 
 /* Scrollbar Colour */
-
-
 /* width */
 
 ::-webkit-scrollbar {
@@ -135,6 +134,26 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+
+/* Page 2 Pictures */
+.seaturtle  {
+    width: 50%;
+}
+
+.kemp{
+    width: 50%;
+
+ }
+
+.leatherback {
+    width: 50%;
+
+}
+
+.greenturtle {
+    width: 50%;
 }
 
 

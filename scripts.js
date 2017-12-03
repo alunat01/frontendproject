@@ -20,13 +20,11 @@
 })();
 
 
+
 "use strict";
 
 function initMap() {
-  let costarica = {
-    lat: 10.540428,
-    lng: -83.498196
-  };
+  let costarica = {lat: 10.540428, lng: -83.498196};
   let mapDemo = document.getElementById("map");
 
   // this sets the default location for when the map is first loaded
@@ -43,3 +41,4 @@ function initMap() {
   });
 
 }
+
