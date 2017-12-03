@@ -1,68 +1,68 @@
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Save the Turtles</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="myscripts.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
- 
-<body>
-
-<div class="alert">
+    
+  <body>
+      
+      <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
   Do not input card details as this is not a real website.
 </div>
-    
-  <header>
+      
+    <header>
+      <h1>Save the Turtles</h1>
+        
       <div class="fixedtopbar">
-    <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar -->
-    <!-- Labels put vice versa as I could not figure out how to put in correct order while having it aligned on right side -->
-    <nav>
-        
-      <li class="dropdown">
-        <a href="involve.html">Want to get involved?</a>
-        <div class="dropdown-content">
-          <a href="#">Donate</a>
-          <a href="#">Adoption</a>
-          <a href="#">Contact Us</a> 
-        </div>
-      </li>
-        
-      <li class="dropdown">
-        <a href="meettheturtles.html">Meet the Turtles</a>
-        <div class="dropdown-content">
-          <a href="#">Over the Ocean</a>
-          <a href="#">Did you know?</a> 
-        </div>
-      </li>
-        
-      <li class="dropdown">
-        <a href="index.html">Who are we?</a>
-        <div class="dropdown-content">
-          <a href="#">Our Story</a>
-          <a href="#">Who are the heroes?</a>
-          <a href="#">Where are we now?</a>
-        </div>
-      </li>
-        
-    </nav>
+        <a id="menu" href="#">Menu</a>
+        <nav id="nav-menu">
+            
+          <ul>
+            <li class="dropdown">
+              <a href="index.html">Who are we?</a>
+              <div class="dropdown-content">
+                <a href="#">Our Story</a>
+                <a href="#">Who are the heroes?</a>
+                <a href="#">Where are we now?</a>
+              </div>
+            </li>
+              
+            <li class="dropdown">
+              <a href="meettheturtles.html">Meet the Turtles</a>
+              <div class="dropdown-content">
+                <a href="#">Over the Ocean</a>
+                <a href="#">Did you know?</a>
+              </div>
+            </li>
+              
+            <li class="dropdown">
+              <a href="involve.html">Want to get involved?</a>
+              <div class="dropdown-content">
+                <a href="#">Donate</a>
+                <a href="#">Adoption</a>
+                <a href="#">Contact Us</a> 
+              </div>
+            </li>
+          </ul>
+            
+        </nav>
       </div>
-  </header>
-    
-    
- <main>
-        <!-- Image from  http://wildlifefriendly.org/sea-turtle-friendly/ --> 
+    </header>
+      
+    <main>
+        
       <img class="turtlebanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
+      
   <section>
     <h2> Add Buttons to different forms</h2>
   </section>
 
   <section>
     <h2>Donation Form</h2>
-      
       
       <form class="donation" method="get">
             <label>First Name</label>
@@ -165,6 +165,7 @@
 
 </main>
 
+    <script src="scripts.js"></script>
 
 </body>
 </html>

@@ -156,6 +156,193 @@ section {
     width: 50%;
 }
 
+/* Page 3 Forms */
+
+label {
+    display: inline-block;
+    padding-bottom: 6px;
+    padding-top: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+
+input[type=text]:focus {
+    border-color: mediumaquamarine;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=checkbox] {
+    text-align: left;
+    width: 47px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: mediumaquamarine;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type=submit] {
+    display: block;
+    border-radius: 4px;
+}
+
+
+input[type=radio] {
+    background-color: mediumaquamarine;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 20%;
+}
+
+fieldset {
+    border: none;
+}
+
+.donate-now {
+  margin-top: -1px;
+  display: inline-block;
+  margin-right: 50px;
+
+}
+
+
+.donate-now li {
+    width: 100px;
+    height:60px;
+    position:relative;
+    border-radius: 4px;
+    color: white;
+    border-style: solid;
+    border-color: mediumaquamarine;
+    background-color: mediumaquamarine;
+    margin-top: 10px;
+}
+
+.donate-now label, .donate-now input {
+    display:block;
+    position:absolute;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+ 
+.donate-now input[type="radio"] {
+    opacity:0.01; /* hides radio buttons */
+    z-index:100;
+}
+
+.donate-now input[type="radio"]:checked + label,
+.Checked + label {
+    background-color: #DDD;
+    color: darkcyan;
+}
+
+.donate-now label {
+     cursor:pointer;
+     z-index:90;
+}
+
+.donate-now label:hover {
+    background:#DDD;
+    color: darkcyan;
+}
+
+.carddetails {
+    display: block;
+    margin-bottom: -15px;
+    font-size: 1.5em;
+}
+
+.regular {
+    display: inline-block;
+    margin-top: -20px;
+}
+
+.regular1 {
+    border-color: #008080;
+    border-style: solid;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+    /* The alert message box */
+.alert {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    text-align: center;
+    font-size: 100%;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
