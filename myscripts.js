@@ -19,29 +19,49 @@ function initMap() {
     
 }
 
-// get the mPopup
-let mpopup = document.getElementById('mpopupBox');
+/*
+	By Osvaldas Valutis, www.osvaldas.info
+	Available for use under the MIT License
+*/
 
-// get the link that opens the mPopup
-let mpLink = document.getElementById("mpopupLink");
 
-// get the close action element
-let close = document.getElementsByClassName("close")[0];
 
-// open the mPopup once the link is clicked
-mpLink.onclick = function() {
-    mpopup.style.display = "block";
-}
+;(function( $, window, document, undefined )
+{
+	$.fn.doubleTapToGo = function( params )
+	{
+		if( !( 'ontouchstart' in window ) &&
+			!navigator.msMaxTouchPoints &&
+			!navigator.userAgent.toLowerCase().match( /windows phone os 7/i ) ) return false;
 
-// close the mPopup once close element is clicked
-close.onclick = function() {
-    mpopup.style.display = "none";
-}
+		this.each( function()
+		{
+			var curItem = false;
 
-// close the mPopup when user clicks outside of the box
-window.onclick = function(event) {
-    if (event.target == mpopup) {
-        mpopup.style.display = "none";
-    }
-}
+			$( this ).on( 'click', function( e )
+			{
+				var item = $( this );
+				if( item[ 0 ] != curItem[ 0 ] )
+				{
+					e.preventDefault();
+					curItem = item;
+				}
+			});
+
+			$( document ).on( 'click touchstart MSPointerDown', function( e )
+			{
+				var resetItem = true,
+					parents	  = $( e.target ).parents();
+
+				for( var i = 0; i < parents.length; i++ )
+					if( parents[ i ] == curItem[ 0 ] )
+						resetItem = false;
+
+				if( resetItem )
+					curItem = false;
+			});
+		});
+		return this;
+	};
+})( jQuery, window, document );
 

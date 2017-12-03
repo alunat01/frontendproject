@@ -15,22 +15,28 @@
     <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar -->
     <!-- Labels put vice versa as I could not figure out how to put in correct order while having it aligned on right side -->
       
-    <nav>
-        
+    <nav id="nav" role="navigation">
+        <a href="#nav" title="Show navigation">Show Menu</a>
+        <a href="#" title="Hide Navigation">Hide Menu</a>
+      <ul>
       <li class="dropdown">
         <a href="involve.html">Want to get involved?</a>
         <div class="dropdown-content">
-          <a href="#">Donate</a>
-          <a href="#">Adoption</a>
-          <a href="#">Contact Us</a> 
+            <ul>
+                <li> <a href="#">Donate</a> </li>
+                <li><a href="#">Adoption</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
         </div>
       </li>
         
       <li class="dropdown">
         <a href="meettheturtles.html">Meet the Turtles</a>
         <div class="dropdown-content">
-          <a href="#">Over the Ocean</a>
-          <a href="#">Did you know?</a> 
+            <ul>
+                <li> <a href="#">Over the Ocean</a> </li>
+                <li> <a href="#">Did you know?</a> </li>
+            </ul>
         </div>
       </li>
         
@@ -42,7 +48,7 @@
           <a href="#">Where are we now?</a>
         </div>
       </li>
-        
+        </ul>
     </nav>
       </div>
   </header>

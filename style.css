@@ -2,39 +2,127 @@
 
 /* Base Styles */
 
-/* Figure out how to add background to header only */
-
 body {
-  font-family: Verdana, Geneva, sans-serif;
-  margin: 0; /* get rid of spacing around webpage */
-  max-width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0; /* get rid of spacing around webpage */
+    max-width: 100%;
+    font-size: 4vw;
 }
 
 .fixedtopbar{
     position: fixed;
     width: 100%;
     background-color: mediumaquamarine;
-    max-height: 100%
+    max-height: 25%
 }
 
 main {
     background-color: white;
 }
 
+#nav
+{
+    /* container */
+}
+    #nav > a
+    {
+        display: none;
+    }
+    #nav li
+    {
+        position: relative;
+    }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: 3.75em;
+    }
+        #nav > ul > li
+        {
+            width: 25%;
+            height: 100%;
+            float: left;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+        #nav li:hover ul
+        {
+            display: block;
+        }
+
+
+
+    #nav
+    {
+        position: absolute;
+    }
+        #nav > a
+        {
+        }
+        #nav:not( :target ) > a:first-of-type,
+        #nav:target > a:last-of-type
+        {
+            display: block;
+        }
+ 
+    /* first level */
+ 
+    #nav > ul
+    {
+        height: auto;
+        display: none;
+        width: 418%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: mediumaquamarine;
+    }
+        #nav:target > ul
+        {
+            display: block;
+        }
+        #nav > ul > li
+        {
+            width: 100%;
+            float: none;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul
+    {
+        position: static;
+        width: 400%;
+    }
+}
+
 li {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-right: 10px;
     float: right;
-	border: 1px solid transparent;
-    min-height: 60px;
-    width: 10%;
+    width: 100%;
     text-align: center;
     background-color: mediumaquamarine;
+    display: none;
+}
+
+li a {
+    padding: 1em;
+    display: block;
 }
 
 li a, .dropdown {
-    display: inline-block;
-    padding: 10px 14px ;
+    padding: 1em;
+    display:  block;
     text-decoration: none; /*underline gone */
     color: white;
 
