@@ -366,10 +366,10 @@ textarea {
 .form1, .form2, .form3{
     background-color: mediumaquamarine;
     display: block;
-    width: 100%;
+    width: 95%;
     height: 20px;
     margin-bottom: 20px;
-    padding: 20px 0 20px 0;
+    padding: 10px 10px 10px 10px;
 
 }
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
