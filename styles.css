@@ -101,7 +101,11 @@ section {
 .turtlebanner {
   max-width: 115%;
   margin-top: -8px;
-  margin-left: -4px;
+  margin-left: -8px;
+}
+
+.ninjaturtles {
+    max-width: 100%;
 }
 
 /* Page 1 Map */
