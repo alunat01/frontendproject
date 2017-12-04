@@ -105,7 +105,8 @@ section {
 }
 
 .ninjaturtles {
-    max-width: 100%;
+    max-width: 450px;
+    height: 300px;
 }
 
 /* Page 1 Map */
