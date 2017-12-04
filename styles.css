@@ -106,10 +106,16 @@ section {
 
 /* Page 1 pictures of heroes */
 
-.ninjaturtles, .avanti, .amina, .sadiyya, .zahraa {
+.ninjaturtles, .avanti, .zahraa {
     max-width: 100%;
     height: 300px;
 }
+
+.amina, .sadiyya {
+    max-width: 100%;
+    height: 400px;
+}
+
 
 /* Responsive Gallery */
 
