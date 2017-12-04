@@ -359,11 +359,19 @@ textarea {
 
 /* Bookmark Buttons on involve.html*/
 .formbuttons {
-    background-color: mediumaquamarine;
     margin-top: 50px;
     padding: 10px 10px 10px 10px;
 }
 
+.form1, .form2, .form3{
+    background-color: mediumaquamarine;
+    display: block;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 0;
+
+}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
 @media screen and (min-width: 500px) {
