@@ -36,8 +36,9 @@ nav a {
   background-color: mediumaquamarine;
   display: block;
   text-align: right;
-  padding-bottom: 1em;
-  margin-top: -0.5em;
+  padding-bottom: 2.4em;
+  margin-top: 1em;
+  padding-top: 1em;
   margin-right: 0.6em;
 }
 
@@ -91,6 +92,11 @@ main {
   	line-height: 30px;
 }
 
+h1 {
+    float: left; 
+    margin-top: -10px;
+    padding: 10px;
+}
 h2 {
     font-size: 2em;
     margin-top: 15px;
@@ -110,7 +116,7 @@ section {
 
 .turtlebanner {
   max-width: 115%;
-  margin-top: -8px;
+  margin-top: -29.4px;
   margin-left: -8px;
 }
 
