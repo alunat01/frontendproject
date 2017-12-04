@@ -323,6 +323,13 @@ textarea {
   width: 100%;
 }
 
+#get-name { 
+    padding: 0.5em; 
+}
+
+#my-name {
+    display: block;
+}
 
 
 /* The alert message box */

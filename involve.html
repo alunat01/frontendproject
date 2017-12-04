@@ -64,9 +64,9 @@
   <section>
     <h2>Donation Form</h2>
       
-      <form class="donation" method="get">
-            <label>First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+      <form class="donation" id="get-name" action="#" method="post">
+            <label for="user-name">First Name</label>
+      <input type="text" id="user-name" name="firstname" placeholder="Enter your first name..">
         
       <label>Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
@@ -147,6 +147,9 @@
           
 
     <input type="submit" value="Donate Now">
+          
+          
+    <p>Hello, <span id="my-name">(Your name)</span>Thank you for submitting the form! You will receive an email with confirmed details</p>
     
       </form>
      
@@ -232,6 +235,7 @@
               
             <label>Security Number</label>
           <input type="number" name="number" placeholder="xxx" pattern="\d{3}">
+              
           </fieldset>
           
 
@@ -265,9 +269,12 @@
           
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="8" cols="50" class="large"></textarea>
+          
+              <input type="submit" value="Submit Message">
+
         </form>
         </section>
-
+        
 </main>
 
     <script src="scripts.js"></script>
