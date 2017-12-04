@@ -51,8 +51,7 @@ li {
   list-style-type: none;
 }
 
-li a,
-.dropdown {
+li a, .dropdown {
   padding: 1em;
 }
 
