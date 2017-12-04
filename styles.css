@@ -89,7 +89,7 @@ li a, .dropdown {
 
 main {
   background-color: white;
-  	line-height: 30px;
+  line-height: 30px;
 }
 
 h1 {
@@ -220,6 +220,29 @@ div.desc {
 
 
 /* Page 3 Forms */
+
+/* Bookmark Buttons on involve.html*/
+
+.form1, .form2, .form3{
+  display: block;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: mediumaquamarine;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  display: block;
+  width: 100%; 
+  cursor: pointer;
+  padding: 1em;
+
+}
+   
+.buttonforms a:hover{
+    background-color: #f1f1f1;
+    color: mediumaquamarine;
+}
 
 label {
     display: inline-block;
@@ -421,21 +444,6 @@ textarea {
     color: black;
 }
 
-/* Bookmark Buttons on involve.html*/
-.formbuttons {
-    margin-top: 50px;
-    padding: 10px 10px 10px 10px;
-}
-
-.form1, .form2, .form3{
-    background-color: mediumaquamarine;
-    display: block;
-    width: 95%;
-    height: 20px;
-    margin-bottom: 20px;
-    padding: 10px 10px 10px 10px;
-
-}
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
 @media screen and (min-width: 500px) {
