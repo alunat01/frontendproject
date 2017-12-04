@@ -104,10 +104,66 @@ section {
   margin-left: -8px;
 }
 
+/* Page 1 pictures of heroes */
+
 .ninjaturtles {
     max-width: 100%;
     height: 300px;
 }
+
+/* Responsive Gallery */
+
+div.gallery:hover {
+    border: 3px solid mediumaquamarine;
+}
+
+.avanti {
+    max-width: 100%;
+    height: 300px;  
+}
+
+.amina {
+    max-width: 100%;
+    height: 400px;
+}
+
+.sadiyya {
+    max-width: 100%;
+    height: 400px;
+}
+
+.zahraa{
+    max-width: 100%;
+    height: 300px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.responsive {
+    width: 100%;
+    }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 
 /* Page 1 Map */
 #map {
@@ -413,6 +469,14 @@ textarea {
   section:hover {
     background: #666;
   }
+    
+    
+        .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    
+    
 }
 
 
@@ -446,6 +510,12 @@ textarea {
     border-color: #666;
     font-size: 1.5em;
   }
+    
+    .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
 }
 
 
