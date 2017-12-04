@@ -153,9 +153,93 @@
       <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
   </section>
 
-  <section>
-    <h2>section 3</h2>
-    <p>some text and content</p>
+   <section>
+    <h2>Adoption Form</h2>
+      
+      <form class="donation" method="get">
+            <label>First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+        
+      <label>Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+          
+      <label>Address</label>
+        <input type="text" id="address" name="address" placeholder="Enter your address">
+    
+      <label>Postcode</label>
+        <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx" pattern="\d{3}-d{3}">
+          
+          
+      <label for="country">City</label>
+          
+    <select id="city" name="city">
+      <option value="choice">Choose City</option>
+      <option value="australia">Birmingham</option>
+      <option value="canada">Leicester</option>
+      <option value="usa">London</option>
+      <option value="uk">Nottingham</option>
+    </select>
+          
+        <label>Contact Number</label>
+          <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
+          
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="Enter your email address"/>
+          
+        <input type="checkbox" name="email_signup[]" value="user_emails"/>
+          <label for="emailsignup">Would you like to receive regular updates?</label>
+  
+<fieldset>      
+              <label for="amount">Monthly Donation Amount</label>
+
+          <ul class="donate-now">
+<li>
+    <input type="radio" id="a25" name="amount" />
+    <label for="a25">£2</label>
+</li>
+<li>
+    <input type="radio" id="a50" name="amount" />
+    <label for="a50">£5</label>
+</li>
+<li>
+    <input type="radio" id="a75" name="amount" checked="checked"/>
+    <label for="a75">£10</label>
+</li>
+                  <li>
+    <input type="radio" id="other" name="amount" checked="checked" />
+    <label for="other">Other</label>   
+</li>
+              </ul>
+<input type="text" id="lname" name="lastname" placeholder="Enter amount">
+              </fieldset>
+          
+          <fieldset class="regular1">
+              
+              <label for="carddetails" class="carddetails">Card Details</label>
+              <label for="cardtype" class="cardtype">Card Type:</label>
+        
+          <input type="radio" name="card" value="visa"/>
+        <label for="visa">Visa</label>
+             <input type="radio" name="card" value="regular"/>
+        <label for="single">Mastercard</label> 
+              
+              <label>Name on Card</label>
+      <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
+              
+               <label>Card Number</label>
+          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="\d{4}-d{4}-d{4}-d{4}">
+          
+              
+            <label>Security Number</label>
+          <input type="number" name="number" placeholder="xxx" pattern="\d{3}">
+          </fieldset>
+          
+
+    <input type="submit" value="Adopt Now">
+    
+      </form>
+     
+      <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
   </section>
 
   <section>
