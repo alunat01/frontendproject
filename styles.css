@@ -156,6 +156,7 @@ section {
     width: 50%;
 }
 
+
 /* Page 3 Forms */
 
 label {
@@ -316,7 +317,15 @@ input[type=number] {
     border-radius: 4px;
 }
 
-    /* The alert message box */
+
+textarea {
+  font:inherit;
+  width: 100%;
+}
+
+
+
+/* The alert message box */
 .alert {
     padding-top: 20px;
     padding-bottom: 20px;
