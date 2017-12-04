@@ -60,19 +60,21 @@ li a, .dropdown {
   padding: 1em;
 }
 
-.dropdown:hover,
-li a:hover {
+.dropdown {
+  border-top: solid white;
+}
+.mainnav:hover, .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: mediumaquamarine;
+}
+
+.dropdown:hover, li a:hover {
   /* background-color: #008080; See if better with or without*/
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content {
-    display: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: mediumaquamarine;
+    display: none; /* Hides second level menu -on click it appears */
 }
 
 .dropdown:hover .dropdown-content {
@@ -93,13 +95,15 @@ h1 {
 
 main {
   background-color: white;
-  padding: .5em;
 }
 
 section {
-  background-color: white;
+  background-color: #e6ffff;
   color: mediumaquamarine;
-  margin-top: 100px;
+  margin-top: 10px;
+  padding: 1em;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .turtlebanner {
