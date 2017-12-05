@@ -241,6 +241,25 @@ div.desc {
     width: 50%;
 }
 
+#video {  /* HTML code from youtube embed function */
+  width: 100%;
+  height: 300px;
+  
+}
+
+.turtlefacts {
+    text-align: left;
+    line-height: 40px;
+    list-style-type: circle;    
+}
+
+#turtlefactswebsite {
+    color: mediumaquamarine;
+    background: white;
+    margin-left: -0px;
+    padding: .1em; /* Make link button smaller */
+}
+
 
 /* Page 3 Forms */
 
@@ -465,25 +484,6 @@ textarea {
 /* When moving the mouse over the close button */
 .closebtn:hover {
     color: black; 
-}
-
-#video {  /* HTML code from youtube embed function */
-  width: 100%;
-  height: 300px;
-  
-}
-
-.turtlefacts {
-    text-align: left;
-    line-height: 40px;
-    list-style-type: circle;    
-}
-
-#turtlefactswebsite {
-    color: mediumaquamarine;
-    background: white;
-    margin-left: -0px;
-    padding: .1em; /* Make link button smaller */
 }
 
 
