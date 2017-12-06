@@ -25,9 +25,6 @@ function modal () {
 }
 }
 */
-
-
-
 /* From W3school - Modal gallery
 
 
@@ -56,12 +53,23 @@ span.onclick = function () {
 */
 
 
-(function () {
-    
-    "use strict";
+/* .................................................... 
 
-    let menuButton = document.getElementById("menu");
-    let navMenu = document.getElementById("nav-menu");
+                
+                
+                
+                Navigation Menu from Lab 
+                
+                
+                
+......................................................*/
+
+(function () {
+
+  "use strict";
+
+  let menuButton = document.getElementById("menu");
+  let navMenu = document.getElementById("nav-menu");
 
   menuButton.addEventListener("click", toggleMenu);
 
@@ -69,22 +77,36 @@ span.onclick = function () {
   function toggleMenu() {
     if (toggle) { // true: it's visible
       navMenu.classList.remove("show-menu"); // hide it
-        toggle = false
+      toggle = false
     }
     else { // false: it's hidden
       navMenu.classList.add("show-menu"); // show it
-        toggle = true
+      toggle = true
     }
   }
 
 })();
 
 
+/* .................................................... 
+
+                
+                
+                
+                Google Maps from Lab
+                
+                
+                
+......................................................*/
+
 
 "use strict";
 
 function initMap() {
-  let costarica = {lat: 10.540428, lng: -83.498196};
+  let costarica = {
+    lat: 10.540428,
+    lng: -83.498196
+  };
   let mapDemo = document.getElementById("map");
 
   // this sets the default location for when the map is first loaded
@@ -102,17 +124,34 @@ function initMap() {
 
 }
 
-(function(){
-/*
-  An "Immediately-Invoked Function Expression" (IIFE) contains
-  all the code. the final brackets () ensure that it executes.
-  This is good practice because:
-  - it keeps your variables out of the global namespace
-  - local references to objects decrease lookup times
-  - it is a foundation for further code organisation
-  It is also an "anonymous" function because it has/needs no name.
-*/
-  
+
+/* .................................................... 
+
+                
+                
+                
+                Javascript for form from Lab
+                
+                
+                
+......................................................*/
+
+
+
+
+
+
+(function () {
+  /*
+    An "Immediately-Invoked Function Expression" (IIFE) contains
+    all the code. the final brackets () ensure that it executes.
+    This is good practice because:
+    - it keeps your variables out of the global namespace
+    - local references to objects decrease lookup times
+    - it is a foundation for further code organisation
+    It is also an "anonymous" function because it has/needs no name.
+  */
+
   /*
     declare all the variables using 'let'. These get a reference
     to the HTML elements we want by finding their ID
@@ -120,7 +159,7 @@ function initMap() {
   let myName = document.getElementById("my-name"); /* Span */
   let userName = document.getElementById("user-name"); /* id of name*/
   let getName = document.getElementById("get-name"); /* id of form */
-  
+
   // changes the 'innerHTML' (text) of the element
   function PerformGreeting(ev) {
     myName.innerHTML = userName.value;
@@ -143,14 +182,21 @@ function initMap() {
     Uncomment the line below - see what happens when you click
     in the grey area outside the input "submit" button. Why?
   */
-  
+
   // getName.addEventListener("click", PerformGreeting);
 
 }());
 
 
 
+
+
+
+
+
 /*let adoptAlert = document.getElementById("adopt-submit");*/
+
+/*
 
 function adopt() {
     "alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!')";
@@ -162,3 +208,6 @@ function checkdata(){
         alert("Please fill in the name box");
     }
 }
+
+
+*/

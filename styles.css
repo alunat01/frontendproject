@@ -1,12 +1,14 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0; /* Gets rid of space around page */
+  margin: 0;
+  /* Gets rid of space around page */
   background-color: mediumaquamarine;
   color: white;
   text-align: center;
@@ -56,25 +58,30 @@ li {
   list-style-type: none;
 }
 
-li a, .dropdown {
+li a,
+.dropdown {
   padding: 1em;
 }
 
 .dropdown {
   border-top: solid white;
 }
-.mainnav:hover, .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: mediumaquamarine;
+
+.mainnav:hover,
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: mediumaquamarine;
 }
 
-.dropdown:hover, li a:hover {
+.dropdown:hover,
+li a:hover {
   /* background-color: #008080; See if better with or without*/
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content {
-    display: none; /* Hides second level menu -on click it appears */
+  display: none;
+  /* Hides second level menu -on click it appears */
 }
 
 .dropdown:hover .dropdown-content {
@@ -85,6 +92,7 @@ li a, .dropdown {
   list-style-type: none;
 }
 
+
 /* Navigation Bar style ends */
 
 main {
@@ -93,17 +101,18 @@ main {
 }
 
 h1 {
-    float: left; 
-    margin-top: -10px;
-    padding: 10px;
+  float: left;
+  margin-top: -10px;
+  padding: 10px;
 }
+
 h2 {
-    font-size: 2em;
-    margin-top: 15px;
+  font-size: 2em;
+  margin-top: 15px;
 }
 
 .us {
-    font-size: 1.7em;
+  font-size: 1.7em;
 }
 
 #turtles {
@@ -111,22 +120,22 @@ h2 {
   font-size: 1.5em;
 }
 
-#boxshadow1 { 
-      box-shadow: 0px 1px 16px 10px #b3ffd9;
+#boxshadow1 {
+  box-shadow: 0px 1px 16px 10px #b3ffd9;
 }
 
-#OS1{
-    margin-top: -10px;
+#OS1 {
+  margin-top: -10px;
 }
 
 #nationalpark {
-    color: mediumaquamarine;
-    text-decoration: underline;
+  color: mediumaquamarine;
+  text-decoration: underline;
 }
 
 #historyturtles {
-    color: mediumaquamarine;
-    text-decoration: underline;
+  color: mediumaquamarine;
+  text-decoration: underline;
 }
 
 section {
@@ -143,50 +152,55 @@ section {
   margin-left: -110px;
 }
 
+
 /* Page 1 pictures of heroes */
 
-.ninjaturtles, .avanti, .zahraa {
-    max-width: 100%;
-    height: 300px;
+.ninjaturtles,
+.avanti,
+.zahraa {
+  max-width: 100%;
+  height: 300px;
 }
 
-.amina, .sadiyya {
-    max-width: 100%;
-    height: 400px;
+.amina,
+.sadiyya {
+  max-width: 100%;
+  height: 400px;
 }
 
 
 /* Responsive Gallery */
 
 div.gallery:hover {
-    border: 3px solid mediumaquamarine;
+  border: 3px solid mediumaquamarine;
 }
 
 div.desc {
-    padding: 15px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 100%
+  padding: 0 6px;
+  float: left;
+  width: 100%
 }
 
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 /* Page 1 Map */
+
 #map {
   height: 400px;
   max-width: 100%;
@@ -194,6 +208,8 @@ div.desc {
 
 
 /* Scrollbar Colour */
+
+
 /* width */
 
 ::-webkit-scrollbar {
@@ -223,49 +239,52 @@ div.desc {
 
 
 /* Page 2 Pictures */
-.seaturtle  {
-    width: 50%;
+
+.seaturtle {
+  width: 50%;
 }
 
-.kemp{
-    width: 50%;
-
- }
+.kemp {
+  width: 50%;
+}
 
 .leatherback {
-    width: 50%;
-
+  width: 50%;
 }
 
 .greenturtle {
-    width: 50%;
+  width: 50%;
 }
 
-#video {  /* HTML code from youtube embed function */
+#video {
+  /* HTML code from youtube embed function */
   width: 100%;
   height: 300px;
-  
 }
 
 .turtlefacts {
-    text-align: left;
-    line-height: 40px;
-    list-style-type: circle;    
+  text-align: left;
+  line-height: 40px;
+  list-style-type: circle;
 }
 
 #turtlefactswebsite {
-    color: mediumaquamarine;
-    background: white;
-    margin-left: -0px;
-    padding: .1em; /* Make link button smaller */
+  color: mediumaquamarine;
+  background: white;
+  margin-left: -0px;
+  padding: .1em;
+  /* Make link button smaller */
 }
 
 
 /* Page 3 Forms */
 
+
 /* Bookmark Buttons on involve.html*/
 
-.form1, .form2, .form3{
+.form1,
+.form2,
+.form3 {
   display: block;
   height: 60px;
   margin-bottom: 20px;
@@ -275,243 +294,244 @@ div.desc {
   text-align: center;
   list-style-type: none;
   display: block;
-  width: 100%; 
+  width: 100%;
   cursor: pointer;
   padding: 1em;
-
 }
-   
-.buttonforms a:hover{
-    background-color: #f1f1f1;
-    color: mediumaquamarine;
+
+.buttonforms a:hover {
+  background-color: #f1f1f1;
+  color: mediumaquamarine;
 }
 
 label {
-    display: inline-block;
-    padding-bottom: 6px;
-    padding-top: 20px;
+  display: inline-block;
+  padding-bottom: 6px;
+  padding-top: 20px;
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=tel] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=text]:focus {
-    border-color: mediumaquamarine;
+  border-color: mediumaquamarine;
 }
 
 select {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
 input[type=checkbox] {
-    text-align: left;
-    width: 47px;
+  text-align: left;
+  width: 47px;
 }
 
-input[type=button], input[type=submit], input[type=reset] {
-    background-color: mediumaquamarine;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: mediumaquamarine;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
 }
 
 input[type=submit] {
-    display: block;
-    border-radius: 4px;
+  display: block;
+  border-radius: 4px;
 }
 
-
 input[type=radio] {
-    background-color: mediumaquamarine;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 20%;
+  background-color: mediumaquamarine;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 20%;
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
 
 .donate-now {
   margin-top: -1px;
   display: inline-block;
   margin-right: 50px;
-
 }
-
 
 .donate-now li {
-    width: 100px;
-    height:60px;
-    position:relative;
-    border-radius: 4px;
-    color: white;
-    border-style: solid;
-    border-color: mediumaquamarine;
-    background-color: mediumaquamarine;
-    margin-top: 10px;
+  width: 100px;
+  height: 60px;
+  position: relative;
+  border-radius: 4px;
+  color: white;
+  border-style: solid;
+  border-color: mediumaquamarine;
+  background-color: mediumaquamarine;
+  margin-top: 10px;
 }
 
-.donate-now label, .donate-now input {
-    display:block;
-    position:absolute;
-    top:0px;
-    left:0;
-    right:0;
-    bottom:0;
+.donate-now label,
+.donate-now input {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
- 
+
 .donate-now input[type="radio"] {
-    opacity:0.01; /* hides radio buttons */
-    z-index:100;
+  opacity: 0.01;
+  /* hides radio buttons */
+  z-index: 100;
 }
 
-.donate-now input[type="radio"]:checked + label,
-.Checked + label {
-    background-color: #DDD;
-    color: darkcyan;
+.donate-now input[type="radio"]:checked+label,
+.Checked+label {
+  background-color: #DDD;
+  color: darkcyan;
 }
 
 .donate-now label {
-     cursor:pointer;
-     z-index:90;
+  cursor: pointer;
+  z-index: 90;
 }
 
 .donate-now label:hover {
-    background:#DDD;
-    color: darkcyan;
+  background: #DDD;
+  color: darkcyan;
 }
 
 .carddetails {
-    display: block;
-    margin-bottom: -15px;
-    font-size: 1.5em;
+  display: block;
+  margin-bottom: -15px;
+  font-size: 1.5em;
 }
 
 .regular {
-    display: inline-block;
-    margin-top: -20px;
+  display: inline-block;
+  margin-top: -20px;
 }
 
 .regular1 {
-    border-color: #008080;
-    border-style: solid;
+  border-color: #008080;
+  border-style: solid;
 }
 
 input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-
 textarea {
-  font:inherit;
+  font: inherit;
   width: 100%;
 }
 
-#get-name { 
-    padding: 0.5em; 
+#get-name {
+  padding: 0.5em;
 }
 
 #my-name {
-    display: block;
+  display: block;
 }
+
 
 /* Adoption Form pictures */
 
 .adoptdesc {
-    font-size: 1.8em;
-    margin-bottom: 100px;
+  font-size: 1.8em;
+  margin-bottom: 100px;
 }
 
 .turtletoy {
-    width: 50%;
-    margin-top: -50px;
+  width: 50%;
+  margin-top: -50px;
 }
 
-
 .adoptfactpack {
-     width: 70%;
-    margin-top: -50px;
+  width: 70%;
+  margin-top: -50px;
 }
 
 .adoptcert {
-    width: 70%;
+  width: 70%;
 }
 
 #cert {
-    margin-top: 30px;
-    margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-
 
 
 /* The alert message box */
+
 .alert {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #f44336; /* Red */
-    color: white;
-    text-align: center;
-    font-size: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  text-align: center;
+  font-size: 100%;
 }
+
 
 /* The close button */
+
 .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+
 /* When moving the mouse over the close button */
+
 .closebtn:hover {
-    color: black; 
+  color: black;
 }
 
 
@@ -519,73 +539,94 @@ textarea {
 
 
 /* Style the Image Used to Trigger the Modal */
+
 #myimg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 300px; /*Change */
-    height: auto; /* xchnage */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+  /*Change */
+  height: auto;
+  /* xchnage */
 }
 
-#myimg:hover {opacity: 0.7;}
+#myimg:hover {
+  opacity: 0.7;
+}
+
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
+
 
 /* Modal Content (Image) */
+
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
+
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 
 /* The Close Button */
+
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-content {
-        width: 100%;
-    }
+  width: 100%;
+}
 
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
@@ -619,14 +660,10 @@ textarea {
   section:hover {
     background: #666;
   }
-    
-    
-        .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-    
-    
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
 }
 
 
@@ -660,12 +697,11 @@ textarea {
     border-color: #666;
     font-size: 1.5em;
   }
-    
-    .responsive {
+  .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-}
+  }
 }
 
 
