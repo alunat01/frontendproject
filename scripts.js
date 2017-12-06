@@ -1,9 +1,9 @@
-/* My own Modal image
+ /* My own Modal image */
     
-    let modal = document.getElementById('mymodal');
-    let img = document.getElementById('myimg');
-    let modalImg = document.getElementById('img01');
-    let captionText = document.getElementById('caption');
+let modal = document.getElementById('mymodal');
+let img = document.getElementById('myimg');
+let modalImg = document.getElementById('img01');
+let captionText = document.getElementById('caption');
     
     
     img.addEventListener("click", modal);
@@ -19,13 +19,12 @@ function modal () {
      
      toggle=true
 
-
-
-
 }
 }
-*/
-/* From W3school - Modal gallery
+
+/*
+
+ From W3school - Modal gallery
 
 
 // Get the modal
@@ -194,13 +193,19 @@ function initMap() {
 
 
 
-/*let adoptAlert = document.getElementById("adopt-submit");*/
+let adoptAlert = document.getElementById("adopt-submit");
 
-/*
+adoptAlert.addEventListener("click", adopt);
 
 function adopt() {
     "alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!')";
 }
+
+
+
+
+
+/*
 
 function checkdata(){
     firstname = document.userform1.first.value;
@@ -209,5 +214,7 @@ function checkdata(){
     }
 }
 
+
+*/
 
 */
