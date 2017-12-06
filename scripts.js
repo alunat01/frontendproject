@@ -1,4 +1,4 @@
- /* My own Modal image */
+ /* My own Modal image 
     
 let modal = document.getElementById('mymodal');
 let img = document.getElementById('myimg');
@@ -20,7 +20,7 @@ function modal () {
      toggle=true
 
 }
-}
+} */
 
 /*
 
@@ -189,7 +189,7 @@ function initMap() {
 
 
 
-
+/*
 
 
 
@@ -198,7 +198,7 @@ let adoptAlert = document.getElementById("adopt-submit");
 adoptAlert.addEventListener("click", adopt);
 
 function adopt() {
-    "alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!')";
+    alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!');
 }
 
 
@@ -217,4 +217,3 @@ function checkdata(){
 
 */
 
-*/

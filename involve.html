@@ -8,11 +8,6 @@
   </head>
   
   <body>
-    <div class="alert">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-      Do not input card details as this is not a real website.
-    </div>
-    
     <header>
       <h1>Save the Turtles</h1>
       
@@ -97,11 +92,11 @@
               </li>
               <li>
                 <input type="radio" id="a75" name="amount" checked="checked"/>
-                <label for="a75">£20</label>
+                <label>£20</label>
               </li>
               <li>
                 <input type="radio" id="other" name="amount" checked="checked" />
-                <label for="other">Other</label>   
+                <label>Other</label>   
               </li>
             </ul>
             <input type="text" id="lastname" name="lastname" placeholder="Enter amount">
@@ -145,7 +140,7 @@
           <label>Address</label>
           <input type="text" id="address" name="address" placeholder="Enter your address">
           <label>Postcode</label>
-          <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx" pattern="\d{3}-d{3}">
+          <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx">
           <label for="country">City</label>
           <select id="city1" name="city">
             <option value="choice">Choose City</option>
@@ -166,19 +161,19 @@
             <ul class="donate-now">
               <li>
                 <input type="radio" id="a2" name="amount" />
-                <label for="a25">£2</label>
+                <label>£2</label>
               </li>
               <li>
                 <input type="radio" id="a5" name="amount" />
-                <label for="a50">£5</label>
+                <label>£5</label>
               </li>
               <li>
                 <input type="radio" id="a10" name="amount" checked="checked"/>
-                <label for="a75">£10</label>
+                <label>£10</label>
               </li>
               <li>
                 <input type="radio" id="other1" name="amount" checked="checked" />
-                <label for="other">Other</label>   
+                <label>Other</label>   
               </li>
             </ul>
             <input type="text" id="lasname" name="lastname" placeholder="Enter amount">
@@ -212,7 +207,7 @@
               <a target="_blank" href="img/factpack.jpg">
               <img class="adoptfactpack" src="img/factpack.jpg" alt="Fact Pack"/>
               </a>
-              <p class="adoptdesc"> Information package</p>
+              <p class="adoptdesc">Information package</p>
             </div>
           </div>
             
@@ -226,6 +221,7 @@
           </div>
             
           <div class="clearfix"></div>
+            
           <input id="adopt-submit" type="submit"  value="Adopt Now">
         </form>
         <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
