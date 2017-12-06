@@ -147,3 +147,18 @@ function initMap() {
   // getName.addEventListener("click", PerformGreeting);
 
 }());
+
+
+
+/*let adoptAlert = document.getElementById("adopt-submit");*/
+
+function adopt() {
+    "alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!')";
+}
+
+function checkdata(){
+    firstname = document.userform1.first.value;
+    if (firstname==""){
+        alert("Please fill in the name box");
+    }
+}

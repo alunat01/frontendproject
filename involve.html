@@ -116,7 +116,7 @@
     <label for="other">Other</label>   
 </li>
               </ul>
-<input type="text" id="lname" name="lastname" placeholder="Enter amount">
+<input type="text" id="lastname" name="lastname" placeholder="Enter amount">
               </fieldset>
           
           <fieldset class="regular">
@@ -169,7 +169,7 @@
       <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
         
       <label>Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+        <input type="text" id="lastnames" name="lastname" placeholder="Enter your last name">
           
       <label>Address</label>
         <input type="text" id="address" name="address" placeholder="Enter your address">
@@ -180,7 +180,7 @@
           
       <label for="country">City</label>
           
-    <select id="city" name="city">
+    <select id="city1" name="city">
       <option value="choice">Choose City</option>
       <option value="australia">Birmingham</option>
       <option value="canada">Leicester</option>
@@ -202,23 +202,23 @@
 
           <ul class="donate-now">
 <li>
-    <input type="radio" id="a25" name="amount" />
+    <input type="radio" id="a2" name="amount" />
     <label for="a25">£2</label>
 </li>
 <li>
-    <input type="radio" id="a50" name="amount" />
+    <input type="radio" id="a5" name="amount" />
     <label for="a50">£5</label>
 </li>
 <li>
-    <input type="radio" id="a75" name="amount" checked="checked"/>
+    <input type="radio" id="a10" name="amount" checked="checked"/>
     <label for="a75">£10</label>
 </li>
                   <li>
-    <input type="radio" id="other" name="amount" checked="checked" />
+    <input type="radio" id="other1" name="amount" checked="checked" />
     <label for="other">Other</label>   
 </li>
               </ul>
-<input type="text" id="lname" name="lastname" placeholder="Enter amount">
+<input type="text" id="lasname" name="lastname" placeholder="Enter amount">
               </fieldset>
           
           <fieldset class="regular1">
@@ -232,7 +232,7 @@
         <label for="single">Mastercard</label> 
               
               <label>Name on Card</label>
-      <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
+      <input type="text" id="cardname1" name="cardname" placeholder="Enter name on card">
               
                <label>Card Number</label>
           <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="\d{4}-d{4}-d{4}-d{4}">
@@ -243,8 +243,38 @@
               
           </fieldset>
           
+          <div class="responsive">
+              <p class="adoptdesc">Adopt a Turtle and you will receive: </p>
+  <div class="adoptgallery">
+    <a target="_blank" href="img/argosturtle.jfif">
+      <img class="turtletoy" src="img/argosturtle.jfif" alt="Cuddly Turtle Toy" />
+    </a>
+    <div class="adoptdesc">Cuddly Turtle Toy</div>
+  </div>
+</div>
 
-    <input type="submit" value="Adopt Now">
+
+<div class="responsive">
+  <div class="adoptgallery">
+    <a target="_blank" href="img/factpack.jpg">
+      <img class="adoptfactpack" src="img/factpack.jpg" alt="Fact Pack"/>
+    </a>
+    <p class="adoptdesc"> Information package</p>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="adoptgallery">
+    <a target="_blank" href="img/cert.jpg">
+      <img class="adoptcert" src="img/cert.jpg" alt="Certification of Adoption" />
+    </a>
+    <div class="adoptdesc" id="cert">Certification of Adoption</div>
+  </div>
+</div>
+          
+<div class="clearfix"></div>          
+          
+    <input id="adopt-submit" type="submit" onclick="adopt()" value="Adopt Now">
     
       </form>
      
@@ -258,10 +288,10 @@
       
       <form class="donation" method="post">
             <label>First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+      <input type="text" id="firstname" name="firstname" onchange="checkdata()" placeholder="Enter your first name">
         
       <label>Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+        <input type="text" id="lname1" name="lastname" placeholder="Enter your last name">
                 
         <label>Contact Number</label>
           <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">

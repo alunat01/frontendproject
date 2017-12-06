@@ -458,6 +458,34 @@ textarea {
     display: block;
 }
 
+/* Adoption Form pictures */
+
+.adoptdesc {
+    font-size: 1.8em;
+    margin-bottom: 100px;
+}
+
+.turtletoy {
+    width: 50%;
+    margin-top: -50px;
+}
+
+
+.adoptfactpack {
+     width: 70%;
+    margin-top: -50px;
+}
+
+.adoptcert {
+    width: 70%;
+}
+
+#cert {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
 
 /* The alert message box */
 .alert {
