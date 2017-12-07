@@ -83,19 +83,27 @@
             
           <fieldset>
             <label for="amount">Donation Amount</label>
+              
+              <form class="donate-now" action="">
+  <input type="radio" name="amount" value="male"> Male<br>
+  <input type="radio" name="amount" value="female"> Female<br>
+  <input type="radio" name="amount" value="other"> Other
+</form>       
             <ul class="donate-now">
               <li>
-                <input type="radio" id="a25" name="amount" />£5
+    <input type="radio" id="a5" name="amount" />
+    <label for="a5">£5</label>
+</li>
+              <li>
+                <input class="donateradio" type="radio" id="other" name="amount" checked="checked" />
+                <label>£10</label>   
               </li>
               <li>
-                <input type="radio" id="a50" name="amount" />£10
-              </li>
-              <li>
-                <input type="radio" id="a75" name="amount" checked="checked"/>
+                <input class="donateradio" type="radio" id="a75" name="amount" checked="checked"/>
                 <label>£20</label>
               </li>
               <li>
-                <input type="radio" id="other" name="amount" checked="checked" />
+                <input class="donateradio" type="radio" id="other" name="amount" checked="checked" />
                 <label>Other</label>   
               </li>
             </ul>
@@ -129,6 +137,40 @@
         </form>
         <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
       </section>
+        
+        
+        <section>
+            <form>
+        <ul class="donate-now">
+<li>
+    <input type="radio" id="a25" name="amount" />
+    <label for="a25">$25</label>
+</li>
+<li>
+    <input type="radio" id="a50" name="amount" />
+    <label for="a50">$50</label>
+</li>
+<li>
+    <input type="radio" id="a75" name="amount" checked="checked" />
+    <label for="a75">$75</label>
+</li>
+<li>
+    <input type="radio" id="a100" name="amount" />
+    <label for="a100">$100</label>
+</li>
+<li>
+    <input type="radio" id="other" name="amount" />
+    <label for="other">other:</label>
+</li>
+<li>
+    <input type="text" id="otherAmount" name="numAmount" />
+</li>
+</ul>
+            </form>
+        </section>
+        
+        
+        
         
       <section>
         <h2 id="A2">Adoption Form</h2>
