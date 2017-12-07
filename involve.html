@@ -8,12 +8,6 @@
   </head>
     
   <body>
-      
-      <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-  Do not input card details as this is not a real website.
-</div>
-      
     <header>
       <h1>Save the Turtles</h1>
         
@@ -92,52 +86,48 @@
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
           
-        <input type="checkbox" name="email_signup[]" value="user_emails"/>
-          <label for="emailsignup">Would you like to receive regular updates?</label>
-  
+        <input type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+          
 <fieldset>      
-              <label for="amount">Donation Amount</label>
+              <section class="donateradio">
+<div>
+            <label>Donation Amount:</label>
 
-          <ul class="donate-now">
-<li>
-    <input type="radio" id="a25" name="amount" />
-    <label for="a25">£5</label>
-</li>
-<li>
-    <input type="radio" id="a50" name="amount" />
-    <label for="a50">£10</label>
-</li>
-<li>
-    <input type="radio" id="a75" name="amount" checked="checked"/>
-    <label for="a75">£20</label>
-</li>
-                  <li>
-    <input type="radio" id="other" name="amount" checked="checked" />
-    <label for="other">Other</label>   
-</li>
-              </ul>
-<input type="text" id="lname" name="lastname" placeholder="Enter amount">
+  <input type="radio" id="control_01" name="select" value="£5" checked>
+  <label class="donatelabel" for="control_01">£5</label>
+</div>
+<div>
+  <input type="radio" id="control_02" name="select" value="£10">
+  <label class="donatelabel" for="control_02">£10</label>
+</div>
+<div>
+  <input type="radio" id="control_03" name="select" value="£20">
+  <label class="donatelabel" for="control_03">£20</label>
+</div>
+<div>
+  <input type="radio" id="control_04" name="select" value="other">
+  <label class="donatelabel" for="control_04">other</label>
+</div>
+</section>
+        
+<input type="text" id="amount" name="amount" placeholder="Enter amount">
               </fieldset>
           
           <fieldset class="regular">
           
-          <input type="radio" name="payment" value="onetime" onclick="alert('You have chosen one-time payment')"/>
-        <label for="single">One-Time</label>
+          <input type="radio" name="payment" value="onetime" onclick="alert('You have chosen one-time payment')"/>One-time
           
-             <input type="radio" name="payment" value="regular" onclick="alert('You have chosen monthly payment')"/>
-        <label for="single">Monthly</label>       
+             <input type="radio" name="payment" value="regular" onclick="alert('You have chosen monthly payment')"/>Monthly
           
           </fieldset>
           
           <fieldset class="regular1">
               
-              <label for="carddetails" class="carddetails">Card Details</label>
-              <label for="cardtype" class="cardtype">Card Type:</label>
+              <label class="carddetails">Card Details</label>
+              <label class="cardtype">Card Type:</label>
         
-          <input type="radio" name="card" value="visa"/>
-        <label for="visa">Visa</label>
-             <input type="radio" name="card" value="regular"/>
-        <label for="single">Mastercard</label> 
+          <input class="types" type="radio" value="visa"/>Visa<br>
+           <input class="types" type="radio" value="regular"/>Mastercard
               
               <label>Name on Card</label>
       <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
@@ -197,39 +187,37 @@
         <input type="checkbox" name="email_signup[]" value="user_emails"/>
           <label for="emailsignup">Would you like to receive regular updates?</label>
   
-<fieldset>      
-              <label for="amount">Monthly Donation Amount</label>
+<fieldset>  
+         <section class="donateradio">
+             <label for="amount">Monthly Donation Amount</label>
+<div>
+  <input type="radio" id="control_05" name="select" value="£2" checked>
+  <label class="donatelabel" for="control_05">£2</label>
+</div>
+<div>
+  <input type="radio" id="control_06" name="select" value="£15">
+  <label class="donatelabel" for="control_06">£15</label>
+</div>
+<div>
+  <input type="radio" id="control_07" name="select" value="£10">
+  <label class="donatelabel" for="control_07">£10</label>
+</div>
+<div>
+  <input type="radio" id="control_08" name="select" value="other">
+  <label class="donatelabel" for="control_08">other</label>
+</div>
+             <input type="text" name="lastname" placeholder="Enter amount">
 
-          <ul class="donate-now">
-<li>
-    <input type="radio" id="a25" name="amount" />
-    <label for="a25">£2</label>
-</li>
-<li>
-    <input type="radio" id="a50" name="amount" />
-    <label for="a50">£5</label>
-</li>
-<li>
-    <input type="radio" id="a75" name="amount" checked="checked"/>
-    <label for="a75">£10</label>
-</li>
-                  <li>
-    <input type="radio" id="other" name="amount" checked="checked" />
-    <label for="other">Other</label>   
-</li>
-              </ul>
-<input type="text" id="lname" name="lastname" placeholder="Enter amount">
-              </fieldset>
+</section>
+                      </fieldset>
           
-          <fieldset class="regular1">
+ <fieldset class="regular1">
               
-              <label for="carddetails" class="carddetails">Card Details</label>
-              <label for="cardtype" class="cardtype">Card Type:</label>
+              <label class="carddetails">Card Details</label>
+              <label class="cardtype">Card Type:</label>
         
-          <input type="radio" name="card" value="visa"/>
-        <label for="visa">Visa</label>
-             <input type="radio" name="card" value="regular"/>
-        <label for="single">Mastercard</label> 
+          <input class="types" type="radio" value="visa"/>Visa<br>
+           <input class="types" type="radio" value="regular"/>Mastercard
               
               <label>Name on Card</label>
       <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
@@ -240,7 +228,6 @@
               
             <label>Security Number</label>
           <input type="number" name="number" placeholder="xxx" pattern="\d{3}">
-              
           </fieldset>
           
 
@@ -279,51 +266,6 @@
 
         </form>
         </section>
-        
-        
-        
-        <p>Haven't finish this yet but, boy, what fun it's been!</p>
-<h1>New Game</h1>
-<h2>Select difficulty&hellip;</h2>
-<section>
-<div>
-  <input type="radio" id="control_01" name="select" value="1" checked>
-  <label for="control_01">
-    <h2>Pfft</h2>
-    <p>Awww, poor baby. Too afraid of the scary game sprites? I laugh at you.</p>
-  </label>
-</div>
-<div>
-  <input type="radio" id="control_02" name="select" value="2">
-  <label for="control_02">
-    <h2>Wannabe</h2>
-    <p>You're not a gaming God by any stretch of the imagination.</p>
-  </label>
-</div>
-<div>
-  <input type="radio" id="control_03" name="select" value="3">
-  <label for="control_03">
-    <h2>Daaamn</h2>
-    <p>Now we're talking. It's gettin' a bit hairy out there in game land.</p>
-  </label>
-</div>
-<div>
-  <input type="radio" id="control_04" name="select" value="4" disabled>
-  <label for="control_04">
-    <h2>Mental</h2>
-    <p>Prepare for glory! This is going to be one hell of a no-holds-barred ride.</p>
-  </label>
-</div>
-<div>
-  <input type="radio" id="control_05" name="select" value="5">
-  <label for="control_05">
-    <h2>Suicidal</h2>
-    <p>You will not live. Strap in and write a heart-felt letter to your loved ones.</p>
-  </label>
-</div>
-</section>
-        
-        
         
 </main>
 
