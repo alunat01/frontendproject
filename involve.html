@@ -52,14 +52,16 @@
         
       <img class="turtlebanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
       
-  <section class="formbuttons">
+        
       <div class="buttonforms">
         <a class="form1" href="#DN1">Donation Form</a>
         <a class="form2" href="#A2">Adoption Form</a>
         <a class="form3" href="#CU3">Contact Us</a> 
       </div>
-  </section>
-
+        
+        <div class="boxshadow1"> </div>
+      <!-- Increase box shadow -->
+        
   <section>
     <h2 id="DN1">Donation Form</h2>
       
@@ -68,11 +70,11 @@
       <input type="text" id="user-name" name="firstname" placeholder="Enter your first name..">
         
       <label>Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+        <input type="text" name="lastname" placeholder="Enter your last name..">
       
-      <label for="country">City</label>
+      <label>City</label>
           
-    <select id="city" name="city">
+    <select name="city">
       <option value="choice">Choose City</option>
       <option value="australia">Birmingham</option>
       <option value="canada">Leicester</option>
@@ -92,7 +94,7 @@
           </div>
 <fieldset>      
               <section class="donateradio">
-                              <label>Donation Amount:</label>
+        <h3>Donation Amount:</h3>
 
 <div>
   <input type="radio" id="control_01" name="select" value="£5" checked>
@@ -116,8 +118,9 @@
               </fieldset>
           
           <fieldset class="regular">
-              <label>Payment Plan:</label>
                         <section class="donateradio">
+        <h3>Payment Plan:</h3>
+
  <div>
   <input type="radio" id="control_09" name="payment" value="one-time">
   <label class="plan" for="control_09">One-time</label>
@@ -140,14 +143,14 @@
               </div>
               
               <label class="nameoncard">Name on Card</label>
-      <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
+      <input type="text" name="cardname" placeholder="Enter name on card">
               
                <label>Card Number</label>
-          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="\d{4}-d{4}-d{4}-d{4}">
+          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
           
               
             <label>Security Number</label>
-          <input type="number" name="number" placeholder="xxx" pattern="\d{3}">
+          <input type="number" name="number" placeholder="xxx">
           </fieldset>
           
 
@@ -169,10 +172,10 @@ https://codepen.io/adamstuartclark/pen/pbYVYR
       
       <form class="donation" method="post">
             <label>First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+      <input type="text" name="firstname" placeholder="Enter your first name">
         
       <label>Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+        <input type="text" name="lastname" placeholder="Enter your last name">
           
       <label>Address</label>
         <input type="text" id="address" name="address" placeholder="Enter your address">
@@ -181,9 +184,9 @@ https://codepen.io/adamstuartclark/pen/pbYVYR
         <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx" pattern="\d{3}-d{3}">
           
           
-      <label for="country">City</label>
+      <label>City</label>
           
-    <select id="city" name="city">
+    <select name="city">
       <option value="choice">Choose City</option>
       <option value="australia">Birmingham</option>
       <option value="canada">Leicester</option>
@@ -203,7 +206,7 @@ https://codepen.io/adamstuartclark/pen/pbYVYR
   
 <fieldset>  
          <section class="donateradio">
-             <label for="amount">Monthly Donation Amount</label>
+             <h3>Monthly Donation Amount</h3>
 <div>
   <input type="radio" id="control_05" name="monthlydonation" value="£2" checked>
   <label class="donatelabel" for="control_05">£2</label>
@@ -234,14 +237,14 @@ https://codepen.io/adamstuartclark/pen/pbYVYR
            <input class="types" type="radio" name="type2" value="mastercard"/>Mastercard
               </div>
               <label class="nameoncard">Name on Card</label>
-      <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
+      <input type="text" name="cardname" placeholder="Enter name on card">
               
                <label>Card Number</label>
-          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx" pattern="\d{4}-d{4}-d{4}-d{4}">
+          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
           
               
             <label>Security Number</label>
-          <input type="number" name="number" placeholder="xxx" pattern="\d{3}">
+          <input type="number" name="number" placeholder="xxx">
           </fieldset>
           
 
@@ -259,7 +262,7 @@ https://codepen.io/adamstuartclark/pen/pbYVYR
       
       <form class="donation" method="post">
             <label>First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+      <input type="text" name="firstname" placeholder="Enter your first name">
         
       <label>Last Name</label>
         <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
