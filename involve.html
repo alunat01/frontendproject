@@ -86,13 +86,15 @@
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
           
-        <input type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
           
+          <div class="emaildiv">
+        <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+          </div>
 <fieldset>      
               <section class="donateradio">
-<div>
-            <label>Donation Amount:</label>
+                              <label>Donation Amount:</label>
 
+<div>
   <input type="radio" id="control_01" name="select" value="£5" checked>
   <label class="donatelabel" for="control_01">£5</label>
 </div>
@@ -106,7 +108,7 @@
 </div>
 <div>
   <input type="radio" id="control_04" name="select" value="other">
-  <label class="donatelabel" for="control_04">other</label>
+  <label class="donatelabel" for="control_04">Other</label>
 </div>
 </section>
         
@@ -114,11 +116,17 @@
               </fieldset>
           
           <fieldset class="regular">
-          
-          <input type="radio" name="payment" value="onetime" onclick="alert('You have chosen one-time payment')"/>One-time
-          
-             <input type="radio" name="payment" value="regular" onclick="alert('You have chosen monthly payment')"/>Monthly
-          
+              <label>Payment Plan:</label>
+                        <section class="donateradio">
+ <div>
+  <input type="radio" id="control_09" name="payment" value="one-time">
+  <label class="plan" for="control_09">One-time</label>
+</div>
+<div>
+  <input type="radio" id="control_10" name="payment" value="monthly">
+  <label class="plan" for="control_10">Monthly</label>
+</div>
+              </section>
           </fieldset>
           
           <fieldset class="regular1">
@@ -126,10 +134,12 @@
               <label class="carddetails">Card Details</label>
               <label class="cardtype">Card Type:</label>
         
-          <input class="types" type="radio" value="visa"/>Visa<br>
-           <input class="types" type="radio" value="regular"/>Mastercard
+        <div class="creditcard">
+          <input class="types" type="radio" name="type1" value="visa"/>Visa<br>
+           <input class="types" type="radio" name="type1" value="mastercard"/>Mastercard
+              </div>
               
-              <label>Name on Card</label>
+              <label class="nameoncard">Name on Card</label>
       <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
               
                <label>Card Number</label>
@@ -148,7 +158,10 @@
     
       </form>
      
-      <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
+      <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead 
+
+https://codepen.io/adamstuartclark/pen/pbYVYR
+-->
   </section>
 
    <section>
@@ -184,26 +197,27 @@
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
           
-        <input type="checkbox" name="email_signup[]" value="user_emails"/>
-          <label for="emailsignup">Would you like to receive regular updates?</label>
+     <div class="emaildiv">
+        <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+          </div>
   
 <fieldset>  
          <section class="donateradio">
              <label for="amount">Monthly Donation Amount</label>
 <div>
-  <input type="radio" id="control_05" name="select" value="£2" checked>
+  <input type="radio" id="control_05" name="monthlydonation" value="£2" checked>
   <label class="donatelabel" for="control_05">£2</label>
 </div>
 <div>
-  <input type="radio" id="control_06" name="select" value="£15">
+  <input type="radio" id="control_06" name="monthlydonation" value="£15">
   <label class="donatelabel" for="control_06">£15</label>
 </div>
 <div>
-  <input type="radio" id="control_07" name="select" value="£10">
+  <input type="radio" id="control_07" name="monthlydonation" value="£10">
   <label class="donatelabel" for="control_07">£10</label>
 </div>
 <div>
-  <input type="radio" id="control_08" name="select" value="other">
+  <input type="radio" id="control_08" name="monthlydonation" value="other">
   <label class="donatelabel" for="control_08">other</label>
 </div>
              <input type="text" name="lastname" placeholder="Enter amount">
@@ -211,15 +225,15 @@
 </section>
                       </fieldset>
           
- <fieldset class="regular1">
+          <fieldset class="regular1">
               
               <label class="carddetails">Card Details</label>
               <label class="cardtype">Card Type:</label>
-        
-          <input class="types" type="radio" value="visa"/>Visa<br>
-           <input class="types" type="radio" value="regular"/>Mastercard
-              
-              <label>Name on Card</label>
+                <div class="creditcard">
+          <input class="types" type="radio" name="type2" value="visa"/>Visa<br>
+           <input class="types" type="radio" name="type2" value="mastercard"/>Mastercard
+              </div>
+              <label class="nameoncard">Name on Card</label>
       <input type="text" id="cardname" name="cardname" placeholder="Enter name on card">
               
                <label>Card Number</label>
@@ -256,8 +270,9 @@
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
           
-        <input type="checkbox" name="email_signup[]" value="user_emails"/>
-          <label for="emailsignup">Would you like to receive regular updates?</label>
+ <div class="emaildiv">
+        <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+          </div>
           
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="8" cols="50" class="large"></textarea>

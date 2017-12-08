@@ -317,8 +317,9 @@ select {
 }
 
 input[type=checkbox] {
-    text-align: left;
     width: 47px;
+    margin-top: 20px;
+    margin-left: -10px;
 }
 
 input[type=button], input[type=submit] {
@@ -351,9 +352,9 @@ fieldset {
     border: none;
 }
 
-/* Testing */
+/* Green Radio buttons on forms */
 
-.donateradio {
+.donateradio, .plan{
   display: flex;
   flex-flow: row wrap;
   flex: 1;
@@ -363,11 +364,11 @@ fieldset {
 
 }
 
-.donateradio input[type="radio"] {
+.donateradio input[type="radio"], .plan input[type="radio"] {
   display: none; /* hides radio button */
 }
 
-.donatelabel {
+.donatelabel, .plan {
   height: 100%;
   display: block;
   color: white;
@@ -385,7 +386,17 @@ fieldset {
     color: darkcyan;
 }
 
+.plan label:hover {
+    background:#DDD;
+    color: darkcyan;
+}
+
 input[type="radio"]:checked + .donatelabel {
+  background: #ddd;
+  color: darkcyan;
+}
+
+input[type="radio"]:checked + .plan {
   background: #ddd;
   color: darkcyan;
 }
@@ -394,7 +405,6 @@ input[type="radio"]:checked + .donatelabel {
     margin-top: -10px;
 }
 
-
 .carddetails {
     display: block;
     font-size: 2em;
@@ -402,8 +412,10 @@ input[type="radio"]:checked + .donatelabel {
 
 .regular {
   width: 100%;
-  margin-left: -25px;
+  margin-top: -10px; 
+  font-size: 1.1em;
 }
+
 
 .regular1 {
     border-color: #008080;
@@ -411,6 +423,14 @@ input[type="radio"]:checked + .donatelabel {
 }
 
 .cardtype {
+    display: block;
+}
+
+.creditcard {
+   margin-right: 26%; 
+   margin-left: 16%;
+}
+.nameoncard {
     display: block;
 }
 
