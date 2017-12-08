@@ -204,7 +204,6 @@ function adopt() {
 
 
 
-
 /*
 
 function checkdata(){
@@ -216,4 +215,3 @@ function checkdata(){
 
 
 */
-

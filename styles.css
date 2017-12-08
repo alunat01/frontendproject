@@ -92,6 +92,26 @@ main {
   line-height: 30px;
 }
 
+blockquote {
+    font-family: 'EB Garamond', serif;
+	position: relative;
+    margin-top: 65px;
+    height: 100%;
+	line-height: 1.4;
+    color: mediumaquamarine;
+    font-size: 2em;
+}
+
+q:before { 
+    content: open-quote;
+    margin-right: 10px;
+}
+
+q:after { 
+    content: close-quote;
+    margin-left: 10px;
+}
+
 h1 {
     float: left; 
     margin-top: -10px;
