@@ -9,7 +9,7 @@
     
   <body>
     <header>
-      <h1>Save the Turtles</h1>
+        <h1><a href="index.html">Save the Turtles</a></h1>
         
       <div class="fixedtopbar">
         <a id="menu" href="#">Menu</a>
@@ -17,7 +17,7 @@
             
           <ul>
             <li class="dropdown">
-              <a href="index.html">Who are we?</a>
+              <a class="mainnav" href="index.html">Who are we?</a>
               <div class="dropdown-content">
                 <a href="index.html#OS1">Our Story</a>
                 <a href="index.html#H2">Who are the heroes?</a>
@@ -26,7 +26,7 @@
             </li>
               
             <li class="dropdown">
-              <a href="meettheturtles.html">Meet the Turtles</a>
+              <a class="mainnav" href="meettheturtles.html">Meet the Turtles</a>
               <div class="dropdown-content">
                 <a href="meettheturtles.html#HT1">History of Turtles</a>
                 <a href="meettheturtles.html#OO2">Over the Ocean</a>
@@ -35,7 +35,7 @@
             </li>
               
             <li class="dropdown">
-              <a href="involve.html">Want to get involved?</a>
+              <a class="mainnav" href="involve.html">Want to get involved?</a>
               <div class="dropdown-content">
                 <a href="#DN1">Donate</a>
                 <a href="#A2">Adoption</a>
@@ -280,11 +280,13 @@ https://codepen.io/adamstuartclark/pen/pbYVYR
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="8" cols="50" class="large"></textarea>
           
-              <input type="submit" value="Submit Message">
+              <input id="submitmessage" type="submit" value="Submit Message">
 
         </form>
         </section>
-        
+        <div class="tothetop">
+        <a class="top" href="#">TOP</a>
+        </div>
 </main>
 
     <script src="scripts.js"></script>
