@@ -1,12 +1,14 @@
 /* GLOBAL AND MOBILE STYLES FIRST */
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;    
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0; /* Gets rid of space around page */
+  margin: 0;
+  /* Gets rid of space around page */
   background-color: mediumaquamarine;
   color: white;
   text-align: center;
@@ -16,6 +18,10 @@ body {
 header {
   background-color: mediumaquamarine;
   color: white;
+}
+
+.v-header {
+  display: none;
 }
 
 
@@ -32,7 +38,6 @@ nav a {
   margin-left: -40px;
 }
 
-
 #menu {
   display: block;
   text-align: right;
@@ -44,17 +49,18 @@ nav a {
 
 .show-menu {
   display: block;
-  text-align: right; 
+  text-align: right;
 }
 
-.mainnav{
-    transition-property: width;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    transition-delay: 3s;
+.mainnav {
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
 }
 
-/* https://www.w3schools.com/css/css3_transitions.asp */ 
+
+/* https://www.w3schools.com/css/css3_transitions.asp */
 
 a {
   color: #fff;
@@ -65,27 +71,31 @@ li {
   list-style-type: none;
 }
 
-li a, .dropdown {
+li a,
+.dropdown {
   padding: 1em;
 }
 
 .dropdown {
   border-top: solid white;
 }
-.mainnav:hover, .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: mediumaquamarine;
-    transition: all 0.8s;
 
+.mainnav:hover,
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: mediumaquamarine;
+  transition: all 0.8s;
 }
 
-.dropdown:hover, li a:hover {
+.dropdown:hover,
+li a:hover {
   /* background-color: #008080; See if better with or without*/
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content {
-    display: none; /* Hides second level menu -on click it appears */
+  display: none;
+  /* Hides second level menu -on click it appears */
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,6 +107,7 @@ li a, .dropdown {
   cursor: pointer;
 }
 
+
 /* Navigation Bar style ends */
 
 main {
@@ -105,61 +116,62 @@ main {
 }
 
 blockquote {
-    font-family: 'EB Garamond', serif;
-	position: relative;
-    margin-top: 65px;
-    height: 100%;
-	line-height: 1.4;
-    color: mediumaquamarine;
-    font-size: 2em;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  margin-top: 65px;
+  height: 100%;
+  line-height: 1.4;
+  color: mediumaquamarine;
+  font-size: 2em;
 }
 
-q:before { 
-    content: open-quote;
-    margin-right: 10px;
+q:before {
+  content: open-quote;
+  margin-right: 10px;
 }
 
-q:after { 
-    content: close-quote;
-    margin-left: 10px;
+q:after {
+  content: close-quote;
+  margin-left: 10px;
 }
 
 h1 {
-    float: left; 
-    margin-top: -10px;
-    padding: 10px;
+  float: left;
+  margin-top: -10px;
+  padding: 10px;
 }
+
 h2 {
-    font-size: 2em;
-    margin-top: 15px;
-    width: 100%;
+  font-size: 2em;
+  margin-top: 15px;
+  width: 100%;
 }
 
 .us {
-    font-size: 1.7em;
+  font-size: 1.7em;
 }
 
-#turtles {
+.turtles {
   line-height: 1.5em;
   font-size: 1.5em;
 }
 
-.boxshadow1 { 
-      box-shadow: 0px 1px 16px 10px #b3ffd9;
+.boxshadow1 {
+  box-shadow: 0px 1px 16px 10px #b3ffd9;
 }
 
-#OS1{
-    margin-top: -10px;
+#OS1 {
+  margin-top: -10px;
 }
 
 #nationalpark {
-    color: mediumaquamarine;
-    text-decoration: underline;
+  color: mediumaquamarine;
+  text-decoration: underline;
 }
 
 #historyturtles {
-    color: mediumaquamarine;
-    text-decoration: underline;
+  color: mediumaquamarine;
+  text-decoration: underline;
 }
 
 section {
@@ -176,49 +188,55 @@ section {
   margin-left: -110px;
 }
 
+
 /* Page 1 pictures of heroes */
 
-.ninjaturtles, .avanti, .zahraa {
-    max-width: 100%;
-    height: 300px;
+.ninjaturtles,
+.avanti,
+.zahraa {
+  max-width: 100%;
+  height: 300px;
 }
 
-.amina, .sadiyya {
-    max-width: 100%;
-    height: 400px;
+.amina,
+.sadiyya {
+  max-width: 100%;
+  height: 400px;
 }
+
 
 /* Responsive Gallery */
 
 div.gallery:hover {
- box-shadow: 0px 0px 5px 5px rgb(102,205,170);
- padding: 1.5em;
- margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 5px rgb(102, 205, 170);
+  padding: 1.5em;
+  margin-bottom: 20px;
 }
 
 div.desc {
-    text-align: left;
-    margin-bottom: 50px;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 100%
+  padding: 0 6px;
+  float: left;
+  width: 100%
 }
 
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
 /* Page 1 Map */
+
 #map {
   height: 400px;
   max-width: 100%;
@@ -226,30 +244,32 @@ div.desc {
 
 
 /* Page 2 Pictures */
-.seaturtle  {
-    width: 50%;
+
+.seaturtle {
+  width: 50%;
 }
 
-.kemp{
-    width: 50%;
-
- }
+.kemp {
+  width: 50%;
+}
 
 .leatherback {
-    width: 50%;
-
+  width: 50%;
 }
 
 .greenturtle {
-    width: 50%;
+  width: 50%;
 }
 
 
 /* Page 3 Forms */
 
+
 /* Bookmark Buttons on involve.html*/
 
-.form1, .form2, .form3{
+.form1,
+.form2,
+.form3 {
   height: 60px;
   margin-bottom: 20px;
   padding: 10px 10px 10px 10px;
@@ -257,7 +277,7 @@ div.desc {
   color: white;
   text-align: center;
   list-style-type: none;
-  width: 60%; 
+  width: 60%;
   cursor: pointer;
   padding: 1em;
   display: flex;
@@ -267,119 +287,120 @@ div.desc {
   margin-left: 20%;
   margin-right: 20%;
 }
-   
+
 .buttonforms {
   margin-bottom: 50px;
-    
 }
 
-.buttonforms a:hover{
-    background-color: #f1f1f1;
-    color: mediumaquamarine;
+.buttonforms a:hover {
+  background-color: #f1f1f1;
+  color: mediumaquamarine;
 }
 
 label {
-    display: inline-block;
-    padding-bottom: 6px;
-    padding-top: 20px;
+  display: inline-block;
+  padding-bottom: 6px;
+  padding-top: 20px;
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=tel] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=text]:focus {
-    border-color: mediumaquamarine;
+  border-color: mediumaquamarine;
 }
 
 select {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f1f1f1;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
 input[type=checkbox] {
-    width: 47px;
-    margin-top: 20px;
-    margin-left: -10px;
+  width: 47px;
+  margin-top: 20px;
+  margin-left: -10px;
 }
 
-input[type=button], input[type=submit] {
-    background-color: mediumaquamarine;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
+input[type=button],
+input[type=submit] {
+  background-color: mediumaquamarine;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
 }
 
 input[type=submit] {
-    display: block;
-    border-radius: 4px;
+  display: block;
+  border-radius: 4px;
 }
 
-
 input[type=radio] {
-    background-color: mediumaquamarine;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 20%;
+  background-color: mediumaquamarine;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 20%;
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
+
 
 /* Green Radio buttons on forms */
 
-.donateradio, .plan{
+.donateradio,
+.plan {
   display: flex;
   flex-flow: row wrap;
   flex: 1;
   flex-direction: column;
-  box-shadow: 10px 10px 10px 10px white; /* Hide Green boxshadow */
+  box-shadow: 10px 10px 10px 10px white;
+  /* Hide Green boxshadow */
   margin-top: -10px;
-
 }
 
-.donateradio input[type="radio"], .plan input[type="radio"] {
-  display: none; /* hides radio button */
+.donateradio input[type="radio"],
+.plan input[type="radio"] {
+  display: none;
+  /* hides radio button */
 }
 
-.donatelabel, .plan {
+.donatelabel,
+.plan {
   height: 100%;
   display: block;
   color: white;
@@ -389,199 +410,221 @@ fieldset {
   text-align: center;
   position: relative;
   padding: 10px;
-  margin-bottom: 20px;    
+  margin-bottom: 20px;
 }
 
 .donateradio label:hover {
-    background:#DDD;
-    color: darkcyan;
+  background: #DDD;
+  color: darkcyan;
 }
 
 .plan label:hover {
-    background:#DDD;
-    color: darkcyan;
+  background: #DDD;
+  color: darkcyan;
 }
 
-input[type="radio"]:checked + .donatelabel {
+input[type="radio"]:checked+.donatelabel {
   background: #ddd;
   color: darkcyan;
 }
 
-input[type="radio"]:checked + .plan {
+input[type="radio"]:checked+.plan {
   background: #ddd;
   color: darkcyan;
 }
 
 #amount {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 .carddetails {
-    display: block;
-    font-size: 2em;
+  display: block;
+  font-size: 2em;
 }
 
 .regular {
   width: 100%;
-  margin-top: -10px; 
+  margin-top: -10px;
   font-size: 1.1em;
 }
 
-
 .regular1 {
-    border-color: #008080;
-    border-style: solid;
+  border-color: #008080;
+  border-style: solid;
 }
 
 .cardtype {
-    display: block;
+  display: block;
 }
 
 .creditcard {
-   margin-right: 26%; 
-   margin-left: 16%;
+  margin-right: 26%;
+  margin-left: 16%;
 }
+
 .nameoncard {
-    display: block;
+  display: block;
 }
 
 input[type=number] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
-
 textarea {
-  font:inherit;
+  font: inherit;
   width: 100%;
 }
 
 #submitmessage {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-#get-name { 
-    padding: 0.5em; 
+#get-name {
+  padding: 0.5em;
 }
 
 #my-name {
-    display: block;
+  display: block;
 }
 
-#video {  /* HTML code from youtube embed function */
+#video {
+  /* HTML code from youtube embed function */
   width: 100%;
   height: 300px;
   border: 0px;
 }
 
 .turtlefacts {
-    text-align: left;
-    line-height: 40px;
-    list-style-type: circle;    
+  text-align: left;
+  line-height: 40px;
+  list-style-type: circle;
 }
 
 #turtlefactswebsite {
-    color: mediumaquamarine;
-    background: white;
-    margin-left: -0px;
-    padding: .1em; /* Make link button smaller */
+  color: mediumaquamarine;
+  background: white;
+  margin-left: -0px;
+  padding: .1em;
+  /* Make link button smaller */
 }
 
 
 /* Style the Image Used to Trigger the Modal */
+
 #myimg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    width: 300px; /*Change */
-    height: auto; /* xchnage */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+  /*Change */
+  height: auto;
+  /* xchnage */
 }
 
-#myimg:hover {opacity: 0.7;}
+#myimg:hover {
+  opacity: 0.7;
+}
+
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
+
 
 /* Modal Content (Image) */
+
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
+
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
 
 /* The Close Button */
+
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .modal-content {
-        width: 100%;
-    }
+  width: 100%;
+}
 
 .top {
   color: white;
   background-color: mediumaquamarine;
   display: block;
-  position: fixed; 
-  bottom: 9px; 
+  position: fixed;
+  bottom: 9px;
   right: 10px;
-  padding: 15px; 
+  padding: 15px;
   font-size: 12px;
   line-height: 14px;
 }
 
 .top:hover {
-  background: rgba(200,200,200,0.96);
+  background: rgba(200, 200, 200, 0.96);
   color: #fff;
 }
-
 
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
+
 
 /* ---- Layout Containers ---- */
 
@@ -591,137 +634,158 @@ textarea {
   height: 100%;
 }
 
-
 .container {
-	background: #fff;
-    max-width: 100%;
+  background: #fff;
+  max-width: 100%;
 }
 
 .cube-container {
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-    margin: 2em;
-    padding-right: 1em;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  margin: 2em;
+  padding-right: 1em;
 }
+
 
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
-    max-width: 100%;
-
+  content: " ";
+  display: table;
+  clear: both;
+  max-width: 100%;
 }
 
 .cube-container {
   margin-left: 20%;
   max-width: 100%;
+}
 
-	}
 
 /* ================================= 
   Photo 3D Transforms & Transitions
 ==================================== */
 
-.cube-container { /* This gives it a 3D effect */
-  box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+.cube-container {
+  /* This gives it a 3D effect */
+  box-shadow: 0 18px 40px 5px rgba(0, 0, 0, .4);
   perspective: 800px;
 }
 
 .photo-cube {
-  transition: transform 2s ease-in-out; 
+  transition: transform 2s ease-in-out;
   width: 220px;
   height: 200px;
-  transform-style: preserve-3d; /* Creates 3D cube transformation*/
+  transform-style: preserve-3d;
+  /* Creates 3D cube transformation*/
   margin-left: -17px;
 }
 
 .photo-cube:hover {
-transform: rotateY(-270deg);
+  transform: rotateY(-270deg);
 }
 
 .front,
 .back,
 .left,
 .right {
-width: 100%;
-height: 100%;
-display: block;
-position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
 }
 
 .front {
-transform: translate3d(0,0,110px);
+  transform: translate3d(0, 0, 110px);
 }
 
 .back {
-transform: translateZ(-110px) rotateY(270deg);
+  transform: translateZ(-110px) rotateY(270deg);
   transform-origin: center left;
 }
 
 .left {
-transform: rotateY(-270deg) translate3d(110px, 0, 0);
+  transform: rotateY(-270deg) translate3d(110px, 0, 0);
   transform-origin: top right;
 }
 
 .right {
-transform: translateZ(-110px) rotateY(180deg);
- }
-
+  transform: translateZ(-110px) rotateY(180deg);
+}
 
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
 @media screen and (min-width: 500px) {
+  body {
+    background-color: white;
+  }
   header {
-    background: #444;
-    color: #ccc;
+    background: mediumaquamarine;
+    color: white;
+    width: 100%;
+    position: absolute;
+  }
+  .v-header {
+    display: none;
+  }
+  nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    margin: 0;
   }
   nav a {
-    width: 44%;
+    width: 100%;
     display: inline-block;
   }
-  nav a:hover {
-    background: #777;
+  #menu {
+    display: block;
+    text-align: right;
+    margin-right: 0.6em;
+    margin-bottom: -40px;
+    font-size: 1.2em;
+  }
+  .show-menu {
+    text-align: right;
+    width: 40%;
+    margin-top: 8%;
   }
   h1 {
     font-size: 2em;
+    margin-top: 18px;
+    margin-bottom: -30px;
+  }
+  .turtlebanner {
+    margin-top: 60px;
+    max-width: 130%;
   }
   main {
     width: 90%;
     margin: 0 auto;
   }
   section {
-    width: 44%;
-    margin: 2%;
+    width: 100%;
     display: inline-block;
-    background: #444;
-    color: #999;
+    background: white;
   }
   section:hover {
     background: #666;
   }
-    
-    
-        .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
-    }
-    
-    .cube-container:first-child {
-		margin-left: 0;
-	}
-	.cube-container:last-child{
-		float: right;
-	}
-	.content {
-		max-width: 500px;
-		margin: auto;
-	}
-    
-    
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+  .cube-container {
+    float: left;
+    margin-left: 16.6%;
+  }
 }
 
 
@@ -731,12 +795,90 @@ transform: translateZ(-110px) rotateY(180deg);
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 
 @media screen and (min-width: 1000px) {
-  header {
-    background: #222;
-    color: #ccc;
+  body {
+    background-color: white;
   }
-  nav {
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    display: none;
+  }
+  #videotitle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 5em;
+    margin-bottom: 0;
+  }
+  .videoaboutus {
+    margin: 1em 1% 1em 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: none;
+    font-size: 1.3em;
+    color: white;
+    box-shadow: none;
+    text-align: center;
+  }
+  .header-content {
+    padding-top: 100px;
+  }
+  .v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+  }
+  .fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .fullscreen-video-wrap video {
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background: #225470;
+    opacity: 0.65;
+  }
+  .header-content {
+    z-index: 2;
+  }
+  .header-content p {
+    font-size: 1.5rem;
     display: block;
+    padding-bottom: 2rem;
+  }
+  header {
+    background-color: mediumaquamarine;
+    color: white;
+  }
+  /*main {
+  float: centre;
+  max-width: 1000px;
+  background-color: mediumaquamarine;
+} */
+  nav {
+    display: flex;
+    width: 100%;
+    float: right;
   }
   nav a {
     line-height: 3em;
@@ -745,33 +887,61 @@ transform: translateZ(-110px) rotateY(180deg);
   #menu {
     display: none;
   }
-  main {
-    max-width: 1000px;
+  #nav-menu {
+    display: block;
   }
+  .mainnav {
+    width: 10%;
+    float: right;
+    display: inline-block;
+  }
+  .fixedtopbar {
+    text-align: right;
+    padding-bottom: 2.4em;
+    padding-top: 2em;
+    margin-right: 0.6em;
+  }
+  .mainnav {
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+    transition-delay: 3s;
+  }
+  /* https://www.w3schools.com/css/css3_transitions.asp */
+  /* Navigation Bar style ends */
+  section {
+    padding: 20px 0;
+    width: 100%;
+    background: white;
+    text-align: left;
+  }
+  /*
   section {
     width: 22%;
     margin: 1em 1% 1em 1%;
     background: #222;
     border-color: #666;
     font-size: 1.5em;
-  }
-    
-    .responsive {
+  } */
+  .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
-}
-    
-    .cube-container:first-child {
-		margin-left: 0;
-	}
-	.cube-container:last-child{
-		float: right;
-	}
-	.content {
-		max-width: 900px;
-		margin: auto;
-	}
+  }
+  .cube-container:first-child {
+    margin-left: 0;
+  }
+  .cube-container:last-child {
+    float: right;
+  }
+  .content {
+    max-width: 900px;
+    margin: auto;
+  }
+  /* https://www.youtube.com/watch?v=4S3HazxSi2Y */
+  .turtlebanner {
+    display: none;
+  }
 }
 
 
