@@ -902,6 +902,34 @@ textarea {
     margin-left: 16.6%;
   }
 
+    
+.form1,
+.form2,
+.form3 {
+  height: 60px;
+  background-color: mediumaquamarine;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  width: 70%;
+  cursor: pointer;
+  display: flex;
+  margin: 10px;
+}
+
+.buttonforms {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.buttonforms a:hover {
+  background-color: #f1f1f1;
+  color: mediumaquamarine;
+}
+    
+    
+    
 /* END FIRST BREAKPOINT */
 
 
