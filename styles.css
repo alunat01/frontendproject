@@ -906,7 +906,7 @@ textarea {
 .form1,
 .form2,
 .form3 {
-  height: 50%;
+  height: 90px;
   background-color: mediumaquamarine;
   color: white;
   text-align: center;
@@ -915,6 +915,7 @@ textarea {
   cursor: pointer;
   display: flex;
   margin: 10px;
+  justify-content: center;
 }
 
 .buttonforms {
