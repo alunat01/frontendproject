@@ -93,17 +93,17 @@
       <section id="H2" class="heroes">
         <h2>Who are the heroes?</h2>
         <img class="ninjaturtles" src="img/teenage-mutant-ninja-turtles-1.jpg" alt="Teenage Mutant Ninja Turtles"/>
-        <p class="us">No, these are not the heroes!</p>
+        <p class="us">No, not the Ninja Turtles</p>
         <p class="us">This is us</p>
-        <div class="responsive">
+          <div class="responsive" id="sadsdesc">
           <div class="gallery">
-            <a target="_blank" href="img/avanti.jfif">
-            <img class="avanti" src="img/avanti.jfif" alt="Avanti" />
+            <a target="_blank" href="img/sadiyya.jfif">
+            <img class="sadiyya" src="img/sadiyya.jfif" alt="sadiyya" />
             </a>
             <div class="desc">
-              <h3>Avanti Gajoram</h3>
-                <h4>Vice President</h4>
-                <p> Avanti Gajoram ..................... </p></div>
+                <h3>DR Sadiyya Ismail</h3>
+                <h4>Scientist</h4>
+                <p> Sadiyya Ismail is a recent graduate in Marine Biology PHD who specialises in marine environment and the fantastic array of life they contain. She has previously volunteered with WWF and has had the chance to work with many marine creatures from Polar Bears to Dolphins. </p></div>
           </div>
         </div>
         <div class="responsive">
@@ -113,31 +113,32 @@
             </a>
             <div class="desc">
                 <h3>Amina Lunat</h3>
-                <h4>Chief Information Officer</h4>
-                <p> Amina Lunat </p>
+                <h4>Director of Turtle Conservation</h4>
+                <p> Amina and her team are currently designing and executing high-impact strategies for Turtle protection, including community-based conservation approaches; eliminating urgent threats such as the illegal wildlife trade by applying new technologies and reducing demand for illegal wildlife products.</p>
                     </div>
           </div>
         </div>
         <div class="responsive">
           <div class="gallery">
-            <a target="_blank" href="img/sadiyya.jfif">
-            <img class="sadiyya" src="img/sadiyya.jfif" alt="sadiyya" />
+            <a target="_blank" href="img/avanti.jfif">
+            <img class="avanti" src="img/avanti.jfif" alt="Avanti" />
             </a>
-            <div class="desc">
-                <h3>DR Sadiyya Ismail</h3>
-                <h4>Scientist</h4>
-                <p> Sadiyya Ismail is a recent graduate in Marine Biology PHD  </p></div>
+            <div class="desc" id="avantidesc">
+              <h3>Avanti Gajoram</h3>
+                <h4>Director of Education</h4>
+                   <p> Avanti is passionate about working with the community, espeically working with young children who are as enthusiastic as she is. She has devoted much of her career to exploring innovative ways to raise awareness such as hosting school trips where they can join the action in saving turtles.
+                </p></div>
           </div>
         </div>
-        <div class="responsive">
+        <div class="responsive" id="zahraadesc">
           <div class="gallery">
             <a target="_blank" href="img/zahraa.jfif">
             <img class="zahraa" src="img/zahraa.jfif" alt="zahraa" />
             </a>
             <div class="desc">
                 <h3>Zahraa Shaikh</h3>
-                <h4>Chief Executive Officer</h4>
-                <p> Zahraa Shaikh ..................... </p>
+                <h4>President</h4>
+                <p> Zahraa Shaikh has been leading the organisation since its establishment in 2015. Her inspiration came from a volunteering experience in Barbados as a student where she noticed the insufficient support provided to turtles as well as the limited knowledge from the public on what actions to take when coming across an injured turtle.</p>
                 </div>
           </div>
         </div>
@@ -148,13 +149,36 @@
         <h2>Where are we now?</h2>
         <div id="map"></div>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC17uwqS-_UjGvXxgrvub-cCPerufVyeSk&callback=initMap"></script>
-        <p> Our team is currently in the small village of Tortuguero (translated as "Region of Turtles") which lies on the northeastern Carribean Coast of Costa Rica in South America. We have partnered with Tortuguero National Park and Costa Rican government to run projects with aims of protecting the many species of turtles that are close to extinction. </p>
-        <p>Visit our partnerships website to find out more information about the village and the projects we are running to protect the turtles</p>
+        <p id="village"> Our team is currently in the small village of Tortuguero (translated as "Region of Turtles") which lies on the northeastern Carribean Coast of Costa Rica in South America. We have partnered with Tortuguero National Park and Costa Rican government to run projects with aims of protecting the many species of turtles that are close to extinction. </p>
+        <p id="park">Visit our partnerships website to find out more information about the village and the projects we are running to protect the turtles</p>
         <a id="nationalpark" href="http://www.tortugueroinfo.com/usa/sea_turtles_tortuguero.htm">Tortuguro National Park</a>
-      </section>   
-        <div class="tothetop">
-        <a class="top" href="#">TOP</a>
+      </section>  
+        
+    <div class="prescontainer">
+        <img class="president" src="img/president2.jpeg" alt="President Zahraa"/>
+      <blockquote id="presidentspeech">
+	    <q>With the rise of endagered species, we can work together to speak for those without a voice</q></blockquote>
         </div>
+    
+        
+        
+        <section id="helplinks">
+          <h2>Take Action</h2>
+            <p>Join us in spreading our message about protecting Turtles and the marine environment. You can either volunteer for us, adopt a turtle or donate to the charity. Your involvement in any shape or form will help us in saving the endagered turtles and their homes.</p>
+              <div class="linkimages">
+                <div class="rowimages">
+                  <img class="links" src="img/link1.jpg" alt="Link1"/>
+                  <img class="links" src="img/link3.jpg" alt="Link3"/>
+                </div>
+              </div>
+            
+             <div class="linkimages">
+              <div class="rowimages">
+                <div class="buttonlinks">
+                  <a class="link1" href="involve.html#DN1">Donation Form</a><a class="link2" href="involve.html#A2">Adoption Form</a>  </div>
+                </div>
+              </div>
+         </section>
     </main>
     <script src="scripts.js"></script>
   </body>
