@@ -519,112 +519,8 @@ textarea {
   /* Make link button smaller */
 }
 
-
-/* Style the Image Used to Trigger the Modal */
-
-#myimg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 300px;
-  /*Change */
-  height: auto;
-  /* xchnage */
-}
-
-#myimg:hover {
-  opacity: 0.7;
-}
-
-
-/* The Modal (background) */
-
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
-}
-
-
-/* Modal Content (Image) */
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-
-/* The Close Button */
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-content {
-  width: 100%;
-}
-
-.top {
-  color: white;
-  background-color: mediumaquamarine;
-  display: block;
-  position: fixed;
-  bottom: 9px;
-  right: 10px;
-  padding: 15px;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.top:hover {
-  background: rgba(200, 200, 200, 0.96);
-  color: #fff;
+.row, .column {
+    display: none;
 }
 
 
@@ -642,7 +538,7 @@ textarea {
 }
 
 .container {
-  background: #fff;
+  background: white;
   max-width: 100%;
 }
 
@@ -679,6 +575,11 @@ textarea {
   box-shadow: 0 18px 40px 5px rgba(0, 0, 0, .4);
   perspective: 800px;
 }
+
+.cube-container {
+    float: left;
+    margin-left: 25%;
+  }
 
 .photo-cube {
   transition: transform 2s ease-in-out;
@@ -924,11 +825,82 @@ textarea {
     margin-left: 29px;
 }
     
-  .cube-container {
+.history {
+  width: 112%;
+  margin-left: -6%;
+}
+
+     
+#OO2 {
+    display: none;
+}
+    
+    /* Create four equal columns that floats next to each other */
+    
+    
+.column, .row {
+    display: block;
+    
+    }
+    
+    .row {
+    background-color: #00a3cc;
+    width: 114%;
+    margin-left: -40px;
+    margin-top: 30px;
+    padding: 1.5em;
+    margin-bottom: 50px;
+    }
+    
+    
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+    
+    #D3 {
+        width: 112%;
+        margin-left: -6%;
+        background-color: mediumaquamarine;
+        color: white;
+    }
+    
+    #turtlefactswebsite {
+        background-color: mediumaquamarine;
+        color: white;
+    }
+    
+   /* https://codepen.io/loriprift/pen/OWzBZZ */
+    
+    
+    .carouselgallery {
+        width: 112%;
+        margin-left: -6%;
+    } 
+    
+    .container {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    
+    
+ .cube-container {
     float: left;
     margin-left: 16.6%;
   }
-}
 
 /* END FIRST BREAKPOINT */
 
@@ -1083,6 +1055,10 @@ textarea {
   .turtlebanner {
     display: none;
   }
+    
+    .column {
+        width: 25%;
+    }
 }
 
 
