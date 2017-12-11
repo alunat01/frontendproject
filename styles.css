@@ -28,7 +28,7 @@ header {
 /* Navigation Bar style starts */
 
 nav {
-  background-color: mediumaquamarine;
+  background-color: #00BD9D;
   display: none;
 }
 
@@ -1250,48 +1250,71 @@ header {
     
 .show-menu {
     width: 100%;
-    display: inline;
-    margin-top: 0em;
+    display: block;
+    margin-top: 0;
 }
     
-.mainnav {
- margin-left: -60px;
+nav {
+    display: block;
 }   
-    
-#whoarewe {
-    padding-right: -10em;
+    .mainnav {
+      margin-top: -0.5em;
+      margin-bottom: -0.5em;
     }
     
-nav a{
-    width: 100%;
-    text-align: left;
-    padding-left: 1.3em;
-    padding-bottom: 0;
-    padding-top: 0.2em;
-}
-      
-nav {
-    display: block; /* Displays the nav or inline*/
+.dropdown:hover .dropdown-content {
+  margin-top: -10px;
+  margin-left: -4px;
 }
 
+/* https://envato.com/blog/css-snippets-responsive-menus/ */
+    .secondlevel a {
+        width: 200px;
+        margin-left: -30px;
+    }
+    
+    .secondlevel a:hover {
+        width: 300px;
+        margin-left: 0px;
+    }
+    
+    .dropdown {
+        margin-left: 0;
+        padding: 0;
+    }
+    
 #nav-menu ul li {
-    width: 16%; /* Width of buttons */
+    width: 17%; /* Width of buttons */
     border: none;
-    font-size: 1.05em;
-    padding: 0;
-}
-
-#nav-menu ul li a:hover{
-    background: #00BD9D; /* Background of all buttons*/
-    color: white;
-}
-
-li a, .dropdown {
-  margin: 0px; /* Spacing betwee buttons*/
+    padding-bottom: 0;
+    padding-top: 0;
+}    
+    
+.mainnav:hover,
+.dropdown-content a:hover {
+  transition: none;
+  box-shadow: none;
 }
     
+.dropdown-content a:hover {
+  margin-left: -10px;
+}
+
 /* A simple, css only, (some-what) responsive menu */
 
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;  
+  font-size: 16px;
+}
+
+nav ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+    
+}
 
 nav li {
   float: left;
@@ -1310,23 +1333,28 @@ nav ul:after {
 
 /* prime */
 ul.firstlevel li a {
-  border-right: 2px solid #fff;
+  display: block;
+  border-right: 1px solid #fff;
+  padding-left: 3em;
 }
 
 ul.firstlevel li:last-child a {
   border-right: none;
 }
 
-/*ul.firstlevel li a:hover {
-  color: crimson;
-}*/
+ul.firstlevel li:first-child a {
+  border-left: 1px solid #fff;
+}
+
+ul.firstlevel li a:hover {
+  color: #00BD9D;
+}
 
 /* subs */
 .secondlevel {
   position: absolute;
   z-index: 200;
-  box-shadow: 2px 2px 0 #BEBEBE;
-  width: 35%;
+  width: 25%;
   display:none;
 }
 
@@ -1336,7 +1364,6 @@ ul.secondlevel li {
 }
 
 ul.secondlevel li a {
-  border-bottom: 1px dotted #ccc;
   border-right: none;
   color: #000;
   padding: 15px 30px;
@@ -1348,79 +1375,57 @@ ul.secondlevel li:last-child a {
 
 ul.secondlevel li a:hover {
   color: #000;
-  background: #eeeeee;
+  background: #fff;
 }
 
 /* sub display*/
 ul.firstlevel li:hover ul {
   display: block;
   background: #fff;
+  width: 25%;
 }
 
 /* keeps the tab background white */
 ul.firstlevel li:hover a {
   background: #fff;
-  color: #666;
+  color:  #00BD9D;
   text-shadow: none;
 }
 
 ul.firstlevel li:hover > a{
-  color: #000;
-}     
-  /*main {
+  color: #00BD9D  ;
+  background-color: #fff;
+} 
+    
+ul.secondlevel li:hover > a{
+ background-color: #ccc;
+}
+
+    
+main {
   float: centre;
   max-width: 1000px;
   background-color: mediumaquamarine;
-} */
-    
-    
-/*  nav {
-    display: block;
-    padding: 1.5em;
-    margin-bottom: 50px;
-        display: flex;
-  flex-direction: row;
-  margin: 0;
-      
+}
 
-  }
-  nav a {
-    line-height: 3em;
-    width: inherit;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    float: left;
-    text-align: left;
-              display: flex;
-  flex-direction: row;
-  margin: 0;
-  }
-  #menu {
-    display: none;
-  }
-*/
-
-  /* https://www.w3schools.com/css/css3_transitions.asp */
   /* Navigation Bar style ends */
     
-
-  section {
+section {
     padding: 20px 0;
-    width: 100%;
+    width: 22%;
     background: white;
     text-align: left;
-  }
-  /*
-  section {
-    width: 22%;
     margin: 1em 1% 1em 1%;
-    background: #222;
-    border-color: #666;
-    font-size: 1.5em;
-  } */
+}
+
+.aboutus {
+    display: none;
+}
+    
+
+    
+    
+
   .responsive {
     padding: 0 6px;
     float: left;
