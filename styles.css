@@ -49,7 +49,7 @@ nav a {
 
 .show-menu {
   display: block;
-  text-align: right;
+  text-align: left;
 }
 
 .mainnav {
@@ -74,10 +74,12 @@ li {
 li a,
 .dropdown {
   padding: 1em;
+  margin-left: 10px;
 }
 
 .dropdown {
   border-top: solid white;
+  margin-left: -40px;
 }
 
 .mainnav:hover,
@@ -110,19 +112,69 @@ li a:hover {
 
 /* Navigation Bar style ends */
 
+
 main {
   background-color: white;
   line-height: 30px;
 }
 
+.turtlebanner {
+  max-width: 150%;
+  margin-top: -29.4px;
+  margin-left: -110px;
+}
+
+h1 {
+  float: left;
+  margin-top: -10px;
+  padding: 10px;
+}
+
+/* Page 1 CSS Styles */
+
+
+h2 {
+  font-size: 2em;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.aboutus {
+  color: #00BD9D;   
+  margin-top: -25px;
+  margin-bottom: -25px;
+}
+
+.turtles {
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+
+#OS1 {
+  margin-top: -10px;
+  background-color: #a5a5af;
+  color: #fff;
+}
+
+/*.boxshadow1 {
+  box-shadow: 0px 1px 16px 10px #b3ffd9;
+}*/
+
 blockquote {
   font-family: 'EB Garamond', serif;
   position: relative;
-  margin-top: 65px;
+  margin-top: 20px;
   height: 100%;
   line-height: 1.4;
-  color: mediumaquamarine;
   font-size: 2em;
+  color:black;
+  width: 112%;
+  margin-left: -23px;
+  padding: 1em;
+  background-color: white;
+  font-style: italic;
+  border-bottom: solid 5px #ddd;
 }
 
 q:before {
@@ -135,33 +187,65 @@ q:after {
   margin-left: 10px;
 }
 
-h1 {
-  float: left;
-  margin-top: -10px;
-  padding: 10px;
+.rowhome {
+  width: 100%;
+  margin-top: -2em;
+  margin-bottom: 4em;
+  border-bottom: solid 5px #ddd;
+}
+     
+.columnhome {
+  display: flex; 
+  width: 100%;
 }
 
-h2 {
-  font-size: 2em;
-  margin-top: 15px;
+/* Clear floats after the columns */
+.rowhome:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rowhome img {
   width: 100%;
+  margin-bottom: -8em;
+  display: block;
+}
+
+figure {
+  width: 211px;
+  overflow: hidden;
+  margin: 0;
+}
+
+figcaption {
+  box-sizing: border-box;
+  height: 7em;
+  padding: .25em;
+  transform: translateY(4em);
+  background: #fff;
+  color: #000;
+  opacity: 0;
+  transition: all .5s;
+}
+
+figure:hover figcaption {
+  transform: translateY(0em);
+  background: rgba( 255, 255, 255, .78 );
+  opacity: .78;
+}
+
+figcaption p {
+    margin-top: 3em;
+}
+
+#H2 {
+    color: #00BD9D;
 }
 
 .us {
   font-size: 1.7em;
-}
-
-.turtles {
-  line-height: 1.5em;
-  font-size: 1.5em;
-}
-
-.boxshadow1 {
-  box-shadow: 0px 1px 16px 10px #b3ffd9;
-}
-
-#OS1 {
-  margin-top: -10px;
+  line-height: 2em;
 }
 
 #nationalpark {
@@ -169,53 +253,48 @@ h2 {
   text-decoration: underline;
 }
 
-#historyturtles {
-  color: mediumaquamarine;
-  text-decoration: underline;
-}
-
 section {
-  background-color: white;
   color: mediumaquamarine;
   margin-top: 10px;
   padding: 1em;
-  box-shadow: 0px 8px 16px 0px #b3ffd9;
+ /* box-shadow: 0px 8px 16px 0px #b3ffd9; */
 }
-
-.turtlebanner {
-  max-width: 150%;
-  margin-top: -29.4px;
-  margin-left: -110px;
-}
-
 
 /* Page 1 pictures of heroes */
 
 .ninjaturtles,
-.avanti,
-.zahraa {
+.avanti
+{
   max-width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 .amina,
 .sadiyya {
   max-width: 100%;
-  height: 400px;
+  height: 300px;
+}
+.zahraa {
+  max-width: 100%;
+  height: 300px;
 }
 
 
 /* Responsive Gallery */
 
-div.gallery:hover {
-  box-shadow: 0px 0px 5px 5px rgb(102, 205, 170);
-  padding: 1.5em;
-  margin-bottom: 20px;
-}
-
 div.desc {
   text-align: left;
   margin-bottom: 50px;
+  background-color: mediumaquamarine;
+  color: white;
+  width: 120%;
+  margin-left: -23px;
+  padding: 1em;
+  padding-right: 2em;
+}
+
+div.desc h3 {
+    text-align: center;
 }
 
 * {
@@ -237,20 +316,105 @@ div.desc {
 
 /* Page 1 Map */
 
+#NOW3 {
+    margin-top: -2em;
+}
 #map {
   height: 400px;
   max-width: 100%;
 }
 
 .prescontainer {
-    display: none;
+    margin-top: 2em;
 }
+
+#presidentspeech {
+	margin: 0;
+	font-style: italic;
+    box-shadow: none;
+    background-color:  #00a3cc;  /*#00BD9D*/
+    color: white;
+    width: 100%;
+    }
 
 #helplinks {
-    display: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #00a3cc;
+  font-size: 1.2em;
+}
+    
+.linkimages {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Page 2 Pictures */
+.rowimages{
+  width: 50.33%;
+  display: flex; 
+  padding: 0.5em;
+  width: 100%;
+}
+    
+.links {
+  display: flex;
+  width: 50%;
+  padding: 1em;
+  height: 150px;
+} 
+    
+.buttonlinks {
+  display: flex; 
+  width: 100%;
+  padding: 1em;
+}
+
+.link1, .link2 {
+  background-color: #00a3cc;
+  padding: 1em;
+  border-radius: 5px;
+  margin-top: -10%;
+  text-align: center;
+ }
+  
+    
+.link1 {
+    width: 59.5%;
+}    
+    
+.link2 {
+    width: 59.5%;
+    margin-left: 35px;
+}
+
+
+.top {
+  background-color: #00BD9D;
+  color: white;
+  display: block;
+  position: fixed;
+  bottom: 9px;
+  right: 10px;
+  padding: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 14px;
+}
+
+.top:hover {
+  background: rgba(200,200,200,0.96);
+  color: #fff;
+}
+
+
+/* Page 2*/
+
+
+#historyturtles {
+  color: mediumaquamarine;
+  text-decoration: underline;
+}
 
 .seaturtle {
   width: 50%;
@@ -626,19 +790,23 @@ textarea {
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
 @media screen and (min-width: 500px) {
-  body {
+  
+body {
     background-color: white;
-  }
-  header {
+}
+    
+header {
     background: mediumaquamarine;
     color: white;
     width: 100%;
     position: absolute;
-  }
-  .v-header {
+}
+
+.v-header {
     display: none;
-  }
-  nav {
+}
+    
+nav {
     display: none;
     width: 100%;
     position: absolute;
@@ -648,11 +816,13 @@ textarea {
     /* Stay at the top */
     right: 0;
     margin: 0;
-  }
-  nav a {
+}
+ 
+nav a {
     width: 100%;
     display: inline-block;
-  }
+}
+    
   #menu {
     display: block;
     text-align: right;
@@ -673,7 +843,8 @@ textarea {
   .turtlebanner {
     margin-top: 60px;
     max-width: 130%;
-  }
+  }    
+    
   main {
     width: 90%;
     margin: 0 auto;
@@ -684,7 +855,6 @@ textarea {
     display: inline-block;
     background: white;
     margin-bottom: 2em;
-    box-shadow: 0px 0px 10px 5px #b3ffd9;
   }
     
   .boxshadow1 {
@@ -692,8 +862,11 @@ textarea {
     }
     
   .aboutus {
-        margin-bottom: 4em;
-    }
+      margin-top: 2em;
+      margin-bottom: 4em;
+        box-shadow: 0px 0px 10px 5px #b3ffd9;
+
+}
     
   #OS1 {
       text-align: left;
@@ -717,9 +890,37 @@ textarea {
     margin-left: -6%;
     background-color: #00a3cc;
     color: white;
-;
+    box-shadow: none;
+
     }
+
+.rowhome, figure {
+  width: 110%;
+  margin-left: -4%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+}
     
+.columnhome {
+  display: flex; 
+  height: 150px;
+  flex-direction: row;
+  justify-content: center;
+  float: left;
+  width: 49.99%;
+}
+    
+.rowhome img {
+  width: 100%;
+  height: 100%;
+}
+    
+    
+figcaption p {
+    margin-top: 1em;
+}  
+   
 .desc {
         margin: 1em;
 }
@@ -728,6 +929,43 @@ textarea {
   width: 112%;
   margin-left: -6%;
 }   
+
+
+/* Responsive Gallery */
+
+.heroesgallery {
+    width: 112%;
+}
+.responsive {
+    width: 45%;
+}
+    
+div.desc {
+  max-width: 100%;
+  width: 120em;
+  padding: 1em;
+  margin: 0.5em;
+  height: 38em;
+  display: flex; 
+  flex-direction: column;
+}
+
+div.desc h3 {
+    text-align: center;
+}
+
+#resavanti, #reszahraa {
+    margin-top: 2em;
+}
+    
+#avantidesc {
+    margin-top: 1.65em;
+} 
+    
+.avanti {
+    margin-top: 2em;
+}
+    
     
 #NOW3 {
     width: 112%;
@@ -740,90 +978,37 @@ textarea {
   height: 400px;
   max-width: 100%;
 }
-
-.president {
-  max-width: 100%;
-  height: 300px;
-  float: left;;
-}
    
 .prescontainer {
     display: flex;
     width: 112%;
     margin-left: -6%;
-    }
+  margin-top: -0.3em;
+ }
     
     
  #presidentspeech {
-    float: right;
-	margin: 0 auto;
-	font-style: italic;
-    background: linear-gradient(to right, #4ac29a -1%, #bdfff3 100%);
-    color: white;
-    box-shadow: none;
-    height: 300px;
+     padding-bottom: 1em;
     }
 
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-    
  
 #helplinks {
-  display: block;
-  text-align: center;
   width: 115%;
   margin-left: -6%;
   color: #00a3cc;
   font-size: 1.2em;
-  margin-top: 50px;
+  margin-top: 40px;
   padding-right: 2em;
 }
     
-.linkimages {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.rowimages{
-  width: 50.33%;
-  display: flex; 
-  padding: 0.5em;
-  width: 100%;
-}
-    
-.links {
-  max-width: 100%;
-  height: 200px;
-  display: flex;
-  width: 49.99999%;
-  padding: 1em;
-} 
-    
-.buttonlinks {
-  display: flex; 
-  width: 100%;
-  padding: 1em;
-}
 
 .link1, .link2 {
-  background-color: #00a3cc;
-  padding: 1em;
-  border-radius: 5px;
   margin-top: -7%;
-  text-align: center;
  }
-  
+
     
-.link1 {
-    width: 59.5%;
-}    
-    
-.link2 {
-    width: 59.5%;
-    margin-left: 29px;
-}
+/* Page 2 CSS Styles */
     
 .history {
   width: 112%;
@@ -835,7 +1020,7 @@ textarea {
     display: none;
 }
     
-    /* Create four equal columns that floats next to each other */
+/* Create four equal columns that floats next to each other */
     
     
 .column, .row {
@@ -929,7 +1114,53 @@ textarea {
   color: mediumaquamarine;
 }
     
-    
+figure {
+  width: 200px;
+  background: #aaa;
+  border: 2px solid #999;
+  overflow: hidden;
+}
+
+figure img {
+  width: 100%;
+  height: 300px;
+  background: #eee;
+  margin-bottom: -4em;
+  display: block;
+}
+
+/* 
+  styles the figcaption element when the page first loads. The 
+  `transition` property simply "prepares" the element for a style 
+  transition - it does NOT trigger the transition.
+  `opacity` affects the WHOLE element - at `.78` text less is harsh when
+  visible. If the alpha channel of the rgba `background` transitioned 
+  instead, the text would not be affected and remain 100% black.
+  A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
+  with a line-height of 1.2em nicely. For more, change the values.
+*/
+figcaption {
+  box-sizing: border-box;
+  height: 4em;
+  line-height: 1.2em;
+  padding: .25em;
+  transform: translateY(4em);
+  background: #fff;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
+}
+
+/* 
+  These styles are applied to the `figcaption` element when hovering 
+  over the`figure` element. The `transition` property on `figcaption` 
+  above is then applied to `all` these hover styles, over 0.5 seconds.
+*/
+figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+}    
     
 /* END FIRST BREAKPOINT */
 
@@ -1012,45 +1243,103 @@ textarea {
     background-color: mediumaquamarine;
     color: white;
   }
+
+    
+    
+    
+nav a{
+    width: 100%;
+    display:inline; /* Makes it horizontal*/
+    margin: 10em;
+    }
+        
+#menu {
+    display: none;
+}
+nav {
+    display: block; /* Displays the nav or inline*/
+    }
+    
+#nav-menu ul li {
+        display: inline;   /* Also makes it horizontals*/
+        background: #dde; /* Background of all buttons*/
+}
+
+#nav-menu ul li a:hover{
+    background: #dde; /* Background of all buttons*/
+}
+    
+    #nav-menu ul li a:link {
+        color: #448;
+    }
+    
+    #nav-menu ul li a:visited {
+        color: #667;
+    }
+
+li a,
+.dropdown {
+  padding: 1em; /* Change size of button*/
+  margin: 0px; /* Spacing betwee buttons*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 100%;
+}
+    
+  nav li {
+    width: 320px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }    
+
   /*main {
   float: centre;
   max-width: 1000px;
   background-color: mediumaquamarine;
 } */
-  nav {
-    display: flex;
-    width: 100%;
-    float: right;
+    
+    
+/*  nav {
+    display: block;
+    padding: 1.5em;
+    margin-bottom: 50px;
+        display: flex;
+  flex-direction: row;
+  margin: 0;
+      
+
   }
   nav a {
     line-height: 3em;
     width: inherit;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float: left;
+    text-align: left;
+              display: flex;
+  flex-direction: row;
+  margin: 0;
   }
   #menu {
     display: none;
   }
-  #nav-menu {
-    display: block;
-  }
-  .mainnav {
-    width: 10%;
-    float: right;
-    display: inline-block;
-  }
-  .fixedtopbar {
-    text-align: right;
-    padding-bottom: 2.4em;
-    padding-top: 2em;
-    margin-right: 0.6em;
-  }
-  .mainnav {
-    transition-property: width;
-    transition-duration: 3s;
-    transition-timing-function: linear;
-    transition-delay: 3s;
-  }
+*/
+
   /* https://www.w3schools.com/css/css3_transitions.asp */
   /* Navigation Bar style ends */
+    
+
   section {
     padding: 20px 0;
     width: 100%;
