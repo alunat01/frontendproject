@@ -1259,7 +1259,7 @@ nav {
 }   
     .mainnav {
       margin-top: -0.5em;
-      margin-bottom: -0.5em;
+      margin-bottom: -1em;
     }
     
 .dropdown:hover .dropdown-content {
@@ -1284,7 +1284,8 @@ nav {
     }
     
 #nav-menu ul li {
-    width: 17%; /* Width of buttons */
+    text-align: left;
+    margin-left: -20px;
     border: none;
     padding-bottom: 0;
     padding-top: 0;
@@ -1403,9 +1404,10 @@ ul.secondlevel li:hover > a{
 
     
 main {
-  float: centre;
-  max-width: 1000px;
-  background-color: mediumaquamarine;
+  float: left;
+  width: 87%;
+  background-color: white;
+  margin-left: 5.3%;
 }
 
   /* Navigation Bar style ends */
@@ -1421,9 +1423,24 @@ section {
 .aboutus {
     display: none;
 }
-    
 
-    
+#OS1 {
+    width: 75%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.2%;
+    background-color: white;
+    color: black;
+    padding-left: 3em;
+    padding-right: 3.5em;
+    margin-top: 5em;
+}
+
+    blockquote {
+        
+        margin-top: 600px;
+    } 
     
 
   .responsive {
