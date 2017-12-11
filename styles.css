@@ -1437,6 +1437,10 @@ section {
     margin-top: 5em;
 }
 
+    #ourstoryimage {
+        float: right;
+        width: 50%;
+    }
     blockquote {
         
         margin-top: 600px;
