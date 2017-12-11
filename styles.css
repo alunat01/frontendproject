@@ -28,7 +28,7 @@ header {
 /* Navigation Bar style starts */
 
 nav {
-  background-color: #00BD9D;
+  background-color: mediumaquamarine;
   display: none;
 }
 
@@ -1254,6 +1254,13 @@ header {
     margin-top: 0em;
 }
     
+.mainnav {
+ margin-left: -60px;
+}   
+    
+#whoarewe {
+    padding-right: -10em;
+    }
     
 nav a{
     width: 100%;
