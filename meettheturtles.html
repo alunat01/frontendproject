@@ -15,32 +15,38 @@
       <div class="fixedtopbar">
         <a id="menu" href="#">Menu</a>
         <nav id="nav-menu">
-          <ul>
+          <ul class="firstlevel">
               
             <li class="dropdown">
               <a class="mainnav" href="index.html">Who are we?</a>
               <div class="dropdown-content">
-                <a href="index.html#OS1">Our Story</a>
-                <a href="index.html#H2">Who are the heroes?</a>
-                <a href="index.html#NOW3">Where are we now?</a>
+                  <ul class="secondlevel">
+                      <li><a href="index.html#OS1">Our Story</a></li>
+                     <li> <a href="index.html#H2">Who are the heroes?</a></li>
+                 <li><a href="index.html#NOW3">Where are we now?</a></li>
+              </ul>
               </div>
             </li>
               
             <li class="dropdown">
               <a class="mainnav" href="meettheturtles.html">Meet the Turtles</a>
               <div class="dropdown-content">
-                <a href="#HT1">History of Turtles</a>
-                <a href="#OO2">Over the Ocean</a>
-                <a href="#D3">Did you know?</a>
+                  <ul class="secondlevel">
+                   <li><a href="#HT1">History of Turtles</a></li>
+                 <li><a href="#OO2">Over the Ocean</a></li>
+               <li><a href="#D3">Did you know?</a></li>
+            </ul>
               </div>
             </li>
               
             <li class="dropdown">
               <a class="mainnav" href="involve.html">Want to get involved?</a>
               <div class="dropdown-content">
-                <a href="involve.html#DN1">Donate</a>
-                <a href="involve.html#A2">Adoption</a>
-                <a href="involve.html#D3">Contact Us</a> 
+                  <ul class="secondlevel">
+                    <li>  <a href="involve.html#DN1">Donate</a></li>
+                     <li> <a href="involve.html#A2">Adoption</a></li>
+                     <li> <a href="involve.html#D3">Contact Us</a> </li>
+                  </ul>
               </div>
             </li>
               
@@ -51,9 +57,15 @@
       
     <main>
         
-      <img class="turtlebanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
+      <img class="turtlebanner" id="desktopbanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
+        
+        <div class="turtally">
+            <p>Here at Save the Turtles, we <i>turtally</i> mad about turtles, that's why we've dedicaed a whole page on Turtles for you to discover!</p>
+        </div>
+        
         
       <section class="history">
+          <img id="care2" src="img/care2.jpg" alt="care2"/>
         <h2 id="HT1">History of Turtles</h2>
         <p>Turtles are belived to have existed in the late Triassic Period of the Mesozoic era, about 215-220 million years ago. Turtles are known to be one of the oldest creatures on Earth before Dinosaurs with the most ancient fossils found in Germany.</p>
         <p>To find out more information: <a id="historyturtles" href="http://www.tortugueroinfo.com/usa/sea_turtles_tortuguero.htm">Click Here</a></p>
@@ -76,7 +88,8 @@
         
          <div class="row"> 
              <h2>Over the Ocean: Turtle Species</h2>
-        <p>It has been estimated that there are around over 300 specied of Turtles, however there 7 well-known Sea Turtle Species. Here are pictures of some of the turtles who live underwater</p>
+        <p>It has been estimated that there are around over 300 specied of Turtles, however there 7 well-known Sea Turtle Species. Here are pictures of some of the turtles who live underwater.</p>
+             <p id="extraOO2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra ullamcorper enim. Maecenas quis neque lectus. Etiam augue turpis, venenatis in nibh in, iaculis ullamcorper ipsum. Vestibulum diam lectus, vehicula in mauris vel, hendrerit gravida urna. Cras in sem orci. In nec lectus odio. Donec vel neque orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris semper non odio quis rutrum. Donec nec euismod velit, in gravida arcu. Duis ac pharetra dui, nec volutpat felis. Fusce dapibus, nibh eu finibus consectetur, ligula massa tempus tortor, eu convallis nisl sem eu sem. Duis blandit mattis lacus, id auctor diam convallis ac. Sed a nisl diam. Nunc sit amet lobortis ligula. Vivamus sed lacinia mi, at molestie sem.</p>
   <div class="column">
     <img src="img/greenturtleanimaltimes.jpg">
     <img src="img/kempnoaafisheries.jpg">
@@ -85,7 +98,7 @@
     <img src="img/seaturtlesealife.jfif">
     <img src="img/natgeokids9.jpg">
   </div>
-  <div class="column">
+  <div class="column" id="hidedesktop">
     <img src="img/natgeokids7.jpg">
     <img src="img/natgeokids5.jpg">
     <img src="img/natgeokids4.jpg">
@@ -93,8 +106,9 @@
     <img src="img/natgeokids2.jpg">
     <img src="img/natgeokids6.jpg">
   </div> 
-</div>
-        
+        </div>
+             
+   
       <section id="D3">
         <h2>Did you know?</h2>
         <ul>
@@ -105,17 +119,34 @@
           <li class="turtlefacts">Although turtles may travel with other turtles, they do not interact or socialise with other turtles</li>
           <li class="turtlefacts">Turtles can live to around 80 years with some of the larger turtles living for around 200 years!</li>
           <li class="turtlefacts">If you would like more information, please visit the following website: <a id="turtlefactswebsite" href="https://www.livescience.com/52361-turtle-facts.html">Live Science</a></li>
-          <li> The below video has many more fascinating facts to watch!</li>
+          <li> The video has many more fascinating facts to watch!</li>
         </ul>
+           <div class="rowhomemeet">
+      <div class="columnhomemeet">
+        <figure class="figureturtle">
+          <img id="didyouknow1" src="img/natgeokids5.jpg">
+            <figcaption class="captionturtle">
+                <p>Check out <a id="natgeolink" href="https://www.natgeokids.com/uk/discover/animals/sea-life/turtle-facts/">Nat Geo Kids </a></p>
+            </figcaption>
+           </figure>
+         <figure class="figureturtle">
+       <img id="didyouknow2" src="img/natgeokids6.jpg">
+      <figcaption class="captionturtle">
+          <p>How cute does this baby turtle look?</p>
+      </figcaption>
+    </figure>
+  </div>
+          </div>
         <iframe id="video" src="https://www.youtube.com/embed/t-KmQ6pGxg4?rel=0" allowfullscreen></iframe>
       </section>
         
+        <img id="wwfturtle" src="img/wwfturtles.jpg" alt="WWf"/>
         
         
         <!-- View on desktop -->
         <section class="carouselgallery">
         <h2>Our Pictures</h2>
-					  <p>These are the amazing pictures taken by our staff and volunteers during their time supporting us!</p>
+					  <p>These are the amazing pictures taken by our staff and volunteers during their time supporting us! If you are interested in joining us, message using the form: <a id="contactuslink" href="involve.html#D3">Contact Us </a></p>
         <div class="container">
 		<div class="content clearfix">
 			<div class="cube-container">
