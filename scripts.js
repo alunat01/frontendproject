@@ -22,34 +22,6 @@ function modal () {
 }
 } */
 
-/*
-
- From W3school - Modal gallery
-
-
-// Get the modal
-    var modal = document.getElementById('mymodal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById('myimg');
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-img.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-}
-
-
-*/
 
 
 /* .................................................... 
@@ -186,13 +158,6 @@ function initMap() {
 
 }());
 
-
-
-
-/*
-
-
-
 let adoptAlert = document.getElementById("adopt-submit");
 
 adoptAlert.addEventListener("click", adopt);
@@ -200,18 +165,3 @@ adoptAlert.addEventListener("click", adopt);
 function adopt() {
     alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!');
 }
-
-
-
-
-/*
-
-function checkdata(){
-    firstname = document.userform1.first.value;
-    if (firstname==""){
-        alert("Please fill in the name box");
-    }
-}
-
-
-*/

@@ -136,7 +136,7 @@
           <label>Address</label>
           <input type="text" id="address" name="address" placeholder="Enter your address">
           <label>Postcode</label>
-          <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx" pattern="\d{3}-d{3}">
+          <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx">
           <label>City</label>
           <select name="city">
             <option value="choice">Choose City</option>
@@ -146,7 +146,7 @@
             <option value="uk">Nottingham</option>
           </select>
           <label>Contact Number</label>
-          <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
+          <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{11}">
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
           <div class="emaildiv">
@@ -160,8 +160,8 @@
                 <label class="donatelabel" for="control_05">£2</label>
               </div>
               <div>
-                <input type="radio" id="control_06" name="monthlydonation" value="£15">
-                <label class="donatelabel" for="control_06">£15</label>
+                <input type="radio" id="control_06" name="monthlydonation" value="£5">
+                <label class="donatelabel" for="control_06">£5</label>
               </div>
               <div>
                 <input type="radio" id="control_07" name="monthlydonation" value="£10">
@@ -188,7 +188,7 @@
             <label>Security Number</label>
             <input type="number" name="number" placeholder="xxx">
           </fieldset>
-          <input type="submit" value="Adopt Now">
+          <input id="adopt-submit" type="submit" value="Adopt Now">
         </form>
       </section>
       <section>
