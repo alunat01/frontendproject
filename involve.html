@@ -6,15 +6,12 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-    
   <body>
     <header>
-        <h1><a href="index.html">Save the Turtles</a></h1>
-        
+      <h1><a href="index.html">Save the Turtles</a></h1>
       <div class="fixedtopbar">
         <a id="menu" href="#">Menu</a>
         <nav id="nav-menu">
-            
           <ul>
             <li class="dropdown">
               <a class="mainnav" href="index.html">Who are we?</a>
@@ -24,7 +21,6 @@
                 <a href="index.html#NOW3">Where are we now?</a>
               </div>
             </li>
-              
             <li class="dropdown">
               <a class="mainnav" href="meettheturtles.html">Meet the Turtles</a>
               <div class="dropdown-content">
@@ -33,7 +29,6 @@
                 <a href="meettheturtles.html#D3">Did you know?</a>
               </div>
             </li>
-              
             <li class="dropdown">
               <a class="mainnav" href="involve.html">Want to get involved?</a>
               <div class="dropdown-content">
@@ -43,253 +38,183 @@
               </div>
             </li>
           </ul>
-            
         </nav>
       </div>
     </header>
-      
     <main>
-        
       <img class="turtlebanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
-      
-        
       <div class="buttonforms">
         <a class="form1" href="#DN1">Donation Form</a>
         <a class="form2" href="#A2">Adoption Form</a>
         <a class="form3" href="#CU3">Contact Us</a> 
       </div>
-        
-        <div class="boxshadow1"> </div>
-      <!-- Increase box shadow -->
-        
-  <section>
-    <h2 id="DN1">Donation Form</h2>
-      
-      <form class="donation" id="get-name" action="#" method="post">
-            <label for="user-name">First Name</label>
-      <input type="text" id="user-name" name="firstname" placeholder="Enter your first name..">
-        
-      <label>Last Name</label>
-        <input type="text" name="lastname" placeholder="Enter your last name..">
-      
-      <label>City</label>
-          
-    <select name="city">
-      <option value="choice">Choose City</option>
-      <option value="australia">Birmingham</option>
-      <option value="canada">Leicester</option>
-      <option value="usa">London</option>
-      <option value="uk">Nottingham</option>
-    </select>
-          
-        <label>Contact Number</label>
+      <section>
+        <h2 id="DN1">Donation Form</h2>
+        <form class="donation" id="get-name" action="#" method="post">
+          <label for="user-name">First Name</label>
+          <input type="text" id="user-name" name="firstname" placeholder="Enter your first name..">
+          <label>Last Name</label>
+          <input type="text" name="lastname" placeholder="Enter your last name..">
+          <label>City</label>
+          <select name="city">
+            <option value="choice">Choose City</option>
+            <option value="australia">Birmingham</option>
+            <option value="canada">Leicester</option>
+            <option value="usa">London</option>
+            <option value="uk">Nottingham</option>
+          </select>
+          <label>Contact Number</label>
           <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
-          
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
-          
-          
           <div class="emaildiv">
-        <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+            <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
           </div>
-<fieldset>      
-              <section class="donateradio">
-        <h3>Donation Amount:</h3>
-
-<div>
-  <input type="radio" id="control_01" name="select" value="£5" checked>
-  <label class="donatelabel" for="control_01">£5</label>
-</div>
-<div>
-  <input type="radio" id="control_02" name="select" value="£10">
-  <label class="donatelabel" for="control_02">£10</label>
-</div>
-<div>
-  <input type="radio" id="control_03" name="select" value="£20">
-  <label class="donatelabel" for="control_03">£20</label>
-</div>
-<div>
-  <input type="radio" id="control_04" name="select" value="other">
-  <label class="donatelabel" for="control_04">Other</label>
-</div>
-</section>
-        
-<input type="text" id="amount" name="amount" placeholder="Enter amount">
-              </fieldset>
-          
+          <fieldset>
+            <section class="donateradio">
+              <h3>Donation Amount:</h3>
+              <div>
+                <input type="radio" id="control_01" name="select" value="£5" checked>
+                <label class="donatelabel" for="control_01">£5</label>
+              </div>
+              <div>
+                <input type="radio" id="control_02" name="select" value="£10">
+                <label class="donatelabel" for="control_02">£10</label>
+              </div>
+              <div>
+                <input type="radio" id="control_03" name="select" value="£20">
+                <label class="donatelabel" for="control_03">£20</label>
+              </div>
+              <div>
+                <input type="radio" id="control_04" name="select" value="other">
+                <label class="donatelabel" for="control_04">Other</label>
+              </div>
+            </section>
+            <input type="text" id="amount" name="amount" placeholder="Enter amount">
+          </fieldset>
           <fieldset class="regular">
-                        <section class="donateradio">
-        <h3>Payment Plan:</h3>
-
- <div>
-  <input type="radio" id="control_09" name="payment" value="one-time">
-  <label class="plan" for="control_09">One-time</label>
-</div>
-<div>
-  <input type="radio" id="control_10" name="payment" value="monthly">
-  <label class="plan" for="control_10">Monthly</label>
-</div>
-              </section>
-          </fieldset>
-          
-          <fieldset class="regular1">
-              
-              <label class="carddetails">Card Details</label>
-              <label class="cardtype">Card Type:</label>
-        
-        <div class="creditcard">
-          <input class="types" type="radio" name="type1" value="visa"/>Visa<br>
-           <input class="types" type="radio" name="type1" value="mastercard"/>Mastercard
+            <section class="donateradio">
+              <h3>Payment Plan:</h3>
+              <div>
+                <input type="radio" id="control_09" name="payment" value="one-time">
+                <label class="plan" for="control_09">One-time</label>
               </div>
-              
-              <label class="nameoncard">Name on Card</label>
-      <input type="text" name="cardname" placeholder="Enter name on card">
-              
-               <label>Card Number</label>
-          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
-          
-              
-            <label>Security Number</label>
-          <input type="number" name="number" placeholder="xxx">
+              <div>
+                <input type="radio" id="control_10" name="payment" value="monthly">
+                <label class="plan" for="control_10">Monthly</label>
+              </div>
+            </section>
           </fieldset>
-          
-
-    <input type="submit" value="Donate Now">
-          
-          
-    <p>Hello, <span id="my-name">(Your name)</span>Thank you for submitting the form! You will receive an email with confirmed details</p>
-    
-      </form>
-     
-      <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead 
-
-https://codepen.io/adamstuartclark/pen/pbYVYR
--->
-  </section>
-
-   <section>
-    <h2 id="A2">Adoption Form</h2>
-      
-      <form class="donation" method="post">
-            <label>First Name</label>
-      <input type="text" name="firstname" placeholder="Enter your first name">
-        
-      <label>Last Name</label>
-        <input type="text" name="lastname" placeholder="Enter your last name">
-          
-      <label>Address</label>
-        <input type="text" id="address" name="address" placeholder="Enter your address">
-    
-      <label>Postcode</label>
-        <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx" pattern="\d{3}-d{3}">
-          
-          
-      <label>City</label>
-          
-    <select name="city">
-      <option value="choice">Choose City</option>
-      <option value="australia">Birmingham</option>
-      <option value="canada">Leicester</option>
-      <option value="usa">London</option>
-      <option value="uk">Nottingham</option>
-    </select>
-          
-        <label>Contact Number</label>
+          <fieldset class="regular1">
+            <label class="carddetails">Card Details</label>
+            <label class="cardtype">Card Type:</label>
+            <div class="creditcard">
+              <input class="types" type="radio" name="type1" value="visa"/>Visa<br>
+              <input class="types" type="radio" name="type1" value="mastercard"/>Mastercard
+            </div>
+            <label class="nameoncard">Name on Card</label>
+            <input type="text" name="cardname" placeholder="Enter name on card">
+            <label>Card Number</label>
+            <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <label>Security Number</label>
+            <input type="number" name="number" placeholder="xxx">
+          </fieldset>
+          <input type="submit" value="Donate Now">
+          <p>Hello, <span id="my-name">(Your name)</span>Thank you for submitting the form! You will receive an email with confirmed details</p>
+        </form>
+        <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead
+          https://codepen.io/adamstuartclark/pen/pbYVYR (Both links were used to help me create radio buttons look like squared buttons)
+          -->
+      </section>
+      <section>
+        <h2 id="A2">Adoption Form</h2>
+        <form class="donation" method="post">
+          <label>First Name</label>
+          <input type="text" name="firstname" placeholder="Enter your first name">
+          <label>Last Name</label>
+          <input type="text" name="lastname" placeholder="Enter your last name">
+          <label>Address</label>
+          <input type="text" id="address" name="address" placeholder="Enter your address">
+          <label>Postcode</label>
+          <input type="text" id="postcode" name="postcode" placeholder="xxx-xxx" pattern="\d{3}-d{3}">
+          <label>City</label>
+          <select name="city">
+            <option value="choice">Choose City</option>
+            <option value="australia">Birmingham</option>
+            <option value="canada">Leicester</option>
+            <option value="usa">London</option>
+            <option value="uk">Nottingham</option>
+          </select>
+          <label>Contact Number</label>
           <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
-          
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
-          
-     <div class="emaildiv">
-        <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+          <div class="emaildiv">
+            <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
           </div>
-  
-<fieldset>  
-         <section class="donateradio">
-             <h3>Monthly Donation Amount</h3>
-<div>
-  <input type="radio" id="control_05" name="monthlydonation" value="£2" checked>
-  <label class="donatelabel" for="control_05">£2</label>
-</div>
-<div>
-  <input type="radio" id="control_06" name="monthlydonation" value="£15">
-  <label class="donatelabel" for="control_06">£15</label>
-</div>
-<div>
-  <input type="radio" id="control_07" name="monthlydonation" value="£10">
-  <label class="donatelabel" for="control_07">£10</label>
-</div>
-<div>
-  <input type="radio" id="control_08" name="monthlydonation" value="other">
-  <label class="donatelabel" for="control_08">other</label>
-</div>
-             <input type="text" name="lastname" placeholder="Enter amount">
-
-</section>
-                      </fieldset>
-          
-          <fieldset class="regular1">
-              
-              <label class="carddetails">Card Details</label>
-              <label class="cardtype">Card Type:</label>
-                <div class="creditcard">
-          <input class="types" type="radio" name="type2" value="visa"/>Visa<br>
-           <input class="types" type="radio" name="type2" value="mastercard"/>Mastercard
+          <fieldset>
+            <section class="donateradio">
+              <h3>Monthly Donation Amount</h3>
+              <div>
+                <input type="radio" id="control_05" name="monthlydonation" value="£2" checked>
+                <label class="donatelabel" for="control_05">£2</label>
               </div>
-              <label class="nameoncard">Name on Card</label>
-      <input type="text" name="cardname" placeholder="Enter name on card">
-              
-               <label>Card Number</label>
-          <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
-          
-              
-            <label>Security Number</label>
-          <input type="number" name="number" placeholder="xxx">
+              <div>
+                <input type="radio" id="control_06" name="monthlydonation" value="£15">
+                <label class="donatelabel" for="control_06">£15</label>
+              </div>
+              <div>
+                <input type="radio" id="control_07" name="monthlydonation" value="£10">
+                <label class="donatelabel" for="control_07">£10</label>
+              </div>
+              <div>
+                <input type="radio" id="control_08" name="monthlydonation" value="other">
+                <label class="donatelabel" for="control_08">other</label>
+              </div>
+              <input type="text" name="lastname" placeholder="Enter amount">
+            </section>
           </fieldset>
-          
-
-    <input type="submit" value="Adopt Now">
-    
-      </form>
-     
-      <!-- https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead -->
-  </section>
-
-  <section>
-    <h2 id="CU3">Contact Us</h2>
-    <p>Interested in volunteering? Have a query?</p>
-      
-      
-      <form class="donation" method="post">
-            <label>First Name</label>
-      <input type="text" name="firstname" placeholder="Enter your first name">
-        
-      <label>Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
-                
-        <label>Contact Number</label>
+          <fieldset class="regular1">
+            <label class="carddetails">Card Details</label>
+            <label class="cardtype">Card Type:</label>
+            <div class="creditcard">
+              <input class="types" type="radio" name="type2" value="visa"/>Visa<br>
+              <input class="types" type="radio" name="type2" value="mastercard"/>Mastercard
+            </div>
+            <label class="nameoncard">Name on Card</label>
+            <input type="text" name="cardname" placeholder="Enter name on card">
+            <label>Card Number</label>
+            <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
+            <label>Security Number</label>
+            <input type="number" name="number" placeholder="xxx">
+          </fieldset>
+          <input type="submit" value="Adopt Now">
+        </form>
+      </section>
+      <section>
+        <h2 id="CU3">Contact Us</h2>
+        <p>Interested in volunteering? Have a query?</p>
+        <form class="donation" method="post">
+          <label>First Name</label>
+          <input type="text" name="firstname" placeholder="Enter your first name">
+          <label>Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+          <label>Contact Number</label>
           <input type="tel" name="number" placeholder="xxxx-xxx-xxxx" pattern="\d{4}-d{3}-d{4}">
-          
           <label>Email Address</label>
           <input type="email" name="email" placeholder="Enter your email address"/>
-          
- <div class="emaildiv">
-        <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
+          <div class="emaildiv">
+            <input class="emailcheck" type="checkbox" name="email_signup[]" value="user_emails"/> Would you like to receive regular updates?
           </div>
-          
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="8" cols="50" class="large"></textarea>
-          
-              <input id="submitmessage" type="submit" value="Submit Message">
-
+          <input id="submitmessage" type="submit" value="Submit Message">
         </form>
-        </section>
-        <div class="tothetop">
+      </section>
+      <div class="tothetop">
         <a class="top" href="#">TOP</a>
-        </div>
-</main>
-
+      </div>
+    </main>
     <script src="scripts.js"></script>
-
-</body>
+  </body>
 </html>
