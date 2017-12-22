@@ -503,9 +503,8 @@ section.desc h3 {
 }
 
 #care2 {
-    width: 100%;
-    margin-top: -20px;
-    margin-bottom: 2em;
+    width: 99%;
+    margin: auto;
 }
 
 	.history {
@@ -518,6 +517,7 @@ section.desc h3 {
  
 .history h2 {
     line-height: 1.4em;
+    margin: 
 }
  
 #OO2 {
@@ -528,6 +528,12 @@ section.desc h3 {
 .column img {
     width: 32%;
 }
+
+  .row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 
 #D3 {
    color:  black;
@@ -585,7 +591,6 @@ section.desc h3 {
 }
 
 .container {
-	background: white;
 	max-width: 100%;
 }
 
@@ -594,7 +599,6 @@ section.desc h3 {
 	max-width: 100%;
 	height: auto;
 	margin: 2em;
-	padding-right: 1em;
 }
 
 .clearfix::after {
@@ -605,7 +609,6 @@ section.desc h3 {
 }
 
 .cube-container {
-	margin-left: 20%;
 	max-width: 100%;
 }
 
@@ -1137,115 +1140,57 @@ textarea {
 /* ================================= 
            08.Main Styles
 ==================================== */
+    
 	.history {
 		width: 100%;
-        margin-top: -4em;
         font-size: 2.5vw;
-        margin-bottom: -1em;
 	}
     
-    .history p {
-        float: left;
+     .history h2 {
         width: 50%;
-        margin-top: 0em;
-        line-height: 2em;
-        height: 100%;
+        text-align: center;
+        margin: auto;
     }
     
-    .history h2 {
-        float: left;
-        width: 50%;
+    .history p {
+        margin-top: 1em;
+        line-height: 2em;
+        width: 53%;
     }
     
     #tortuguero {
-        width: 50%;
-        float: left;
-        margin-top: 15em;
-        margin-left: -50%;
+        width: 100%;
+        padding: 0;
     }
     
     #care2 {
-        width: 40%;
-        float: right;
-        margin-top: 7em;  
+        width: 42%;
+        margin: 1em;
+        position: absolute;
+        transform: translate(10%, 38%);
+
     }
+    
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
     
 /* ================================= 
         09.Simple Image Gallery
 ==================================== */    
     
-	.column,
-	.row {
-		display: block;
-	}
-	.row {
-		width: 100%;
-		margin-top: 30px;
-		padding: 1.5em;
-		margin-bottom: 50px;
-	}
-	.column {
-		float: left;
-		width: 50%;
-		padding: 10px;
-	}
 	.column img {
-		margin-top: 12px;
-		width: 100%;
-	}
+    width: 40%;
+        margin: 0.5em;
+}
 
     .row:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-    
-/*   	figure {
-		width: 200px;
-		background: #aaa;
-		border: 2px solid #999;
-		overflow: hidden;
-	}
-	figure img {
-		width: 100%;
-		height: 300px;
-		background: #eee;
-		margin-bottom: -4em;
-		display: block;
-	}
-	/* 
-  styles the figcaption element when the page first loads. The 
-  `transition` property simply "prepares" the element for a style 
-  transition - it does NOT trigger the transition.
-  `opacity` affects the WHOLE element - at `.78` text less is harsh when
-  visible. If the alpha channel of the rgba `background` transitioned 
-  instead, the text would not be affected and remain 100% black.
-  A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
-  with a line-height of 1.2em nicely. For more, change the values.
-*/
-	/*figcaption {
-		box-sizing: border-box;
-		height: 4em;
-		line-height: 1.2em;
-		padding: .25em;
-		transform: translateY(4em);
-		background: #fff;
-		/* background: rgba( 255, 255, 255, 0 ); */
-		/*opacity: 0;
-		transition: all .5s;
-	}
-	/* 
-  These styles are applied to the `figcaption` element when hovering 
-  over the`figure` element. The `transition` property on `figcaption` 
-  above is then applied to `all` these hover styles, over 0.5 seconds.
-*/
-	/*figure:hover figcaption {
-		transform: translateY(0em);
-		/* background: rgba( 255, 255, 255, .78 ); */
-		/*opacity: .78;
-	}   
-    
-    */
     
     .rowhomemeet {
         display: none;
@@ -1256,14 +1201,12 @@ textarea {
            08.Main Styles
 ==================================== */    
     
-	#D3 {
-		width: 100%;
-		background-color: mediumaquamarine;
-		color: white;
-	}
+    #D3 {
+        padding-top: 0;
+    }
+    
 	#turtlefactswebsite {
-		background-color: mediumaquamarine;
-		color: white;
+		color: black;
 	}
     
     #wwfturtle {
@@ -1277,10 +1220,6 @@ textarea {
 ==================================== */
     
 	/* https://codepen.io/loriprift/pen/OWzBZZ */
-	.carouselgallery {
-		width: 100%;
-        color: #00a3cc;
-	}
     
     .carouselgallery h2 {
         font-size: 7vw;
