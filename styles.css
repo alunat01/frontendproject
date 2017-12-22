@@ -1,85 +1,62 @@
 /* ================================= 
               Summary
 ====================================
-
 1. Mobile Screen and Global Styles
 2. Tablet Screen - Medium Screen
 3. Desktop Screen - Large Screen
-
-
 ==================================== 
       CSS List - Global Styles
 ====================================
-
 01. HTML & Body Styles
 02. Navigation Bar
 03. Main Styles
-
 *********** index.html *************
 04. Card Style Image Gallery
 05. Responsive Gallery
 06. Google Maps
 07. Links to forms
-
 ******* meettheturtles.html ********
 08. Main styles
 09. 3D Photocube Gallery
-
 ********** involve.html ************
 10. Forms
 11. Radio Squared Buttons
 12. Payment Card Input
-
-
 ==================================== 
   CSS List - Medium Screen Styles
 ====================================
-
 01. Body Styles
 02. Navigation Bar
-
 *********** index.html *************
 03  Main Styles
 04. Card Style Image Gallery
 05. Responsive Gallery
 06. Google Maps
 07. Buttons to forms
-
 ******* meettheturtles.html ********
 08. Main styles
 09. Simple Image Gallery
 10. 3D Photocube Gallery
-
 ********** involve.html ************
 11. Forms
-
-
 ==================================== 
    CSS List - Large Screen Styles
 ====================================
-
 01. Video Header
 02. Navigation Bar
-
 *********** index.html *************
 03  Main Styles
 04. Card Style Image Gallery
 05. Responsive Gallery
 06. Google Maps
 07. Buttons to forms
-
 ******* meettheturtles.html ********
 08. Main styles
 09. Simple Image Gallery 2
 10. Card Style Image Gallery 2
 11. 3D Photocube Gallery
-
 ********** involve.html ************
 12. Forms
-
-
-
-
 /* GLOBAL AND MOBILE STYLES FIRST */
 
 /* ================================= 
@@ -509,20 +486,46 @@ section.desc h3 {
 	text-decoration: underline;
 }
 
-.seaturtle {
-	width: 50%;
+.turtally {
+		color: #00a3cc;
+		font-size: 2em;
+		line-height: 1.5em;
+		background-color: #eef;
+		width: 100%;
+    padding: 1em;
 }
 
-.kemp {
-	width: 50%;
+#care2 {
+    width: 100%;
+    margin-top: -20px;
+    margin-bottom: 2em;
 }
 
-.leatherback {
-	width: 50%;
+	.history {
+		width: 100%;
+		color: black;
+        padding: 3em 1.5em 1em 1.5em;
+        font-size: 1.3em;
+        line-height:2em;
+	}
+ 
+.history h2 {
+    line-height: 1.4em;
+}
+ 
+#OO2 {
+    background-color: #00BD9D;
+    padding: 1em;
 }
 
-.greenturtle {
-	width: 50%;
+.column img {
+    width: 32%;
+}
+
+#D3 {
+   color:  black;
+    padding: 1em;
+    margin-top: 2em;
 }
 
 .turtlefacts {
@@ -532,20 +535,10 @@ section.desc h3 {
 }
 
 #turtlefactswebsite {
-	color: mediumaquamarine;
-	background: white;
-	margin-left: -0px;
-	padding: .1em;
-
-}
-
-#care2 {
-    display: none;
-}
-
-.row,
-.column {
-	display: none;
+	color: black;
+    background-color: white;
+	padding: 0em;
+    text-decoration: underline;
 }
 
 #video {
@@ -560,21 +553,28 @@ section.desc h3 {
     }
 
 #wwfturtle {
-        width: 120%;
-        margin-left: -5em;
-        margin-top: 2em;
+        display: none;
     }
 
 /* ================================= 
        09.3D Photo Cube Gallery
 ==================================== */
 
+
 /* ---- Layout Containers ---- */
 
 .carouselgallery {
-	padding-bottom: 100px;
+	padding: 2em;
 	width: 100%;
 	height: 100%;
+    color:  #00a3cc;
+    text-align: center;
+    
+}
+
+#contactuslink {
+    color:  #00a3cc;
+    text-decoration: underline;
 }
 
 .container {
@@ -662,6 +662,27 @@ section.desc h3 {
             involve.html
 ==================================== */
 
+.donationform, .adoptionform, .messageform {
+    color: mediumaquamarine;
+    padding: 3em 1em 0em 1em;
+}
+
+.messageform {
+    padding-bottom: 1em;
+    padding-top: 4em;
+}
+
+.introforms {
+    color: mediumaquamarine;
+    padding: 1em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    word-spacing: 3px;
+}
+
+.introforms h2 {
+    line-height: 1.2em;
+}
 
 .form1,
 .form2,
@@ -682,10 +703,6 @@ section.desc h3 {
 	flex-direction: column;
 	margin-left: 20%;
 	margin-right: 20%;
-}
-
-.buttonforms {
-	margin-bottom: 50px;
 }
 
 .buttonforms a:hover {
@@ -1160,10 +1177,6 @@ textarea {
         margin-left: -50%;
     }
     
-	#OO2 {
-		display: none;
-	}
-    
     #care2 {
         width: 40%;
         float: right;
@@ -1179,7 +1192,6 @@ textarea {
 		display: block;
 	}
 	.row {
-		background-color: #00a3cc;
 		width: 100%;
 		margin-top: 30px;
 		padding: 1.5em;
@@ -1876,24 +1888,24 @@ textarea {
 		width: 40%;
 		margin-top: -2.6%;
 	}
-	#OO2 {
-		display: none;
-	}
+    
+    #OO2 {
+        display: block;
+    }
     
     
 /* ================================= 
        09.Simple Image Gallery
 ==================================== */
     
-	#rowdesktop {
+	#rowdesktop, #OO2 {
 		width: 100%;
 		margin-top: -1.7em;
 		padding-top: 4em;
-		background-color: #00BD9D;
 		padding-bottom: 5em;
 		height: 100%;
 	}
-	#rowdesktop h2 {
+	#OO2 h2 {
 		font-size: 3vw;
 	}
 	#rowdesktop p {
