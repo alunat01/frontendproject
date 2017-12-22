@@ -324,7 +324,7 @@ figcaption p {
 }
 
 #nationalpark {
-	color: mediumaquamarine;
+	color: #00BD9D;
 	text-decoration: underline;
 }
 
@@ -385,7 +385,7 @@ section.desc h3 {
 
 #NOW3 {
 	margin-top: -2em;
-    color: mediumaquamarine;
+    color: #00BD9D;
 }
 
 #map {
@@ -447,6 +447,13 @@ section.desc h3 {
 	padding: 1em;
 	border-radius: 5px;
     margin: 1em;
+    cursor: pointer;
+
+}
+
+#link1:hover, #link2:hover {
+	background: rgba(200, 200, 200, 0.96);
+	color: #00a3cc;
 }
 
 /* ================================= 
@@ -986,11 +993,11 @@ textarea {
 ==================================== */    
 	.turtlebanner {
 		margin-top: 60px;
-		max-width: 130%;
+		max-width: 130%; /* Make the banner look bigger */
 	}
 	main {
 		width: 100%;
-		margin: 0 auto;
+		margin: 0;
         padding: 0;
 	}
     
@@ -1007,31 +1014,21 @@ textarea {
 		margin-top: 2em;
 		margin-bottom: 4em;
 		box-shadow: 0px 0px 5px 2px #00BD9D;
+        width: 90%;
 	}
+    
 	#ourstoryimage {
 		display: none;
 	}
 	#OS1 {
 		text-align: left;
-		background-color: mediumaquamarine;
-		color: white;
 		width: 100%;
-	}
-	blockquote {
-		width: 100%;
-		margin-left: 0px;
-		margin-top: -15px;
-		margin-bottom: 40px;
-		padding-top: 40px;
-		padding-right: 80px;
-		padding-left: 80px;
-		padding-bottom: 10px;
-		width: 100%;
-		background-color: #00a3cc;
-		color: white;
-		box-shadow: none;
 	}
     
+    #topquote {
+        background-color: #00a3cc;
+        color: white;
+    }
     
 /* ================================= 
       04.Card Style Image Gallery
@@ -1080,7 +1077,7 @@ textarea {
 	}
 	section.desc {
 		max-width: 100%;
-		width: 100%; /* Previous 120em*/
+		width: 100%;
 		padding: 1em;
 		margin: 0.5em;
 		height: 38em;
@@ -1108,7 +1105,12 @@ textarea {
 	#NOW3 {
 		width: 100%;
 		text-align: left;
+        padding: 1em;
 	}
+    
+    #NOW3 h2 {
+        text-align: center;
+    }
 	#map {
 		display: block;
 		height: 400px;
@@ -1120,28 +1122,13 @@ textarea {
            03.Main Styles
 ==================================== */
     
-	.prescontainer {
-		display: flex;
-		width: 100%;
-		margin-top: -0.3em;
-	}
-	#presidentspeech {
-		padding-bottom: 1em;
-	}
-    
-/*    
-	#helplinks {
-		width: 100%;
-		color: #00a3cc;
-		font-size: 1.2em;
-		margin-top: 40px;
-		padding-right: 2em;
-	}
+
 	#link1,
 	#link2 {
-		margin-top: -7%;
-	}
-*/
+	width: 100%;
+	cursor: pointer;
+}
+
     
 /* ================================= 
          meettheturtles.html
@@ -1781,7 +1768,7 @@ textarea {
 		width: 55%;
 		float: right;
 		font-size: 1.3vw;
-		color: black;
+		color: #00BD9D;
 	}
 	.prescontainer {
 		width: 100%;
