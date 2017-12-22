@@ -19,7 +19,7 @@
 04. Card Style Image Gallery
 05. Responsive Gallery
 06. Google Maps
-07. Buttons to forms
+07. Links to forms
 
 ******* meettheturtles.html ********
 08. Main styles
@@ -202,6 +202,9 @@ li a:hover {
 main {
 	background-color: white;
 	line-height: 30px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .turtlebanner {
@@ -231,6 +234,7 @@ h2 {
 	color: #00BD9D;
 	margin-top: -25px;
 	margin-bottom: -25px;
+    padding: 2em;
 }
 
 .turtles {
@@ -242,6 +246,7 @@ h2 {
 	margin-top: -10px;
 	background-color: #a5a5af;
 	color: #fff;
+    padding: 2em;
 }
 
 #ourstoryimage {
@@ -250,18 +255,12 @@ h2 {
 
 blockquote {
 	font-family: 'EB Garamond', serif;
-	position: relative;
-	margin-top: 20px;
 	height: 100%;
 	line-height: 1.4;
 	font-size: 2em;
-	color: black;
-	width: 112%;
-	margin-left: -23px;
-	padding: 1em;
+	width: 100%;
 	background-color: white;
 	font-style: italic;
-	border-bottom: solid 5px #ddd;
 }
 
 q:before {
@@ -274,15 +273,20 @@ q:after {
 	margin-left: 10px;
 }
 
+#topquote {
+    color: black;   
+    margin: 0;
+    padding: 1.13em;
+    padding-top: 2em;
+    padding-bottom: 1.7em;
+}    
+
 /* ================================= 
       04.Card Style Image Gallery
 ==================================== */
 
 .rowhome {
 	width: 100%;
-	margin-top: -2em;
-	margin-bottom: 4em;
-	border-bottom: solid 5px #ddd;
 }
 
 .columnhome {
@@ -298,19 +302,18 @@ q:after {
 
 .rowhome img {
 	width: 100%;
-	margin-bottom: -8em;
+	margin-bottom: -7em;
 	display: block;
 }
 
 figure {
-	width: 211px;
+	width: 100%;
 	overflow: hidden;
 	margin: 0;
 }
 
 figcaption {
 	box-sizing: border-box;
-	height: 7em;
 	padding: .25em;
 	transform: translateY(4em);
 	background: #fff;
@@ -334,6 +337,7 @@ figcaption p {
 ==================================== */
 
 #H2 {
+    padding-top: 4em;
 	color: #00BD9D;
 }
 
@@ -347,17 +351,10 @@ figcaption p {
 	text-decoration: underline;
 }
 
-section {
-	color: mediumaquamarine;
-	margin-top: 10px;
-	padding: 1em;
-}
-
 
 /* ================================= 
          05.Responsive Gallery
 ==================================== */
-
 .ninjaturtles,
 .avanti {
 	max-width: 100%;
@@ -375,18 +372,16 @@ section {
 	height: 300px;
 }
 
-div.desc {
+section.desc {
 	text-align: left;
 	margin-bottom: 50px;
 	background-color: mediumaquamarine;
 	color: white;
-	width: 120%;
-	margin-left: -23px;
+	width: 100%;
 	padding: 1em;
-	padding-right: 2em;
 }
 
-div.desc h3 {
+section.desc h3 {
 	text-align: center;
 }
 
@@ -413,6 +408,7 @@ div.desc h3 {
 
 #NOW3 {
 	margin-top: -2em;
+    color: mediumaquamarine;
 }
 
 #map {
@@ -437,7 +433,12 @@ div.desc h3 {
 	/*#00BD9D*/
 	color: white;
 	width: 100%;
+    padding: 1.5em;
 }
+
+/* ================================= 
+          07.Links to forms
+==================================== */
 
 #helplinks {
 	display: block;
@@ -445,54 +446,30 @@ div.desc h3 {
 	width: 100%;
 	color: #00a3cc;
 	font-size: 1.2em;
+    padding: 1.3em;
+    margin-bottom: 2em; /* Top button not covering content at bottom of page */
 }
 
-.linkimages {
-	display: flex;
-	flex-wrap: wrap;
+.linkimages { 
+    white-space: nowrap;
 }
 
-.rowimages {
-	width: 50.33%;
-	display: flex;
-	padding: 0.5em;
-	width: 100%;
+#formpicture1, #formpicture2 {
+    width: 50%;
+    padding: 0.4em;    
 }
-
-.links {
-	display: flex;
-	width: 50%;
-	padding: 1em;
-	height: 150px;
-}
-
-
-/* ================================= 
-          07.Buttoms to forms
-==================================== */
 
 .buttonlinks {
-	display: flex;
-	width: 100%;
-	padding: 1em;
+    display: flex;
 }
 
-.link1,
-.link2 {
-	background-color: #00a3cc;
+#link1,
+#link2 {
+    display: block;
+    background-color: #00a3cc;
 	padding: 1em;
 	border-radius: 5px;
-	margin-top: -10%;
-	text-align: center;
-}
-
-.link1 {
-	width: 59.5%;
-}
-
-.link2 {
-	width: 59.5%;
-	margin-left: 35px;
+    margin: 1em;
 }
 
 /* ================================= 
@@ -977,7 +954,7 @@ textarea {
 	}
 	.show-menu {
 		text-align: right;
-		width: 350px;
+		width: 50%;
 		margin-top: 60px;
 	}
 	h1 {
@@ -995,8 +972,9 @@ textarea {
 		max-width: 130%;
 	}
 	main {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
+        padding: 0;
 	}
     
 /* ================================= 
@@ -1020,8 +998,7 @@ textarea {
 		text-align: left;
 		background-color: mediumaquamarine;
 		color: white;
-		width: 115%;
-		margin-left: -6%;
+		width: 100%;
 	}
 	blockquote {
 		width: 100%;
@@ -1032,8 +1009,7 @@ textarea {
 		padding-right: 80px;
 		padding-left: 80px;
 		padding-bottom: 10px;
-		width: 115%;
-		margin-left: -6%;
+		width: 100%;
 		background-color: #00a3cc;
 		color: white;
 		box-shadow: none;
@@ -1046,8 +1022,7 @@ textarea {
     
 	.rowhome,
 	figure {
-		width: 110%;
-		margin-left: -4%;
+		width: 100%;
 		margin-top: 0.5em;
 		margin-bottom: 1em;
 		border: none;
@@ -1077,26 +1052,25 @@ textarea {
 		margin: 1em;
 	}
 	.heroes {
-		width: 112%;
-		margin-left: -6%;
+		width: 100%;
 	}
 
 	.heroesgallery {
-		width: 112%;
+		width: 100%;
 	}
 	.responsive {
-		width: 45%;
+		width: 50%;
 	}
-	div.desc {
+	section.desc {
 		max-width: 100%;
-		width: 120em;
+		width: 100%; /* Previous 120em*/
 		padding: 1em;
 		margin: 0.5em;
 		height: 38em;
 		display: flex;
 		flex-direction: column;
 	}
-	div.desc h3 {
+	section.desc h3 {
 		text-align: center;
 	}
 	#resavanti,
@@ -1115,8 +1089,7 @@ textarea {
            06.Google Maps
 ==================================== */
 	#NOW3 {
-		width: 112%;
-		margin-left: -6%;
+		width: 100%;
 		text-align: left;
 	}
 	#map {
@@ -1132,26 +1105,26 @@ textarea {
     
 	.prescontainer {
 		display: flex;
-		width: 112%;
-		margin-left: -6%;
+		width: 100%;
 		margin-top: -0.3em;
 	}
 	#presidentspeech {
 		padding-bottom: 1em;
 	}
+    
+/*    
 	#helplinks {
-		width: 115%;
-		margin-left: -6%;
+		width: 100%;
 		color: #00a3cc;
 		font-size: 1.2em;
 		margin-top: 40px;
 		padding-right: 2em;
 	}
-	.link1,
-	.link2 {
+	#link1,
+	#link2 {
 		margin-top: -7%;
 	}
-
+*/
     
 /* ================================= 
          meettheturtles.html
@@ -1161,8 +1134,7 @@ textarea {
            08.Main Styles
 ==================================== */
 	.history {
-		width: 112%;
-		margin-left: -6%;
+		width: 100%;
         margin-top: -4em;
         font-size: 2.5vw;
         margin-bottom: -1em;
@@ -1208,8 +1180,7 @@ textarea {
 	}
 	.row {
 		background-color: #00a3cc;
-		width: 114%;
-		margin-left: -40px;
+		width: 100%;
 		margin-top: 30px;
 		padding: 1.5em;
 		margin-bottom: 50px;
@@ -1230,7 +1201,7 @@ textarea {
 		clear: both;
 	}
     
-    	figure {
+/*   	figure {
 		width: 200px;
 		background: #aaa;
 		border: 2px solid #999;
@@ -1253,7 +1224,7 @@ textarea {
   A `height` of `4em` and `padding` of `.25em` will fit 3 lines of text 
   with a line-height of 1.2em nicely. For more, change the values.
 */
-	figcaption {
+	/*figcaption {
 		box-sizing: border-box;
 		height: 4em;
 		line-height: 1.2em;
@@ -1261,7 +1232,7 @@ textarea {
 		transform: translateY(4em);
 		background: #fff;
 		/* background: rgba( 255, 255, 255, 0 ); */
-		opacity: 0;
+		/*opacity: 0;
 		transition: all .5s;
 	}
 	/* 
@@ -1269,11 +1240,13 @@ textarea {
   over the`figure` element. The `transition` property on `figcaption` 
   above is then applied to `all` these hover styles, over 0.5 seconds.
 */
-	figure:hover figcaption {
+	/*figure:hover figcaption {
 		transform: translateY(0em);
 		/* background: rgba( 255, 255, 255, .78 ); */
-		opacity: .78;
-	}    
+		/*opacity: .78;
+	}   
+    
+    */
     
     .rowhomemeet {
         display: none;
@@ -1285,8 +1258,7 @@ textarea {
 ==================================== */    
     
 	#D3 {
-		width: 112%;
-		margin-left: -6%;
+		width: 100%;
 		background-color: mediumaquamarine;
 		color: white;
 	}
@@ -1296,8 +1268,7 @@ textarea {
 	}
     
     #wwfturtle {
-        width: 140%;
-        margin-left: -5em;
+        width: 100%;
         margin-top: 2em;
     }
     
@@ -1308,8 +1279,7 @@ textarea {
     
 	/* https://codepen.io/loriprift/pen/OWzBZZ */
 	.carouselgallery {
-		width: 112%;
-		margin-left: -6%;
+		width: 100%;
         color: #00a3cc;
 	}
     
@@ -1595,35 +1565,28 @@ textarea {
 	ul.secondlevel li:hover>a {
 		background-color: #ccc;
 	}
-	main {
-		float: left;
-		width: 87%;
+	
+    main {
+		/*float: left;*/
+		width: 100%;
 		background-color: white;
-		margin-left: 5.3%;
+        margin: 0;
+        padding: 0;
 	}
 
 
 /* ================================= 
            03.Main Styles
 ==================================== */
-    
-	section {
-		padding: 20px 0;
-		width: 22%;
-		background: white;
-		text-align: left;
-		margin: 1em 1% 1em 1%;
-	}
 	.aboutus {
 		display: none;
 	}
 	#OS1 {
 		display: inline;
-		width: 115%;
+		width: 100%;
 		height: 22em;
 		background-color: white;
 		color: black;
-		padding-left: 2em;
 		font-size: 1em;
 		word-spacing: 1px;
 		float: left;
@@ -1644,13 +1607,12 @@ textarea {
 		position: relative;
 		top: 3.1em;
 		width: 43%;
-		min-height: 120%
+		min-height: 120% /* Not sure if needed */
 	}
 	#topquote {
 		height: 250px;
 		margin-top: 485px;
-		width: 117%;
-		margin-left: -2.3em;
+		width: 100%;
 		padding-top: 1.4em;
 	}
 	blockquote {
@@ -1664,9 +1626,8 @@ textarea {
 ==================================== */
     
 	.rowhome {
-		width: 115%;
+		width: 100%;
 		margin: 0;
-		margin-left: -6%;
 	}
 	.columnhome {
 		display: flex;
@@ -1694,12 +1655,11 @@ textarea {
 	}
 	figcaption {
 		height: 7em;
-		width: 20em;
 		padding: .25em;
 	}
     
 	.heroes {
-		width: 115%;
+		width: 100%;
 	}
 	#H2 h2 {
 		text-align: center;
@@ -1728,29 +1688,30 @@ textarea {
 	.responsive {
 		padding: 0 6px;
 		float: left;
-		width: 23.5%;
+		width: 25%;
+        margin: 0;
 	}
 	.heroesgallery {
-		width: 105%;
+		width: 100%;
 	}
-	div.desc {
-		max-width: 99%;
-		width: 130em;
-		padding: 2em;
+	section.desc {
+		max-width: 100%;
 		margin: 0;
-		height: 35em;
-		margin-top: 2em;
+		/*height: 35em;*/
 	}
 	#reszahraa {
 		margin-top: 0;
 	}
 	#resavanti {
-		margin-top: 6em;
+        margin: 0;
+        padding: 0;
 	}
-	#avantidesc {
-		margin-top: 2em;
+	
+    #avantidesc {
+        margin: 0;
 	}
-	.avanti,
+	
+    .avanti,
 	.sadiyya,
 	.amina,
 	.zahraa {
@@ -1760,6 +1721,8 @@ textarea {
 		height: 100%;
 		padding-left: 0.5em;
 	}
+    
+    /* Image editor to cut top of each image*/
     
 
 /* ================================= 
@@ -1809,18 +1772,20 @@ textarea {
 		color: black;
 	}
 	.prescontainer {
-		width: 115%;
+		width: 100%;
 	}
 	#presidentspeech {
 		height: 180px;
 		padding: 1.4em;
 		padding-left: 5em;
 		padding-right: 5em;
-		margin-left: -2px;
 	}
+    
 	#helplinks h2 {
 		font-size: 3em;
 	}
+    
+    /*
 	#helplinks {
 		background-color: #eef;
 		padding-top: 5em;
@@ -1828,7 +1793,6 @@ textarea {
 	}
 	#helplinks p {
 		padding: 2em;
-		margin-left: 1em;
 		font-size: 1.2em;
 		margin-top: -1em;
 		line-height: 2em;
@@ -1836,18 +1800,18 @@ textarea {
 	}
 	.links {
 		display: block;
-		width: 30%;
-		height: 100%;
+		/*width: 30%;*/
+		/* height: 100%;
 		margin: auto;
 		margin-bottom: 2em;
 	}
-    
+     */
     
 /* ================================= 
          07.Buttons to Forms
 ==================================== */
     
-	.buttonlinks {
+/*	.buttonlinks {
 		width: 100%;
 		margin: auto;
 	}
@@ -1859,7 +1823,7 @@ textarea {
 		margin-left: 240px;
 		margin-right: 100px;
 		margin-top: -2em;
-	}
+	} */
     
 /* ================================= 
          meettheturtles.html
@@ -1875,23 +1839,21 @@ textarea {
 	}
 	#desktopbanner {
 		display: block;
-		width: 150%;
-		margin-left: -70px;
+		width: 100%;
 	}
 	.turtally {
 		color: #00a3cc;
 		font-size: 3vw;
-		line-height: 2em;
+		line-height: 1em;
 		background-color: #eef;
-		width: 120%;
-		margin-left: -6%;
+		width: 100%;
 		padding-right: 3em;
 		padding-left: 2em;
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
 	.history {
-		width: 120%;
+		width: 100%;
 		margin-right: -10px;
 		color: black;
 		height: 330px;
@@ -1924,8 +1886,7 @@ textarea {
 ==================================== */
     
 	#rowdesktop {
-		width: 115%;
-		margin-left: -6%;
+		width: 100%;
 		margin-top: -1.7em;
 		padding-top: 4em;
 		background-color: #00BD9D;
@@ -1965,7 +1926,7 @@ textarea {
 		color: black;
 		font-size: 1.3vw;
 		padding: 3em;
-		width: 115%;
+		width: 100%;
 		margin-top: -2em;
 	}
 	#D3 ul {
@@ -2032,13 +1993,11 @@ textarea {
 		max-height: 300px;
 		position: relative;
 		left: 35em;
-		bottom: 7.5em;
 	}
 	#wwfturtle {
 		display: block;
-		width: 116%;
+		width: 100%;
 		height: 100%;
-		margin-left: -6%;
 		position: relative;
 		bottom: 13.6em;
 	}
@@ -2088,7 +2047,7 @@ textarea {
 		/* Align horizontally */
 		margin-left: 187px;
 		position: relative;
-		right: 3em;
+		/*right: 3em;*/
 	}
     
 

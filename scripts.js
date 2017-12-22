@@ -35,9 +35,9 @@ function modal () {
                 
 ......................................................*/
 
-(function () {
+"use strict";
 
-  "use strict";
+(function () {
 
   let menuButton = document.getElementById("menu");
   let navMenu = document.getElementById("nav-menu");
@@ -70,8 +70,6 @@ function modal () {
                 
 ......................................................*/
 
-
-"use strict";
 
 function initMap() {
   let costarica = {
@@ -130,6 +128,8 @@ function initMap() {
   let myName = document.getElementById("my-name"); /* Span */
   let userName = document.getElementById("user-name"); /* id of name*/
   let getName = document.getElementById("get-name"); /* id of form */
+    
+//    console.log(getName);
 
   // changes the 'innerHTML' (text) of the element
   function PerformGreeting(ev) {
