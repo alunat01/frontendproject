@@ -389,7 +389,7 @@ section.desc h3 {
 
 #NOW3 {
 	margin-top: -2em;
-    color: #00BD9D;
+    color: black;
 }
 
 #map {
@@ -1525,43 +1525,49 @@ textarea {
 	.aboutus {
 		display: none;
 	}
+    
 	#OS1 {
-		display: inline;
-		width: 100%;
-		height: 22em;
-		background-color: white;
-		color: black;
-		font-size: 1em;
-		word-spacing: 1px;
-		float: left;
-	}
-	.ourstory {
-		margin-top: 3em;
-	}
+        padding-top: 3em;
+        margin-top: 3.75em;
+        margin-bottom: 0;
+    }
+    
 	#ourstorytext {
 		width: 60%;
-		height: 80%;
 		padding-right: 4em;
-		font-size: 1.5vw;
-		margin-top: -0.2em;
+		font-size: 1.7vw;
+        margin: 0;
+        line-height: 1.5em;
 	}
+    
 	#ourstoryimage {
 		display: block;
 		float: right;
-		position: relative;
-		top: 3.1em;
-		width: 43%;
-		min-height: 120% /* Not sure if needed */
+        width: 45%;
+        margin-left: 2em;
+        transform: translate(10%, -9%);
+        height: 570px;
 	}
+    
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+    
 	#topquote {
-		height: 250px;
-		margin-top: 485px;
-		width: 100%;
-		padding-top: 1.4em;
+        margin-top: -2.6em;
+        position: relative;
+        height: 50%;
+        padding-bottom: 1em;
+        padding-right: 5em;
+        padding-left: 5em;
 	}
+    
 	blockquote {
 		margin: 0;
 		padding: 0;
+        font-size: 3vw;
 	}
     
     
@@ -1607,7 +1613,7 @@ textarea {
 	}
 	#H2 h2 {
 		text-align: center;
-		font-size: 3em;
+		font-size: 4em;
 	}
 	.ninjaturtles {
 		display: block;
@@ -1622,6 +1628,7 @@ textarea {
 		padding-top: 1em;
 		margin-top: 0em;
 		margin-bottom: 1em;
+        font-size: 2.5vw;
 	}
     
     
@@ -1637,22 +1644,27 @@ textarea {
 	}
 	.heroesgallery {
 		width: 100%;
+        padding-right: 0;
 	}
+    
 	section.desc {
 		max-width: 100%;
 		margin: 0;
-		/*height: 35em;*/
+        margin-top: 1em;
+        font-size: 1.4vw;
 	}
+    
 	#reszahraa {
 		margin-top: 0;
 	}
+    
 	#resavanti {
         margin: 0;
         padding: 0;
 	}
 	
     #avantidesc {
-        margin: 0;
+        margin-top: 1.1em;
 	}
 	
     .avanti,
@@ -1664,24 +1676,8 @@ textarea {
 		width: 70%;
 		height: 100%;
 		padding-left: 0.5em;
-	}
-    
-    /* Image editor to cut top of each image*/
-    
-
-/* ================================= 
-           03.Main Styles
-==================================== */
-    
-	#NOW3 {
-		text-align: center;
-		margin-top: 1em;
-		color: black;
-	}
-	.current h2 {
-		font-size: 3em;
-	}
-    
+	}    
+   
     
 /* ================================= 
             06.Google Maps
@@ -1699,79 +1695,72 @@ textarea {
 /* ================================= 
            03.Main Styles
 ==================================== */
+	
+  #NOW3 {
+		text-align: center;
+		margin-top: 2em;
+		color: black;
+	}
     
-	#village {
-		padding-top: 2em;
+	.current h2 {
+		font-size: 4em;
+	}
+    
+    
+    #village {
 		padding-right: 2em;
 		width: 55%;
 		float: right;
-		font-size: 1.3vw;
+		font-size: 1.7vw;
+        line-height: 1.5em;
 	}
+    
 	#park,
 	#nationalpark {
 		padding-top: 0em;
 		width: 55%;
 		float: right;
-		font-size: 1.3vw;
-		color: #00BD9D;
+		font-size: 1.7vw;
+		color: #000;
+        line-height: 1.5em;
 	}
 	.prescontainer {
 		width: 100%;
 	}
 	#presidentspeech {
-		height: 180px;
-		padding: 1.4em;
+		padding: 2em;
 		padding-left: 5em;
 		padding-right: 5em;
+        margin-bottom: 1em;
 	}
+    
+    
+    #helplinks {
+        padding: 3em;
+        font-size: 2vw;
+        line-height: 1.5em;
+    }
     
 	#helplinks h2 {
-		font-size: 3em;
+		font-size: 2.7em;
 	}
     
-    /*
-	#helplinks {
-		background-color: #eef;
-		padding-top: 5em;
-		margin-top: -1em;
-	}
-	#helplinks p {
-		padding: 2em;
-		font-size: 1.2em;
-		margin-top: -1em;
-		line-height: 2em;
-		margin-bottom: -1em;
-	}
-	.links {
-		display: block;
-		/*width: 30%;*/
-		/* height: 100%;
-		margin: auto;
-		margin-bottom: 2em;
-	}
-     */
-    
-/* ================================= 
-         07.Buttons to Forms
-==================================== */
-    
-/*	.buttonlinks {
-		width: 100%;
-		margin: auto;
-	}
-	.link1 {
-		margin-left: 100px;
-		margin-top: -2em;
-	}
-	.link2 {
-		margin-left: 240px;
-		margin-right: 100px;
-		margin-top: -2em;
-	} */
-    
+    .top {
+        display: none;
+    }
 /* ================================= 
          meettheturtles.html
-==================================== */    
+==================================== */
+    
+.slantedheader {
+  background:#a32114;
+  position:relative;
+  top:50px;
+  margin:0 auto;
+  height:50px;
+  width:100px;
+    }
+    
     
 /* ================================= 
            08.Main Styles
