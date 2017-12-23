@@ -1752,14 +1752,38 @@ textarea {
          meettheturtles.html
 ==================================== */
     
-.slantedheader {
-  background:#a32114;
-  position:relative;
-  top:50px;
-  margin:0 auto;
-  height:50px;
-  width:100px;
+    #shortheader {
+        height: 30vh;
     }
+
+	#shortheaderwrap {
+		height: 30vh;
+		overflow: hidden;
+	}
+	.fullscreen-video-wrap video {
+		min-height: 100%;
+		min-width: 100%;
+	}
+	#shortheaderoverlay {
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		z-index: 1;
+		background: #225470;
+		opacity: 0.65;
+	}
+	.header-content {
+		z-index: 2;
+	}
+	.header-content p {
+		font-size: 1.5rem;
+		display: block;
+		padding-bottom: 2rem;
+	}
+    
+    
     
     
 /* ================================= 
@@ -1771,7 +1795,7 @@ textarea {
 		display: none;
 	}
 	#desktopbanner {
-		display: block;
+		display: none;
 		width: 100%;
 	}
 	.turtally {
