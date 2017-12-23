@@ -332,6 +332,10 @@ figcaption p {
 /* ================================= 
          05.Responsive Gallery
 ==================================== */
+.gallery {
+        pointer-events: none; /* Stops Image enlargement if user clicks on images */
+}
+
 .ninjaturtles,
 .avanti {
 	max-width: 100%;
@@ -996,7 +1000,8 @@ textarea {
 ==================================== */    
 	.turtlebanner {
 		margin-top: 60px;
-		max-width: 130%; /* Make the banner look bigger */
+		max-width: 110%; /* Makes the banner look bigger */
+        margin-left: 0;
 	}
 	main {
 		width: 100%;
@@ -1064,16 +1069,13 @@ textarea {
 /* ================================= 
          05.Responsive Gallery
 ==================================== */   
-    
-	.desc {
-		margin: 1em;
-	}
 	.heroes {
 		width: 100%;
 	}
 
 	.heroesgallery {
 		width: 100%;
+        padding-right: 1em;
 	}
 	.responsive {
 		width: 50%;
@@ -1321,9 +1323,7 @@ textarea {
 		box-shadow: none;
 		text-align: center;
 	}
-	.header-content {
-		padding-top: 100px;
-	}
+    
 	.v-header {
 		height: 100vh;
 		display: flex;
@@ -1370,57 +1370,69 @@ textarea {
 /* ================================= 
           02.Navigation Bar
 ==================================== */
-    
-	header {
-		background-color: #00BD9D;
-		color: white;
-	}
 	#menu {
 		display: none;
 	}
-	.show-menu {
-		width: 100%;
+    
+    nav {
 		display: block;
-		margin-top: 0;
+        
 	}
-	nav {
+    
+	/*.show-menu {
 		display: block;
-	}
+	} */
+
+    
+    #whoarewe {
+        margin-left: -60px;
+        width: 170px;
+    }
+    
+    #meetlink {
+        padding-left: 2em;
+        margin-left: 0;
+        width: 180px;
+    }
+    
+    #involvement {
+        padding-left: 2em;
+        margin-left: 0;
+        width: 215px;
+    }
+    
 	.mainnav {
 		margin-top: -0.5em;
 		margin-bottom: -1em;
 	}
+    
 	.dropdown:hover .dropdown-content {
-		margin-top: -10px;
-		margin-left: -4px;
+		margin-top: -10px; /* Rid of spacing between first level and second level */ 
 	}
-	/* https://codepen.io/jurbank/pen/veGnb */
-	.secondlevel a {
-		width: 200px;
-		margin-left: -30px;
-	}
+    
+	/* Modified from https://codepen.io/jurbank/pen/veGnb */
+    
 	.secondlevel a:hover {
-		width: 300px;
-		margin-left: 0px;
+        box-shadow: none;
 	}
+    
 	.dropdown {
 		margin-left: 0;
 		padding: 0;
+        text-align: left;
 	}
+    
 	#nav-menu ul li {
-		text-align: left;
-		margin-left: -20px;
+		margin-left: 0px;
 		border: none;
 		padding-bottom: 0;
 		padding-top: 0;
+        box-shadow: none; /* Hides raised box-shadow */
 	}
+    
 	.mainnav:hover,
 	.dropdown-content a:hover {
 		transition: none;
-		box-shadow: none;
-	}
-	.dropdown-content a:hover {
-		margin-left: -10px;
 	}
     
 	nav a {
@@ -1428,15 +1440,13 @@ textarea {
 		color: #fff;
 		display: block;
 		font-size: 16px;
-	}
-	nav ul {
-		list-style: none;
-		position: relative;
-		text-align: left;
-	}
+        box-shadow: none;
+    }
+    
 	nav li {
 		float: left;
 	}
+    
 	/* clear'n floats */
 	nav ul:after {
 		clear: both;
@@ -1446,63 +1456,59 @@ textarea {
 		content: " ";
 		display: table;
 	}
+    
+    
 	/* prime */
 	ul.firstlevel li a {
 		display: block;
 		border-right: 1px solid #fff;
 		padding-left: 3em;
-	}
-	ul.firstlevel li:last-child a {
-		border-right: none;
-	}
-	ul.firstlevel li:first-child a {
-		border-left: 1px solid #fff;
-	}
-	ul.firstlevel li a:hover {
-		color: #00BD9D;
-	}
+	} 
+    
 	/* subs */
 	.secondlevel {
 		position: absolute;
-		z-index: 200;
-		width: 25%;
-		display: none;
 	}
+    
 	ul.secondlevel li {
 		float: none;
 		margin: 0;
+        text-align: left;
+        
 	}
 	ul.secondlevel li a {
-		border-right: none;
-		color: #000;
-		padding: 15px 30px;
+		border-right: none; /* Removes white border */
+        margin-left: -40px;
 	}
-	ul.secondlevel li:last-child a {
-		border-bottom: none;
-	}
-	ul.secondlevel li a:hover {
-		color: #000;
-		background: #fff;
-	}
+    
 	/* sub display*/
 	ul.firstlevel li:hover ul {
 		display: block;
 		background: #fff;
 		width: 25%;
+        margin-left: -15px; /* Align second level with first level */
 	}
+
+    #firstmenu {
+        margin-left: -60px; /* Align second level with first level for first menu */
+    }
+    
 	/* keeps the tab background white */
 	ul.firstlevel li:hover a {
 		background: #fff;
 		color: #00BD9D;
 		text-shadow: none;
 	}
+    
 	ul.firstlevel li:hover>a {
 		color: #00BD9D;
 		background-color: #fff;
 	}
+    
 	ul.secondlevel li:hover>a {
 		background-color: #ccc;
-	}
+        width: 337px;
+    }
 	
     main {
 		/*float: left;*/
