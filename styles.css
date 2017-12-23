@@ -471,10 +471,11 @@ section.desc h3 {
 	position: fixed;
 	bottom: 9px;
 	right: 10px;
-	padding: 15px;
-	font-size: 12px;
+	padding: 10px;
+	font-size: 1.5em;
 	cursor: pointer;
-	line-height: 14px;
+    line-height: 15px;
+    padding-top: 20px;
 }
 
 .top:hover {
@@ -1517,9 +1518,7 @@ textarea {
         padding: 0;
 	}
     
-/* Slanted menu modified from http://generatedcontent.org/post/26407228072/split-feature */    
-    
-
+/* Slanted menu researched from http://generatedcontent.org/post/26407228072/split-feature */    
         #slantedmenu {
          transform: skewY(1deg);
         height: 1.5em;
@@ -1713,6 +1712,7 @@ textarea {
 		text-align: center;
 		margin-top: 2em;
 		color: black;
+        padding: 2em;
 	}
     
 	.current h2 {
@@ -1721,7 +1721,6 @@ textarea {
     
     
     #village {
-		padding-right: 2em;
 		width: 55%;
 		float: right;
 		font-size: 1.7vw;
@@ -1747,7 +1746,6 @@ textarea {
         margin-bottom: 1em;
 	}
     
-    
     #helplinks {
         padding: 3em;
         font-size: 2vw;
@@ -1761,6 +1759,8 @@ textarea {
     .top {
         display: none;
     }
+    
+    
 /* ================================= 
          meettheturtles.html
 ==================================== */
@@ -1793,80 +1793,92 @@ textarea {
 	.turtlebanner {
 		display: none;
 	}
-	#desktopbanner {
-		display: none;
+    
+    #desktopbanner {
+        display: block;
 		width: 100%;
+        position: absolute;
+        transform: translate(0%, 200%);
 	}
+    
+    
 	.turtally {
 		color: #00a3cc;
 		font-size: 3vw;
-		line-height: 1em;
+		line-height: 2em;
 		background-color: #eef;
 		width: 100%;
-		padding-right: 3em;
-		padding-left: 2em;
-		padding-top: 1em;
-		padding-bottom: 1em;
-	}
-	.history {
-		width: 100%;
-		margin-right: -10px;
-		color: black;
-		height: 330px;
-	}
-	.history p {
-		width: 60%;
-		float: right;
-		padding-right: 6em;
-		padding-left: 3em;
-		font-size: 1.5vw;
-	}
-	.history h2 {
-		font-size: 3vw;
-		width: 60%;
-		float: right;
-		padding-left: 1.5em;
-	}
-	#care2 {
-		float: left;
-		width: 40%;
-		margin-top: -2.6%;
+        padding: 3em;
+        padding-top: 2.5em;
 	}
     
-    #OO2 {
-        display: block;
+	.history {
+        margin-top: 1em;
+		width: 100%;
+		color: black;
+	}
+    
+	.history p {
+        float: none;
+        width: 60%;
+		font-size: 1.7vw;
+	}
+    
+	.history h2 {
+		font-size: 4vw;
+        padding-bottom: 0.5em;
+	}
+    
+    #tortuguero {
+        width: 60%;
     }
+    
+	#care2 {
+		width: 35%;
+        float: right;
+        transform: translate(27%, 30%);
+	}  
     
     
 /* ================================= 
        09.Simple Image Gallery
 ==================================== */
     
-	#rowdesktop, #OO2 {
+    
+	#OO2 {
 		width: 100%;
-		margin-top: -1.7em;
-		padding-top: 4em;
-		padding-bottom: 5em;
-		height: 100%;
+        padding: 4em;
+        line-height: 4em;
+        padding-bottom: 0em;
 	}
+    
 	#OO2 h2 {
-		font-size: 3vw;
+		font-size: 4vw;
 	}
-	#rowdesktop p {
+    
+	#OO2 p {
 		font-size: 2vw;
-		line-height: 2em;
-		padding-right: 2em;
-		padding-left: 2em;
 	}
+    
 	#columndesktop {
 		display: flex;
 		justify-content: space-around;
 		padding: 0 6px;
 		float: left;
-		width: 18%;
-		margin: 1em;
-		height: 250px;
-		margin-left: 33.2em;
+        transform: translate(0%, 0%);
+	}
+    
+  .column img {
+    width: 19%;
+    min-height: 50%;
+      height: 150px;
+      margin: 0;
+}
+
+  .OO2:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
     
 
@@ -1877,66 +1889,28 @@ textarea {
 	#hidedesktop {
 		display: none;
 	}
+    
 	#D3 {
 		background-color: white;
 		color: black;
 		font-size: 1.3vw;
 		padding: 3em;
 		width: 100%;
-		margin-top: -2em;
+		margin-top: -1em;
+        padding-bottom: 0;
+        margin-bottom: 0;
 	}
+    
 	#D3 ul {
-		float: left;
-		width: 50%;
+		width: 60%;
+        font-size: 1.5vw;
+        padding-top: 1em;
+        padding-left: 1em;
 	}
     
-    
-/* ================================= 
-      10.Card Style Image Gallery   
-==================================== */
-    
-	.rowhomemeet {
-		display: flex;
-		width: 45%;
-		margin: 0;
-		float: right;
-		justify-content: flex-end;
-	}
-	.columnhomemeet {
-		flex-direction: column;
-		width: 80.99%;
-		border: none;
-		height: auto;
-		position: relative;
-		top: -8em;
-		right: -3em;
-	}
-	/* Clear floats after the columns */
-	.rowhomemeet:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	.figureturtle {
-		width: 100%;
-		border: none;
-		margin: 0;
-	}
-	.captionturtle {
-		height: 5em;
-		width: 26em;
-		padding: 1em;
-		margin-bottom: -20px;
-	}
-	.figureturtle p {
-		font-size: 1.2em;
-		text-align: center;
-		color: black;
-	}
-	.figureturtle a {
-		color: darkblue;
-		text-decoration-line: underline
-	}
+    #D3 h2 {
+        font-size: 4vw;
+    }
     
     
 /* ================================= 
@@ -1944,18 +1918,20 @@ textarea {
 ==================================== */
     
 	#video {
+        display: block;
 		float: right;
 		width: 37%;
 		max-height: 300px;
-		position: relative;
-		left: 35em;
+        transform: translate(5%, -140%);
 	}
+    
 	#wwfturtle {
 		display: block;
 		width: 100%;
 		height: 100%;
-		position: relative;
-		bottom: 13.6em;
+        transform: translate(0%, -50%);
+        padding: 0;
+        margin: 0;
 	}
     
     
@@ -1969,32 +1945,33 @@ textarea {
 	.cube-container:last-child {
 		float: right;
 	}
-	.content {
-		max-width: 900px;
-		margin: auto;
-	}
     
 	.carouselgallery {
-		position: relative;
-		bottom: 12em;
+        margin-top: -8em;
+        padding-top: 0;
 		color: #00a3cc;
+        height: 100%;
 	}
+    
 	.carouselgallery h2 {
 		font-size: 4vw;
 		text-align: center;
 	}
+    
 	.carouselgallery p {
-		font-size: 2vw;
+		font-size: 2.2vw;
 		text-align: center;
 		padding-left: 5em;
 		padding-right: 5em;
 		line-height: 1.5em;
 	}
+    
 	.carouselgallery a {
 		line-height: 1.5em;
 		color: #00a3cc;
 		text-decoration: underline;
 	}
+    
 	.container {
 		max-width: 100%;
 		margin: auto;
@@ -2002,8 +1979,7 @@ textarea {
 		float: right;
 		/* Align horizontally */
 		margin-left: 187px;
-		position: relative;
-		/*right: 3em;*/
+        transform: translateX(-32%)
 	}
     
 
