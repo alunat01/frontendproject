@@ -1375,8 +1375,7 @@ textarea {
 	}
     
     nav {
-		display: block;
-        
+		display: block;   
 	}
     
 	/*.show-menu {
@@ -1517,7 +1516,21 @@ textarea {
         margin: 0;
         padding: 0;
 	}
+    
+/* Slanted menu modified from http://generatedcontent.org/post/26407228072/split-feature */    
+    
 
+        #slantedmenu {
+         transform: skewY(1deg);
+        height: 1.5em;
+        margin-top: 1em;
+    }
+    
+    #slantedmenu ul {
+        transform: skewY(-0.5deg);
+        margin-top: 0em;
+    } 
+    /* Make menu list look str aight*/
 
 /* ================================= 
            03.Main Styles
@@ -1528,7 +1541,7 @@ textarea {
     
 	#OS1 {
         padding-top: 3em;
-        margin-top: 3.75em;
+        margin-top: 3em;
         margin-bottom: 0;
     }
     
@@ -1545,7 +1558,7 @@ textarea {
 		float: right;
         width: 45%;
         margin-left: 2em;
-        transform: translate(10%, -9%);
+        transform: translate(10%, -6%);
         height: 570px;
 	}
     
@@ -1752,39 +1765,25 @@ textarea {
          meettheturtles.html
 ==================================== */
     
+    
+/* Video header for page 2 and 3 */  
+    
     #shortheader {
         height: 30vh;
+        width: 100%;
+        justify-content: center;
+        
     }
 
 	#shortheaderwrap {
 		height: 30vh;
 		overflow: hidden;
+        
 	}
-	.fullscreen-video-wrap video {
-		min-height: 100%;
-		min-width: 100%;
-	}
+    
 	#shortheaderoverlay {
-		height: 100vh;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		z-index: 1;
-		background: #225470;
-		opacity: 0.65;
+		height: 30vh;
 	}
-	.header-content {
-		z-index: 2;
-	}
-	.header-content p {
-		font-size: 1.5rem;
-		display: block;
-		padding-bottom: 2rem;
-	}
-    
-    
-    
     
 /* ================================= 
            08.Main Styles
