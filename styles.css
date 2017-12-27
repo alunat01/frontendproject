@@ -394,6 +394,7 @@ section.desc h3 {
 #NOW3 {
 	margin-top: -2em;
     color: black;
+    padding: 1em;
 }
 
 #map {
@@ -943,6 +944,56 @@ textarea {
     }
 
 
+
+footer {
+   display: block;
+   width: 100%;
+   color: white;
+   padding: 3em;
+   background-color: #292c2f;
+   text-align: left;
+}
+
+footer h1 {
+    padding: 0;
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.leftlinks {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 100%;
+    font-size: 1em;
+}
+
+.leftlinks a {
+    padding: 0.5em 0;
+}
+
+.socialmedia {
+	display: inline-block;
+    margin-top: 1em;
+}
+
+.socialmedia a{
+	display: inline-block;
+    width: 20%;
+	cursor: pointer;
+	border-radius: 2px;
+	text-align: center;
+	margin-right: 10px;;
+}
+
+.socialmedia img {
+    width: 100%;
+}
+
+footer::after {
+    clear: both;
+}
+
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
 
 @media screen and (min-width: 500px) {
@@ -1297,6 +1348,44 @@ textarea {
     .adoptionimages {
         display: none;
     }
+    
+
+footer h1 {
+    padding: 0;
+    font-size: 2.5em;
+    margin: 0; /* Hides White spacing around title */
+    background-color: #292c2f;
+    width: 100%;
+}
+
+.leftlinks {
+    font-size: 1.2em;
+}
+    
+.socialmedia {
+        margin-left: -1.8em;
+    }
+
+.socialmedia a{
+	display: inline-block;
+    width: 20%;
+    height: 100%;
+	cursor: pointer;
+	background-color: #292c2f;
+	line-height: 0;
+	margin-right: -1em;
+	margin-bottom: 0;
+}
+
+.socialmedia img {
+    width: 60%;
+}
+
+footer::after {
+    clear: both;
+}
+    
+    
 }
 
 
@@ -1317,29 +1406,6 @@ textarea {
 		display: none;
 	}
     
-.moveme {
-  display: block;
-  position: relative;
-  margin-left: -72em;
-  box-sizing: border-box;
-  animation-name: movingBox;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-.moveme img {
-    margin-top: 4em;
-    width: 7%;
-    margin-bottom: 5em;
-}
-    
-@keyframes movingBox {
-  0%   { left: 0px; top: 0px; }
-  100%  { left: calc(100% - 200px); top: 0px; }
-}
-
     
 /* ================================= 
            01.Video Header
@@ -1750,9 +1816,10 @@ textarea {
   #NOW3 {
 		text-align: center;
 		margin-top: 2em;
-		color: black;
-        padding: 2em;
-	}
+        padding: 7em 4em;
+background-color: #a5a5af;
+	color: #fff;	
+    }
     
 	.current h2 {
 		font-size: 4em;
@@ -1772,11 +1839,12 @@ textarea {
 		width: 55%;
 		float: right;
 		font-size: 1.7vw;
-		color: #000;
+		color: #fff;
         line-height: 1.5em;
 	}
 	.prescontainer {
 		width: 100%;
+        margin-top: -2em;
 	}
 	#presidentspeech {
 		padding: 2em;
@@ -2064,7 +2132,6 @@ textarea {
     
     .adoptionform {
         width: 60%;
-        float: left;
         font-size: 1.5vw;
     }
     
@@ -2080,12 +2147,11 @@ textarea {
     
        
     .adoptionimages {
-        display: flex;
-        flex-direction: column;
+        display: inline;
         font-size: 3vw;
-        width: 30%;
+        width: 100%;
         margin: auto;
-        margin-top: 1em;
+        margin-top: 10em;
     }
     
     #bonus {
@@ -2094,34 +2160,36 @@ textarea {
     }
     
      #argos {
-        width: 60%;
+        width: 20%;
         height: 100%;
          margin: auto;
-         margin-bottom: 1em;
     }
     
     #cert {
-        width: 60%;
+        width: 20%;
         height: 50%;
         margin: auto;
-        margin-bottom: 1em;
     }
     
     #factpack {
-        width: 60%;
+        width: 20%;
         height: 50%;
         margin: auto;
     }
      
-    
     .messageform {
         color: #00a3cc;
         font-size: 1.5vw;
-        width: 30%;
-        float: right;
-        transform: translate(-10%,-104%);
+        width: 100%;
         background-color: aliceblue;
         padding: 2em;
+        margin-top: 2em;
+    }
+    
+    .messageform fieldset {
+        width: 60%;
+        margin: auto;
+        
     }
     
     #message {
@@ -2134,7 +2202,82 @@ textarea {
      #submitmessage {
         background-color: #00a3cc;
     }
+    
+/* Animation from Lab - Turtle sliding back and forth */    
+.moveme {
+  display: block;
+  position: relative;
+  margin-left: -72em;
+  box-sizing: border-box;
+  animation-name: movingBox;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
 
+.moveme img {
+    margin-top: 4em;
+    width: 5%;
+    margin-bottom: 5em;
+}
+    
+@keyframes movingBox {
+  0%   { left: 0px; top: 0px; }
+  100%  { left: calc(100% - 200px); top: 0px; }
+}
+    
+    
+    footer {
+        text-align: center;
+        margin-top: -5em;
+    }
+    footer section {
+            background-color: #292c2f;
+    }    
+
+footer h1 {
+    display: block;
+    padding: 0;
+    font-size: 2.8em;
+    width: 100%;
+}
+    
+.leftlinks {
+    display: flex;
+    flex-direction: row;
+    float: none;
+    justify-content: center;
+}
+    
+    .leftlinks a{
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    
+    .socialmedia {
+        display: inline-block;
+            width: 100%;
+
+    }
+
+.socialmedia a {
+    display: inline;
+}
+
+.socialmedia img {
+    width: 4%;
+    margin: 1.5em;
+}
+
+    .involvefooter {
+        margin-top: -3em;
+    }
+
+footer::after {
+    clear: both;
+}
+    
 }
 
 
