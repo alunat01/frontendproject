@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+      <!-- Video header background for desktop screen only -->
        <div class="v-header v-container" id="shortheader">
       <div class="fullscreen-video-wrap" id="shortheaderwrap">
         <video src="img/Sea%20Turtle%20Live%20Wallpaper.mp4" autoplay loop="loop">
@@ -63,7 +64,7 @@
       <img class="turtlebanner" id="desktopbanner" src="img/Green-Sea-Turtle-Banner-.png" alt="Turtle Banner"/>
         <section class="introforms">
         <h2>Want to join #teamturtles?</h2>
-        <p>We have a wide range of new and exciting opportunities ready and waiting for you to join! Please use the below forms if you would like to donate, adopt or send us a message if you are interested in volunteering. </p>
+        <p>We have a wide range of new and exciting opportunities ready and waiting for you to join! Please use the forms below if you would like to donate, adopt or send us a message if you are interested in volunteering. </p>
         </section>
       <div class="buttonforms">
         <a class="form1" href="#DN1">Donation Form</a>
@@ -130,20 +131,7 @@
               </div>
             </section>
           </fieldset>
-          <fieldset class="regular1" id="donationpart4">
-            <label class="carddetails">Card Details</label>
-            <label class="cardtype">Card Type:</label>
-            <div class="creditcard">
-              <input class="types" type="radio" name="type1" value="visa"/>Visa<br>
-              <input class="types" type="radio" name="type1" value="mastercard"/>Mastercard
-            </div>
-            <label class="nameoncard">Name on Card</label>
-            <input type="text" name="cardname" placeholder="Enter name on card">
-            <label>Card Number</label>
-            <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
-            <label>Security Number</label>
-            <input type="number" name="number" placeholder="xxx">
-          </fieldset>
+            <!-- Javascript from lab used -->
             <fieldset id="donationpart5">
           <input type="submit" value="Donate Now">
           <p>Hello, <span id="my-name">(Your name)</span>Thank you for submitting the form! You will receive an email with confirmed details</p>
@@ -205,20 +193,7 @@
               <input type="text" name="lastname" placeholder="Enter amount">
             </section>
           </fieldset>
-          <fieldset class="regular1" id="adoptionpart3">
-            <label class="carddetails">Card Details</label>
-            <label class="cardtype">Card Type:</label>
-            <div class="creditcard">
-              <input class="types" type="radio" name="type2" value="visa"/>Visa<br>
-              <input class="types" type="radio" name="type2" value="mastercard"/>Mastercard
-            </div>
-            <label class="nameoncard">Name on Card</label>
-            <input type="text" name="cardname" placeholder="Enter name on card">
-            <label>Card Number</label>
-            <input type="number" name="number" placeholder="xxxx-xxxx-xxxx-xxxx">
-            <label>Security Number</label>
-            <input type="number" name="number" placeholder="xxx">
-          </fieldset>
+            <!-- Javascript created with help from Dave -->
             <fieldset id="adoptionpart4">
           <input id="adopt-submit" type="submit" value="Adopt Now">
             </fieldset>
@@ -253,6 +228,10 @@
             </fieldset>
         </form>
       </section>
+         <!-- Turtle animation -->
+        <div class="moveme" id="turtlecartoon">
+          <img src="img/cartoonturtle2.png" alt="Cartoon"/>
+	</div>
     </main>
        <footer class="involvefooter">
           <section>
@@ -278,6 +257,7 @@
              </a>
           </div>
       </footer>
+      <!-- Back to top button -->
       <div class="tothetop">
         <a class="top" href="#">^</a>
       </div>

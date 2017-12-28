@@ -1,29 +1,3 @@
- /* My own Modal image 
-    
-let modal = document.getElementById('mymodal');
-let img = document.getElementById('myimg');
-let modalImg = document.getElementById('img01');
-let captionText = document.getElementById('caption');
-    
-    
-    img.addEventListener("click", modal);
-    
-    let image = false
-    
-function modal () {
-  if (image) {
-    img01...................................
-  }
-   else {
-     img01........................................
-     
-     toggle=true
-
-}
-} */
-
-
-
 /* .................................................... 
 
                 
@@ -39,8 +13,8 @@ function modal () {
 
 (function () {
 
-  let menuButton = document.getElementById("menu");
-  let navMenu = document.getElementById("nav-menu");
+    let menuButton = document.getElementById("menu");
+    let navMenu = document.getElementById("nav-menu");
 
   menuButton.addEventListener("click", toggleMenu);
 
@@ -99,7 +73,7 @@ function initMap() {
                 
                 
                 
-                Javascript for form from Lab
+          Javascript for Donation form from Lab
                 
                 
                 
@@ -111,57 +85,39 @@ function initMap() {
 
 
 (function () {
-  /*
-    An "Immediately-Invoked Function Expression" (IIFE) contains
-    all the code. the final brackets () ensure that it executes.
-    This is good practice because:
-    - it keeps your variables out of the global namespace
-    - local references to objects decrease lookup times
-    - it is a foundation for further code organisation
-    It is also an "anonymous" function because it has/needs no name.
-  */
+ 
+  let myName = document.getElementById("my-name");
+  let userName = document.getElementById("user-name"); 
+  let getName = document.getElementById("get-name"); 
 
-  /*
-    declare all the variables using 'let'. These get a reference
-    to the HTML elements we want by finding their ID
-  */
-  let myName = document.getElementById("my-name"); /* Span */
-  let userName = document.getElementById("user-name"); /* id of name*/
-  let getName = document.getElementById("get-name"); /* id of form */
-    
-//    console.log(getName);
-
-  // changes the 'innerHTML' (text) of the element
   function PerformGreeting(ev) {
     myName.innerHTML = userName.value;
     ev.preventDefault();
   }
-  /*
-    Without setting the variables first, the above line would be really long:
-    document.getElementById("my-name").innerHTML = document.getElementById("user-name").value;
-  */
-
-  /*
-    Event Listeners keep your JavaScript out of the HTML -
-    professional developers avoid (e.g.) "onclick" in HTML tags.
-    This 'listens' for the user to submit the form.
-    You can attach multiple events to any single element.
-  */
+ 
   getName.addEventListener("submit", PerformGreeting);
 
-  /*
-    Uncomment the line below - see what happens when you click
-    in the grey area outside the input "submit" button. Why?
-  */
-
-  // getName.addEventListener("click", PerformGreeting);
 
 }());
+
+
+/* .................................................... 
+
+                
+                
+                
+Pop-up window for Adoption Form - Help from Dave in Lab
+                
+                
+                
+......................................................*/
+
+
 
 let adoptAlert = document.getElementById("adopt-submit");
 
 adoptAlert.addEventListener("click", adopt);
 
 function adopt() {
-    alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you adopted and a free turtle toy!');
+    alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you have adopted and a free turtle toy!');
 }
