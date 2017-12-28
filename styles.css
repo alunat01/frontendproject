@@ -59,120 +59,122 @@
 12. Forms
 /* GLOBAL AND MOBILE STYLES FIRST */
 
+
 /* ================================= 
          01.HTML & Body Styles
 ==================================== */
 
 html,
 body {
-	max-width: 100%;
-	overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-	margin: 0;
-	/* Gets rid of space around page */
-	background-color: #00BD9D;
-	color: white;
-	text-align: center;
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+  margin: 0;
+  /* Gets rid of space around page */
+  background-color: #00BD9D;
+  color: white;
+  text-align: center;
+  font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 }
 
 header {
-	color: white;
+  color: white;
 }
 
 .v-header {
-	display: none;
+  display: none;
 }
 
 .moveme {
-    display: none;
+  display: none;
 }
+
 
 /* ================================= 
          02.Navigation Bar
 ==================================== */
 
 nav {
-	background-color: #00BD9D;
-	display: none;
+  background-color: #00BD9D;
+  display: none;
 }
 
 nav a {
-	padding: 1em;
-	display: block;
-	margin-left: -40px;
+  padding: 1em;
+  display: block;
+  margin-left: -40px;
 }
 
 #menu {
-	display: block;
-	text-align: right;
-	padding-bottom: 2.4em;
-	margin-top: 1em;
-	padding-top: 1em;
-	margin-right: 0.6em;
+  display: block;
+  text-align: right;
+  padding-bottom: 2.4em;
+  margin-top: 1em;
+  padding-top: 1em;
+  margin-right: 0.6em;
 }
 
 .show-menu {
-	display: block;
-	text-align: left;
+  display: block;
+  text-align: left;
 }
 
 .mainnav {
-	transition-property: width;
-	transition-duration: 3s;
-	transition-timing-function: linear;
-	transition-delay: 3s;
+  transition-property: width;
+  transition-duration: 3s;
+  transition-timing-function: linear;
+  transition-delay: 3s;
 }
 
 
 /* https://www.w3schools.com/css/css3_transitions.asp */
 
 a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 li a,
 .dropdown {
-	padding: 1em;
-	margin-left: 10px;
+  padding: 1em;
+  margin-left: 10px;
 }
 
 .dropdown {
-	border-top: solid white;
-	margin-left: -40px;
+  border-top: solid white;
+  margin-left: -40px;
 }
 
 .mainnav:hover,
 .dropdown-content a:hover {
-	background-color: #f1f1f1;
-	color: #00BD9D;
-	transition: all 0.8s;
+  background-color: #f1f1f1;
+  color: #00BD9D;
+  transition: all 0.8s;
 }
 
 .dropdown:hover,
 li a:hover {
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content {
-	display: none;
-	/* Hides second level menu -on click it appears */
+  display: none;
+  /* Hides second level menu -on click it appears */
 }
 
 .dropdown:hover .dropdown-content {
-	margin-top: 13px;
-	display: block;
-	text-align: center;
-	padding: 10px 14px;
-	list-style-type: none;
-	cursor: pointer;
+  margin-top: 13px;
+  display: block;
+  text-align: center;
+  padding: 10px 14px;
+  list-style-type: none;
+  cursor: pointer;
 }
 
 
@@ -181,23 +183,23 @@ li a:hover {
 ==================================== */
 
 main {
-	background-color: white;
-	line-height: 30px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  background-color: white;
+  line-height: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .turtlebanner {
-	max-width: 150%;
-	margin-top: -29.4px;
-	margin-left: -110px;
+  max-width: 150%;
+  margin-top: -29.4px;
+  margin-left: -110px;
 }
 
 h1 {
-	float: left;
-	margin-top: -10px;
-	padding: 10px;
+  float: left;
+  margin-top: -10px;
+  padding: 10px;
 }
 
 
@@ -206,184 +208,189 @@ h1 {
 ==================================== */
 
 h2 {
-	font-size: 2em;
-	margin-top: 15px;
-	width: 100%;
+  font-size: 2em;
+  margin-top: 15px;
+  width: 100%;
 }
 
 .aboutus {
-	color: #00BD9D;
-	margin-top: -25px;
-	margin-bottom: -25px;
-    padding: 2em;
+  color: #00BD9D;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  padding: 2em;
 }
 
 .turtles {
-	line-height: 1.5em;
-	font-size: 1.5em;
+  line-height: 1.5em;
+  font-size: 1.5em;
 }
 
 #OS1 {
-	margin-top: -10px;
-	background-color: #a5a5af;
-	color: #fff;
-    padding: 2em;
+  margin-top: -10px;
+  background-color: #a5a5af;
+  color: #fff;
+  padding: 2em;
 }
 
 #ourstoryimage {
-	display: none;
+  display: none;
 }
 
 blockquote {
-	font-family: 'EB Garamond', serif;
-	height: 100%;
-	line-height: 1.4;
-	font-size: 2em;
-	width: 100%;
-	background-color: white;
-	font-style: italic;
+  font-family: 'EB Garamond', serif;
+  height: 100%;
+  line-height: 1.4;
+  font-size: 2em;
+  width: 100%;
+  background-color: white;
+  font-style: italic;
 }
 
 q:before {
-	content: open-quote;
-	margin-right: 5px;
+  content: open-quote;
+  margin-right: 5px;
 }
 
 q:after {
-	content: close-quote;
-	margin-left: 5px;
+  content: close-quote;
+  margin-left: 5px;
 }
 
 #topquote {
-    color: black;   
-    margin: 0;
-    padding: 1.13em;
-    padding-top: 2em;
-    padding-bottom: 1.7em;
-}    
+  color: black;
+  margin: 0;
+  padding: 1.13em;
+  padding-top: 2em;
+  padding-bottom: 1.7em;
+}
+
 
 /* ================================= 
       04.Card Style Image Gallery
 ==================================== */
 
 .rowhome {
-	width: 100%;
+  width: 100%;
 }
 
 .columnhome {
-	display: flex;
-	width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .rowhome:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .rowhome img {
-	width: 100%;
-	margin-bottom: -7em;
-	display: block;
+  width: 100%;
+  margin-bottom: -7em;
+  display: block;
 }
 
 figure {
-	width: 100%;
-	overflow: hidden;
-	margin: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
 }
 
 figcaption {
-	box-sizing: border-box;
-	padding: .25em;
-	transform: translateY(4em);
-	background: #fff;
-	color: #000;
-	opacity: 0;
-	transition: all .5s;
+  box-sizing: border-box;
+  padding: .25em;
+  transform: translateY(4em);
+  background: #fff;
+  color: #000;
+  opacity: 0;
+  transition: all .5s;
 }
 
 figure:hover figcaption {
-	transform: translateY(0em);
-	background: rgba( 255, 255, 255, .78);
-	opacity: .78;
+  transform: translateY(0em);
+  background: rgba( 255, 255, 255, .78);
+  opacity: .78;
 }
 
 figcaption p {
-	margin-top: 3em;
+  margin-top: 3em;
 }
+
 
 /* ================================= 
            03.Main Styles
 ==================================== */
 
 #H2 {
-    padding-top: 4em;
-	color: #00BD9D;
+  padding-top: 4em;
+  color: #00BD9D;
 }
 
 .us {
-	font-size: 1.7em;
-	line-height: 2em;
+  font-size: 1.7em;
+  line-height: 2em;
 }
 
 #nationalpark {
-	color: #00BD9D;
-	text-decoration: underline;
+  color: #00BD9D;
+  text-decoration: underline;
 }
 
 
 /* ================================= 
          05.Responsive Gallery
 ==================================== */
+
 .gallery {
-        pointer-events: none; /* Stops Image enlargement if user clicks on images */
+  pointer-events: none;
+  /* Stops Image enlargement if user clicks on images */
+  /* CSS validator shows error - however I cannot find another way to disable user clicking on it */
 }
 
 .ninjaturtles,
 .avanti {
-	max-width: 100%;
-	height: 250px;
+  max-width: 100%;
+  height: 250px;
 }
 
 .amina,
 .sadiyya {
-	max-width: 100%;
-	height: 300px;
+  max-width: 100%;
+  height: 300px;
 }
 
 .zahraa {
-	max-width: 100%;
-	height: 300px;
+  max-width: 100%;
+  height: 300px;
 }
 
 section.desc {
-	text-align: left;
-	margin-bottom: 50px;
-	background-color: mediumaquamarine;
-	color: white;
-	width: 100%;
-	padding: 1em;
+  text-align: left;
+  margin-bottom: 50px;
+  background-color: mediumaquamarine;
+  color: white;
+  width: 100%;
+  padding: 1em;
 }
 
 section.desc h3 {
-	text-align: center;
+  text-align: center;
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .responsive {
-	padding: 0 6px;
-	float: left;
-	width: 100%
+  padding: 0 6px;
+  float: left;
+  width: 100%
 }
 
 .clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
@@ -392,14 +399,14 @@ section.desc h3 {
 ==================================== */
 
 #NOW3 {
-	margin-top: -2em;
-    color: black;
-    padding: 1em;
+  margin-top: -2em;
+  color: black;
+  padding: 1em;
 }
 
 #map {
-	height: 400px;
-	max-width: 100%;
+  height: 400px;
+  max-width: 100%;
 }
 
 
@@ -408,84 +415,88 @@ section.desc h3 {
 ==================================== */
 
 .prescontainer {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 #presidentspeech {
-	margin: 0;
-	font-style: italic;
-	box-shadow: none;
-	background-color: #00a3cc;
-	/*#00BD9D*/
-	color: white;
-	width: 100%;
-    padding: 1.5em;
+  margin: 0;
+  font-style: italic;
+  box-shadow: none;
+  background-color: #00a3cc;
+  /*#00BD9D*/
+  color: white;
+  width: 100%;
+  padding: 1.5em;
 }
+
 
 /* ================================= 
           07.Links to forms
 ==================================== */
 
 #helplinks {
-	display: block;
-	text-align: center;
-	width: 100%;
-	color: #00a3cc;
-	font-size: 1.2em;
-    padding: 1.3em;
-    margin-bottom: 2em; /* Top button not covering content at bottom of page */
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #00a3cc;
+  font-size: 1.2em;
+  padding: 1.3em;
+  margin-bottom: 2em;
+  /* Top button not covering content at bottom of page */
 }
 
-.linkimages { 
-    white-space: nowrap;
+.linkimages {
+  white-space: nowrap;
 }
 
-#formpicture1, #formpicture2 {
-    width: 50%;
-    padding: 0.4em;    
+#formpicture1,
+#formpicture2 {
+  width: 50%;
+  padding: 0.4em;
 }
 
 .buttonlinks {
-    display: flex;
+  display: flex;
 }
 
 #link1,
 #link2 {
-    display: block;
-    background-color: #00a3cc;
-	padding: 1em;
-	border-radius: 5px;
-    margin: 1em;
-    cursor: pointer;
-
+  display: block;
+  background-color: #00a3cc;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 1em;
+  cursor: pointer;
 }
 
-#link1:hover, #link2:hover {
-	background: rgba(200, 200, 200, 0.96);
-	color: #00a3cc;
+#link1:hover,
+#link2:hover {
+  background: rgba(200, 200, 200, 0.96);
+  color: #00a3cc;
 }
+
 
 /* ================================= 
      03.Main Styles - Back to Top
 ==================================== */
 
 .top {
-	background-color: #00BD9D;
-	color: white;
-	display: block;
-	position: fixed;
-	bottom: 9px;
-	right: 10px;
-	padding: 10px;
-	font-size: 1.5em;
-	cursor: pointer;
-    line-height: 15px;
-    padding-top: 20px;
+  background-color: #00BD9D;
+  color: white;
+  display: block;
+  position: fixed;
+  bottom: 9px;
+  right: 10px;
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  line-height: 15px;
+  padding-top: 20px;
 }
 
 .top:hover {
-	background: rgba(200, 200, 200, 0.96);
-	color: #fff;
+  background: rgba(200, 200, 200, 0.96);
+  color: #fff;
 }
 
 
@@ -493,108 +504,108 @@ section.desc h3 {
          meettheturtles.html
 ==================================== */
 
+
 /* ================================= 
            08.Main Styles
 ==================================== */
 
-
 #historyturtles {
- 	color: mediumaquamarine;
-	text-decoration: underline;
+  color: mediumaquamarine;
+  text-decoration: underline;
 }
 
 .turtally {
-		color: #00a3cc;
-		font-size: 2em;
-		line-height: 1.5em;
-		background-color: #eef;
-		width: 100%;
-    padding: 1em;
+  color: #00a3cc;
+  font-size: 2em;
+  line-height: 1.5em;
+  background-color: #eef;
+  width: 100%;
+  padding: 1em;
 }
 
 #care2 {
-    width: 99%;
-    margin: auto;
+  width: 99%;
+  margin: auto;
 }
 
-	.history {
-		width: 100%;
-		color: black;
-        padding: 3em 1.5em 1em 1.5em;
-        font-size: 1.3em;
-        line-height:2em;
-	}
- 
-.history h2 {
-    line-height: 1.4em;
-    margin: 
+.history {
+  width: 100%;
+  color: black;
+  padding: 3em 1.5em 1em 1.5em;
+  font-size: 1.3em;
+  line-height: 2em;
 }
- 
+
+.history h2 {
+  line-height: 1.4em;
+}
+
 #OO2 {
-    background-color: #00BD9D;
-    padding: 1em;
+  background-color: #00BD9D;
+  padding: 1em;
 }
 
 .column img {
-    width: 32%;
+  width: 32%;
 }
 
-  .row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 table {
-    border-collapse: collapse;
-    width: 100%;   
+  border-collapse: collapse;
+  width: 100%;
 }
 
-td, th  {
-    border: 1px solid #ddd;
-    text-align: left;
-    padding: 8px;
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
 }
 
 tr:hover {
-    background-color: #ddd;
-    color: #00BD9D;
+  background-color: #ddd;
+  color: #00BD9D;
 }
 
 #D3 {
-   color:  black;
-    padding: 1em;
-    margin-top: 2em;
+  color: black;
+  padding: 1em;
+  margin-top: 2em;
 }
 
 .turtlefacts {
-	text-align: left;
-	line-height: 40px;
-	list-style-type: circle;
+  text-align: left;
+  line-height: 40px;
+  list-style-type: circle;
 }
 
 #turtlefactswebsite {
-	color: black;
-    background-color: white;
-	padding: 0em;
-    text-decoration: underline;
+  color: black;
+  background-color: white;
+  padding: 0em;
+  text-decoration: underline;
 }
 
 #video {
-	/* HTML code from youtube embed function */
-	width: 100%;
-	height: 300px;
-	border: 0px;
+  /* HTML code from youtube embed function */
+  width: 100%;
+  height: 300px;
+  border: 0px;
 }
 
-    .rowhomemeet {
-        display: none;
-    }
+.rowhomemeet {
+  display: none;
+}
 
 #wwfturtle {
-        display: none;
-    }
+  display: none;
+}
+
 
 /* ================================= 
        09.3D Photo Cube Gallery
@@ -604,94 +615,93 @@ tr:hover {
 /* ---- Layout Containers ---- */
 
 .carouselgallery {
-	padding: 2em;
-	width: 100%;
-	height: 100%;
-    color:  #00a3cc;
-    text-align: center;
-    
+  padding: 2em;
+  width: 100%;
+  height: 100%;
+  color: #00a3cc;
+  text-align: center;
 }
 
 #contactuslink {
-    color:  #00a3cc;
-    text-decoration: underline;
+  color: #00a3cc;
+  text-decoration: underline;
 }
 
 .container {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .cube-container {
-	text-align: center;
-	max-width: 100%;
-	height: auto;
-	margin: 2em;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  margin: 2em;
 }
 
 .clearfix::after {
-	content: " ";
-	display: table;
-	clear: both;
-	max-width: 100%;
+  content: " ";
+  display: table;
+  clear: both;
+  max-width: 100%;
 }
 
 .cube-container {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 
 /* Photo 3D Transforms & Transitions */
 
 .cube-container {
-	/* This gives it a 3D effect */
-	box-shadow: 0 18px 40px 5px rgba(0, 0, 0, .4);
-	perspective: 800px;
+  /* This gives it a 3D effect */
+  box-shadow: 0 18px 40px 5px rgba(0, 0, 0, .4);
+  perspective: 800px;
 }
 
 .cube-container {
-	float: left;
-	margin-left: 25%;
+  float: left;
+  margin-left: 25%;
 }
 
 .photo-cube {
-	transition: transform 2s ease-in-out;
-	width: 220px;
-	height: 200px;
-	transform-style: preserve-3d;
-	/* Creates 3D cube transformation*/
-	margin-left: -17px;
+  transition: transform 2s ease-in-out;
+  width: 220px;
+  height: 200px;
+  transform-style: preserve-3d;
+  /* Creates 3D cube transformation*/
+  margin-left: -17px;
 }
 
 .photo-cube:hover {
-	transform: rotateY(-270deg);
+  transform: rotateY(-270deg);
 }
 
 .front,
 .back,
 .left,
 .right {
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
 }
 
 .front {
-	transform: translate3d(0, 0, 110px);
+  transform: translate3d(0, 0, 110px);
 }
 
 .back {
-	transform: translateZ(-110px) rotateY(270deg);
-	transform-origin: center left;
+  transform: translateZ(-110px) rotateY(270deg);
+  transform-origin: center left;
 }
 
 .left {
-	transform: rotateY(-270deg) translate3d(110px, 0, 0);
-	transform-origin: top right;
+  transform: rotateY(-270deg) translate3d(110px, 0, 0);
+  transform-origin: top right;
 }
 
 .right {
-	transform: translateZ(-110px) rotateY(180deg);
+  transform: translateZ(-110px) rotateY(180deg);
 }
 
 
@@ -699,52 +709,54 @@ tr:hover {
             involve.html
 ==================================== */
 
-.donationform, .adoptionform, .messageform {
-    color: mediumaquamarine;
-    padding: 3em 1em 0em 1em;
+.donationform,
+.adoptionform,
+.messageform {
+  color: mediumaquamarine;
+  padding: 3em 1em 0em 1em;
 }
 
 .messageform {
-    padding-bottom: 1em;
-    padding-top: 4em;
+  padding-bottom: 1em;
+  padding-top: 4em;
 }
 
 .introforms {
-    color: mediumaquamarine;
-    padding: 1em;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    word-spacing: 3px;
+  color: mediumaquamarine;
+  padding: 1em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  word-spacing: 3px;
 }
 
 .introforms h2 {
-    line-height: 1.2em;
+  line-height: 1.2em;
 }
 
 .form1,
 .form2,
 .form3 {
-	height: 60px;
-	margin-bottom: 20px;
-	padding: 10px 10px 10px 10px;
-	background-color: mediumaquamarine;
-	color: white;
-	text-align: center;
-	list-style-type: none;
-	width: 60%;
-	cursor: pointer;
-	padding: 1em;
-	display: flex;
-	flex: 1;
-	flex-flow: row wrap;
-	flex-direction: column;
-	margin-left: 20%;
-	margin-right: 20%;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 10px;
+  background-color: mediumaquamarine;
+  color: white;
+  text-align: center;
+  list-style-type: none;
+  width: 60%;
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .buttonforms a:hover {
-	background-color: #f1f1f1;
-	color: mediumaquamarine;
+  background-color: #f1f1f1;
+  color: mediumaquamarine;
 }
 
 
@@ -753,85 +765,85 @@ tr:hover {
 ==================================== */
 
 label {
-	display: inline-block;
-	padding-bottom: 6px;
-	padding-top: 20px;
+  display: inline-block;
+  padding-bottom: 6px;
+  padding-top: 20px;
 }
 
 input {
-	width: 100%;
+  width: 100%;
 }
 
 input[type=text] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=tel] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=email] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border-radius: 4px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 input[type=text]:focus {
-	border-color: mediumaquamarine;
+  border-color: mediumaquamarine;
 }
 
 select {
-	width: 100%;
-	padding: 16px 20px;
-	border: none;
-	border-radius: 4px;
-	background-color: #f1f1f1;
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
 }
 
 input[type=checkbox] {
-	width: 47px;
-	margin-top: 20px;
-	margin-left: -10px;
+  width: 47px;
+  margin-top: 20px;
+  margin-left: -10px;
 }
 
 input[type=button],
 input[type=submit] {
-	background-color: mediumaquamarine;
-	border: none;
-	color: white;
-	padding: 16px 32px;
-	text-decoration: none;
-	margin: 4px 2px;
-	cursor: pointer;
-	width: 100%;
-	margin-top: 20px;
+  background-color: mediumaquamarine;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
 }
 
 input[type=submit] {
-	display: block;
-	border-radius: 4px;
+  display: block;
+  border-radius: 4px;
 }
 
 input[type=radio] {
-	background-color: mediumaquamarine;
-	color: white;
-	cursor: pointer;
-	border-radius: 4px;
-	width: 20%;
+  background-color: mediumaquamarine;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 20%;
 }
 
 fieldset {
-	border: none;
+  border: none;
 }
 
 
@@ -841,53 +853,53 @@ fieldset {
 
 .donateradio,
 .plan {
-	display: flex;
-	flex-flow: row wrap;
-	flex: 1;
-	flex-direction: column;
-	box-shadow: 10px 10px 10px 10px white;
-	margin-top: -10px;
-    margin-bottom: -0.5em;
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px 10px white;
+  margin-top: -10px;
+  margin-bottom: -0.5em;
 }
 
 .donateradio input[type="radio"],
 .plan input[type="radio"] {
-	display: none;
-	/* hides radio button */
+  display: none;
+  /* hides radio button */
 }
 
 .donatelabel,
 .plan {
-	height: 100%;
-	display: block;
-	color: white;
-	background: mediumaquamarine;
-	border: 2px solid mediumaquamarine;
-	border-radius: 10px;
-	text-align: center;
-	position: relative;
-	padding: 10px;
-	margin-bottom: 20px;
+  height: 100%;
+  display: block;
+  color: white;
+  background: mediumaquamarine;
+  border: 2px solid mediumaquamarine;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .donateradio label:hover {
-	background: #DDD;
-	color: darkcyan;
+  background: #DDD;
+  color: darkcyan;
 }
 
 .plan label:hover {
-	background: #DDD;
-	color: darkcyan;
+  background: #DDD;
+  color: darkcyan;
 }
 
 input[type="radio"]:checked+.donatelabel {
-	background: #ddd;
-	color: darkcyan;
+  background: #ddd;
+  color: darkcyan;
 }
 
 input[type="radio"]:checked+.plan {
-	background: #ddd;
-	color: darkcyan;
+  background: #ddd;
+  color: darkcyan;
 }
 
 
@@ -896,89 +908,88 @@ input[type="radio"]:checked+.plan {
 ==================================== */
 
 #amount {
-	margin-top: -10px;
+  margin-top: -10px;
 }
 
 .regular {
-	width: 100%;
-	margin-top: -10px;
-	font-size: 1.1em;
+  width: 100%;
+  margin-top: -10px;
+  font-size: 1.1em;
 }
+
 
 /* ================================= 
                10.Forms
 ==================================== */
 
 textarea {
-	font: inherit;
-	width: 100%;
+  font: inherit;
+  width: 100%;
 }
 
 #submitmessage {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #get-name {
-	padding: 0.5em;
+  padding: 0.5em;
 }
 
 #my-name {
-	display: block;
+  display: block;
 }
 
 .adoptionimages {
-        display: none;
-    }
-
-
-
-footer {
-   display: block;
-   width: 100%;
-   color: white;
-   padding: 3em;
-   background-color: #292c2f;
-   text-align: left;
+  display: none;
 }
 
-footer h1 {
-    padding: 0;
-    font-size: 2em;
-    padding-top: 1em;
+footer {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 3em;
+  background-color: #292c2f;
+  text-align: left;
+}
+
+footer h2 {
+  padding: 0;
+  font-size: 2em;
+  padding-top: 1em;
 }
 
 .leftlinks {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    width: 100%;
-    font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 100%;
+  font-size: 1em;
 }
 
 .leftlinks a {
-    padding: 0.5em 0;
+  padding: 0.5em 0;
 }
 
 .socialmedia {
-	display: inline-block;
-    margin-top: 1em;
+  display: inline-block;
+  margin-top: 1em;
 }
 
-.socialmedia a{
-	display: inline-block;
-    width: 20%;
-	cursor: pointer;
-	border-radius: 2px;
-	text-align: center;
-	margin-right: 10px;;
+.socialmedia a {
+  display: inline-block;
+  width: 20%;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+  margin-right: 10px;
 }
 
 .socialmedia img {
-    width: 100%;
+  width: 100%;
 }
 
 footer::after {
-    clear: both;
+  clear: both;
 }
 
 /* FIRST BREAKPOINT (MEDIUM SIZE) */
@@ -990,389 +1001,416 @@ footer::after {
            01.Body Styles
 ==================================== */
     
-	body {
-		background-color: white;
-	}
-	header {
-		background: #00BD9D;
-		color: white;
-		width: 100%;
-		position: absolute;
-	}
-	.v-header {
-		display: none;
-	}
+  body {
+    background-color: white;
+  }
     
-    .moveme {
+  header {
+    background: #00BD9D;
+    color: white;
+    width: 100%;
+    position: absolute;
+  }
+    
+  .v-header {
     display: none;
-}
-
+  }
+    
+  .moveme {
+    display: none;
+  }
+    
     
 /* ================================= 
           02.Navigation Bar
-==================================== */   
+==================================== */
     
-	nav {
-		display: none;
-		width: 100%;
-		position: absolute;
-		z-index: 1;
-		/* Stay on top */
-		top: 0;
-		/* Stay at the top */
-		right: 0;
-		margin: 0;
-	}
-	nav a {
-		width: 100%;
-		display: inline-block;
-	}
-	#menu {
-		display: block;
-		text-align: right;
-		margin-right: 0.6em;
-		margin-bottom: -40px;
-		font-size: 1.2em;
-	}
-	.show-menu {
-		text-align: right;
-		width: 50%;
-		margin-top: 60px;
-	}
-	h1 {
-		font-size: 2em;
-		margin-top: 18px;
-		margin-bottom: -30px;
-	}
+  nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    margin: 0;
+  }
+    
+  nav a {
+    width: 100%;
+    display: inline-block;
+  }
+    
+  #menu {
+    display: block;
+    text-align: right;
+    margin-right: 0.6em;
+    margin-bottom: -40px;
+    font-size: 1.2em;
+  }
+    
+  .show-menu {
+    text-align: right;
+    width: 50%;
+    margin-top: 60px;
+  }
+    
+  h1 {
+    font-size: 2em;
+    margin-top: 18px;
+    margin-bottom: -30px;
+  }
     
     
 /* ================================= 
            03.Main Styles
-==================================== */    
-	.turtlebanner {
-		margin-top: 60px;
-		max-width: 110%; /* Makes the banner look bigger */
-        margin-left: 0;
-	}
-	main {
-		width: 100%;
-		margin: 0;
-        padding: 0;
-	}
+==================================== */
     
+  .turtlebanner {
+    margin-top: 60px;
+    max-width: 110%;
+    /* Makes the banner look bigger */
+    margin-left: 0;
+  }
+    
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+    
+
 /* ================================= 
              index.html
-==================================== */    
-	section {
-		width: 100%;
-		display: inline-block;
-		background: white;
-		margin-bottom: 2em;
-	}
-	.aboutus {
-		margin-top: 2em;
-		margin-bottom: 4em;
-		box-shadow: 0px 0px 5px 2px #00BD9D;
-        width: 90%;
-	}
+==================================== */
     
-	#ourstoryimage {
-		display: none;
-	}
-	#OS1 {
-		text-align: left;
-		width: 100%;
-	}
+  section {
+    width: 100%;
+    display: inline-block;
+    background: white;
+    margin-bottom: 2em;
+  }
     
-    #topquote {
-        background-color: #00a3cc;
-        color: white;
-    }
+  .aboutus {
+    margin-top: 2em;
+    margin-bottom: 4em;
+    box-shadow: 0px 0px 5px 2px #00BD9D;
+    width: 90%;
+  }
+    
+  #ourstoryimage {
+    display: none;
+  }
+    
+  #OS1 {
+    text-align: left;
+    width: 100%;
+  }
+    
+  #topquote {
+    background-color: #00a3cc;
+    color: white;
+  }
+    
     
 /* ================================= 
       04.Card Style Image Gallery
 ==================================== */
+
+  .rowhome,
+  figure {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border: none;
+  }
     
-	.rowhome,
-	figure {
-		width: 100%;
-		margin-top: 0.5em;
-		margin-bottom: 1em;
-		border: none;
-	}
-	.columnhome {
-		display: flex;
-		height: 150px;
-		flex-direction: row;
-		justify-content: center;
-		float: left;
-		width: 49.99%;
-	}
-	.rowhome img {
-		width: 100%;
-		height: 100%;
-	}
-	figcaption p {
-		margin-top: 1em;
-	}
+  .columnhome {
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    width: 49.99%;
+  }
     
+  .rowhome img {
+    width: 100%;
+    height: 100%;
+  }
     
+  figcaption p {
+    margin-top: 1em;
+  }
+    
+
 /* ================================= 
          05.Responsive Gallery
-==================================== */   
-	.heroes {
-		width: 100%;
-	}
-
-	.heroesgallery {
-		width: 100%;
-        padding-right: 1em;
-	}
-	.responsive {
-		width: 50%;
-	}
-	section.desc {
-		max-width: 100%;
-		width: 100%;
-		padding: 1em;
-		margin: 0.5em;
-		height: 38em;
-		display: flex;
-		flex-direction: column;
-	}
-	section.desc h3 {
-		text-align: center;
-	}
-	#resavanti,
-	#reszahraa {
-		margin-top: 2em;
-	}
-	#avantidesc {
-		margin-top: 1.65em;
-	}
-	.avanti {
-		margin-top: 2em;
-	}
+==================================== */
+    
+  .heroes {
+    width: 100%;
+  }
+    
+  .heroesgallery {
+    width: 100%;
+    padding-right: 1em;
+  }
+    
+  .responsive {
+    width: 50%;
+  }
+    
+  section.desc {
+    max-width: 100%;
+    width: 100%;
+    padding: 1em;
+    margin: 0.5em;
+    height: 38em;
+    display: flex;
+    flex-direction: column;
+  }
+    
+  section.desc h3 {
+    text-align: center;
+  }
+    
+  #resavanti,
+  #reszahraa {
+    margin-top: 2em;
+  }
+    
+  #avantidesc {
+    margin-top: 1.65em;
+  }
+    
+  .avanti {
+    margin-top: 2em;
+  }
+    
     
     
 /* ================================= 
            06.Google Maps
 ==================================== */
-	#NOW3 {
-		width: 100%;
-		text-align: left;
-        padding: 1em;
-	}
     
-    #NOW3 h2 {
-        text-align: center;
-    }
-	#map {
-		display: block;
-		height: 400px;
-		max-width: 100%;
-	}
+  #NOW3 {
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+  }
+    
+  #NOW3 h2 {
+    text-align: center;
+  }
+    
+  #map {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+  }
     
     
 /* ================================= 
            03.Main Styles
 ==================================== */
     
+  #link1,
+  #link2 {
+    width: 100%;
+    cursor: pointer;
+  }
 
-	#link1,
-	#link2 {
-	width: 100%;
-	cursor: pointer;
-}
 
-    
 /* ================================= 
          meettheturtles.html
-==================================== */  
-    
+==================================== */
+
 /* ================================= 
            08.Main Styles
 ==================================== */
     
-	.history {
-		width: 100%;
-        font-size: 2.5vw;
-	}
+  .history {
+    width: 100%;
+    font-size: 2.5vw;
+  }
     
-     .history h2 {
-        width: 50%;
-        text-align: center;
-        margin: auto;
-    }
+  .history h2 {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
     
-    .history p {
-        margin-top: 1em;
-        line-height: 2em;
-        width: 53%;
-    }
+  .history p {
+    margin-top: 1em;
+    line-height: 2em;
+    width: 53%;
+  }
     
-    #tortuguero {
-        width: 100%;
-        padding: 0;
-    }
+  #tortuguero {
+    width: 100%;
+    padding: 0;
+  }
     
-    #care2 {
-        width: 42%;
-        margin: 1em;
-        position: absolute;
-        transform: translate(10%, 38%);
-
-    }
+  #care2 {
+    width: 42%;
+    margin: 1em;
+    position: absolute;
+    transform: translate(10%, 38%);
+  }
     
   .clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
+  }
+    
     
 /* ================================= 
         09.Simple Image Gallery
-==================================== */    
-    
-	.column img {
+==================================== */
+
+  .column img {
     width: 25%;
-        margin: 0.5em;
-}
-
-    .row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+    margin: 0.5em;
+  }
     
-    .rowhomemeet {
-        display: none;
-    }
-
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  .rowhomemeet {
+    display: none;
+  }
+    
 
 /* ================================= 
            08.Main Styles
-==================================== */    
+==================================== */
     
-    #D3 {
-        padding-top: 0;
-    }
+  #D3 {
+    padding-top: 0;
+  }
     
-	#turtlefactswebsite {
-		color: black;
-	}
+  #turtlefactswebsite {
+    color: black;
+  }
     
-    #wwfturtle {
-        width: 100%;
-        margin-top: 2em;
-    }
+  #wwfturtle {
+    width: 100%;
+    margin-top: 2em;
+  }
     
     
 /* ================================= 
        10.3D Photo Cube Gallery
 ==================================== */
+
+/* https://codepen.io/loriprift/pen/OWzBZZ */
     
-	/* https://codepen.io/loriprift/pen/OWzBZZ */
+  .carouselgallery h2 {
+    font-size: 7vw;
+  }
     
-    .carouselgallery h2 {
-        font-size: 7vw;
-    }
+  .carouselgallery p {
+    font-size: 3vw;
+    line-height: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
     
-    .carouselgallery p {
-        font-size: 3vw;
-        line-height: 2em;
-        padding-left: 2em;
-        padding-right: 2em;
-    }
-        
-    .carouselgallery a {
-        color: #00a3cc;
-    }
-        
+  .carouselgallery a {
+    color: #00a3cc;
+  }
     
-	.container {
-		margin-left: 25%;
-		margin-right: 25%;
-	}
-	.cube-container {
-		float: left;
-		margin-left: 16.6%;
-	}
+  .container {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+    
+  .cube-container {
+    float: left;
+    margin-left: 16.6%;
+  }
     
     
 /* ================================= 
             involve.html
 ==================================== */
-    
+
 /* ================================= 
            11.Form Styles
-==================================== */    
+==================================== */
     
-	.form1,
-	.form2,
-	.form3 {
-		height: 90px;
-		background-color: mediumaquamarine;
-		color: white;
-		text-align: center;
-		list-style-type: none;
-		width: 70%;
-		cursor: pointer;
-		display: flex;
-		margin: 10px;
-		justify-content: center;
-	}
-	.buttonforms {
-		display: flex;
-		flex-direction: row;
-		margin: 0;
-	}
-	.buttonforms a:hover {
-		background-color: #f1f1f1;
-		color: mediumaquamarine;
-	}
+  .form1,
+  .form2,
+  .form3 {
+    height: 90px;
+    background-color: mediumaquamarine;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+    width: 70%;
+    cursor: pointer;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+  }
     
-    .adoptionimages {
-        display: none;
-    }
+  .buttonforms {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
     
-
-footer h1 {
+  .buttonforms a:hover {
+    background-color: #f1f1f1;
+    color: mediumaquamarine;
+  }
+    
+  .adoptionimages {
+    display: none;
+  }
+    
+  footer h2 {
     padding: 0;
     font-size: 2.5em;
-    margin: 0; /* Hides White spacing around title */
+    margin: 0;
+    /* Hides White spacing around title */
     background-color: #292c2f;
     width: 100%;
-}
-
-.leftlinks {
-    font-size: 1.2em;
-}
+  }
     
-.socialmedia {
+  .leftlinks {
+    font-size: 1.2em;
+  }
+    
+  .socialmedia {
     margin-top: 3em;
-        margin-left: -1.8em;
-    }
-
-.socialmedia a{
-	display: inline-block;
+    margin-left: -1.8em;
+  }
+    
+  .socialmedia a {
+    display: inline-block;
     width: 20%;
     height: 100%;
-	cursor: pointer;
-	background-color: #292c2f;
-	line-height: 0;
-	margin-right: -1em;
-	margin-bottom: 0;
-}
-
-.socialmedia img {
-    width: 50%;
-}
-
-footer::after {
-    clear: both;
-}
+    cursor: pointer;
+    background-color: #292c2f;
+    line-height: 0;
+    margin-right: -1em;
+    margin-bottom: 0;
+  }
     
+  .socialmedia img {
+    width: 50%;
+  }
+    
+  footer::after {
+    clear: both;
+  }
     
 }
 
@@ -1383,902 +1421,908 @@ footer::after {
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 
 @media screen and (min-width: 1000px) {
-        
-	body {
-		background-color: white;
-	}
-	* {
-		box-sizing: border-box;
-	}
-	h1 {
-		display: none;
-	}
+    
+  body {
+    background-color: white;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+    
+  h1 {
+    display: none;
+  }
     
     
 /* ================================= 
            01.Video Header
 ==================================== */
     
-	#videotitle {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		font-size: 5em;
-		margin-bottom: 0;
-	}
-	.videoaboutus {
-		margin: 1em 1% 1em 1%;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		background: none;
-		font-size: 1.3em;
-		color: white;
-		box-shadow: none;
-		text-align: center;
-	}
+  #videotitle {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 5em;
+    margin-bottom: 0;
+  }
     
-	.v-header {
-		height: 100vh;
-		display: flex;
-		align-items: center;
-	}
-	.v-container {
-		max-width: 960px;
-		padding-left: 1rem;
-		padding-right: 1rem;
-		margin: auto;
-	}
-	.fullscreen-video-wrap {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100vh;
-		overflow: hidden;
-	}
-	.fullscreen-video-wrap video {
-		min-height: 100%;
-		min-width: 100%;
-	}
-	.header-overlay {
-		height: 100vh;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		z-index: 1;
-		background: #225470;
-		opacity: 0.65;
-	}
-	.header-content {
-		z-index: 2;
-	}
-	.header-content p {
-		font-size: 1.5rem;
-		display: block;
-		padding-bottom: 2rem;
-	}
+  .videoaboutus {
+    margin: 1em 1% 1em 1%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: none;
+    font-size: 1.3em;
+    color: white;
+    box-shadow: none;
+    text-align: center;
+  }
     
-
+  .v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+    
+  .v-container {
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+  }
+    
+  .fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+    
+  .fullscreen-video-wrap video {
+    min-height: 100%;
+    min-width: 100%;
+  }
+    
+  .header-overlay {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    background: #225470;
+    opacity: 0.65;
+  }
+    
+  .header-content {
+    z-index: 2;
+  }
+    
+  .header-content p {
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+  }
+    
+    
 /* ================================= 
           02.Navigation Bar
 ==================================== */
-	#menu {
-		display: none;
-	}
     
-    nav {
-		display: block;   
-	}
+  #menu {
+    display: none;
+  }
     
-	/*.show-menu {
-		display: block;
-	} */
-
+  nav {
+    display: block;
+  }
     
-    #whoarewe {
-        margin-left: -60px;
-        width: 170px;
-    }
+  #whoarewe {
+    margin-left: -60px;
+    width: 170px;
+  }
     
-    #meetlink {
-        padding-left: 2em;
-        margin-left: 0;
-        width: 180px;
-    }
+  #meetlink {
+    padding-left: 2em;
+    margin-left: 0;
+    width: 180px;
+  }
     
-    #involvement {
-        padding-left: 2em;
-        margin-left: 0;
-        width: 215px;
-    }
+  #involvement {
+    padding-left: 2em;
+    margin-left: 0;
+    width: 215px;
+  }
     
-	.mainnav {
-		margin-top: -0.5em;
-		margin-bottom: -1em;
-	}
+  .mainnav {
+    margin-top: -0.5em;
+    margin-bottom: -1em;
+  }
     
-	.dropdown:hover .dropdown-content {
-		margin-top: -10px; /* Rid of spacing between first level and second level */ 
-	}
+  .dropdown:hover .dropdown-content {
+    margin-top: -10px;
+    /* Rid of spacing between first level and second level */
+  }
     
-	/* Modified from https://codepen.io/jurbank/pen/veGnb */
+  /* Modified from https://codepen.io/jurbank/pen/veGnb */
+  .secondlevel a:hover {
+    box-shadow: none;
+  }
     
-	.secondlevel a:hover {
-        box-shadow: none;
-	}
+  .dropdown {
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+  }
     
-	.dropdown {
-		margin-left: 0;
-		padding: 0;
-        text-align: left;
-	}
+  #nav-menu ul li {
+    margin-left: 0px;
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    box-shadow: none;
+    /* Hides raised box-shadow */
+  }
     
-	#nav-menu ul li {
-		margin-left: 0px;
-		border: none;
-		padding-bottom: 0;
-		padding-top: 0;
-        box-shadow: none; /* Hides raised box-shadow */
-	}
+  .mainnav:hover,
+  .dropdown-content a:hover {
+    transition: none;
+  }
     
-	.mainnav:hover,
-	.dropdown-content a:hover {
-		transition: none;
-	}
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    box-shadow: none;
+  }
     
-	nav a {
-		text-decoration: none;
-		color: #fff;
-		display: block;
-		font-size: 16px;
-        box-shadow: none;
-    }
+  nav li {
+    float: left;
+  }
     
-	nav li {
-		float: left;
-	}
+  nav ul:after {
+    clear: both;
+  }
     
-	/* clear'n floats */
-	nav ul:after {
-		clear: both;
-	}
-	nav ul:before,
-	nav ul:after {
-		content: " ";
-		display: table;
-	}
+  nav ul:before,
+  nav ul:after {
+    content: " ";
+    display: table;
+  }
+    
+  ul.firstlevel li a {
+    display: block;
+    border-right: 1px solid #fff;
+    padding-left: 3em;
+  }
+    
+  .secondlevel {
+    position: absolute;
+  }
+    
+  ul.secondlevel li {
+    float: none;
+    margin: 0;
+    text-align: left;
+  }
+    
+  ul.secondlevel li a {
+    border-right: none;
+    /* Removes white border */
+    margin-left: -40px;
+  }
+    
+  ul.firstlevel li:hover ul {
+    display: block;
+    background: #fff;
+    width: 25%;
+    margin-left: -15px;
+    /* Align second level with first level */
+  }
+    
+  #firstmenu {
+    margin-left: -60px;
+    /* Align second level with first level for first menu */
+  }
+    
+  /* keeps the tab background white */
+  ul.firstlevel li:hover a {
+    background: #fff;
+    color: #00BD9D;
+    text-shadow: none;
+  }
+    
+  ul.firstlevel li:hover>a {
+    color: #00BD9D;
+    background-color: #fff;
+  }
+    
+  ul.secondlevel li:hover>a {
+    background-color: #ccc;
+    width: 337px;
+  }
+    
+/* Slanted menu researched from http://generatedcontent.org/post/26407228072/split-feature */
+  #slantedmenu {
+    transform: skewY(1deg);
+    height: 1.5em;
+    margin-top: 1em;
+  }
+    
+  #slantedmenu ul {
+    transform: skewY(-0.5deg);
+    margin-top: 0em;
+  }
     
     
-	/* prime */
-	ul.firstlevel li a {
-		display: block;
-		border-right: 1px solid #fff;
-		padding-left: 3em;
-	} 
-    
-	/* subs */
-	.secondlevel {
-		position: absolute;
-	}
-    
-	ul.secondlevel li {
-		float: none;
-		margin: 0;
-        text-align: left;
-        
-	}
-	ul.secondlevel li a {
-		border-right: none; /* Removes white border */
-        margin-left: -40px;
-	}
-    
-	/* sub display*/
-	ul.firstlevel li:hover ul {
-		display: block;
-		background: #fff;
-		width: 25%;
-        margin-left: -15px; /* Align second level with first level */
-	}
-
-    #firstmenu {
-        margin-left: -60px; /* Align second level with first level for first menu */
-    }
-    
-	/* keeps the tab background white */
-	ul.firstlevel li:hover a {
-		background: #fff;
-		color: #00BD9D;
-		text-shadow: none;
-	}
-    
-	ul.firstlevel li:hover>a {
-		color: #00BD9D;
-		background-color: #fff;
-	}
-    
-	ul.secondlevel li:hover>a {
-		background-color: #ccc;
-        width: 337px;
-    }
-	
-    main {
-		/*float: left;*/
-		width: 100%;
-		background-color: white;
-        margin: 0;
-        padding: 0;
-	}
-    
-/* Slanted menu researched from http://generatedcontent.org/post/26407228072/split-feature */    
-        #slantedmenu {
-         transform: skewY(1deg);
-        height: 1.5em;
-        margin-top: 1em;
-    }
-    
-    #slantedmenu ul {
-        transform: skewY(-0.5deg);
-        margin-top: 0em;
-    } 
-    /* Make menu list look str aight*/
-
 /* ================================= 
            03.Main Styles
 ==================================== */
-	.aboutus {
-		display: none;
-	}
     
-	#OS1 {
-        padding-top: 3em;
-        margin-top: 3em;
-        margin-bottom: 0;
-    }
+  main {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
     
-	#ourstorytext {
-		width: 60%;
-		padding-right: 4em;
-		font-size: 1.7vw;
-        margin: 0;
-        line-height: 1.5em;
-	}
+  .aboutus {
+    display: none;
+  }
     
-	#ourstoryimage {
-		display: block;
-		float: right;
-        width: 45%;
-        margin-left: 2em;
-        transform: translate(10%, -6%);
-        height: 570px;
-	}
+  #OS1 {
+    padding-top: 3em;
+    margin-top: 3em;
+    margin-bottom: 0;
+  }
     
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+  #ourstorytext {
+    width: 60%;
+    padding-right: 4em;
+    font-size: 1.7vw;
+    margin: 0;
+    line-height: 1.5em;
+  }
     
-	#topquote {
-        margin-top: -2.6em;
-        position: relative;
-        height: 50%;
-        padding-bottom: 1em;
-        padding-right: 5em;
-        padding-left: 5em;
-	}
+  #ourstoryimage {
+    display: block;
+    float: right;
+    width: 45%;
+    margin-left: 2em;
+    transform: translate(10%, -6%);
+    height: 570px;
+  }
     
-	blockquote {
-		margin: 0;
-		padding: 0;
-        font-size: 3vw;
-	}
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  #topquote {
+    margin-top: -2.6em;
+    position: relative;
+    height: 50%;
+    padding-bottom: 1em;
+    padding-right: 5em;
+    padding-left: 5em;
+  }
+    
+  blockquote {
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+  }
     
     
 /* ================================= 
       04.Card Style Image Gallery
 ==================================== */
     
-	.rowhome {
-		width: 100%;
-		margin: 0;
-	}
-	.columnhome {
-		display: flex;
-		height: 290px;
-		flex-direction: row;
-		justify-content: center;
-		float: left;
-		width: 49.99%;
-		border: none;
-	}
-	.rowhome img {
-		width: 100%;
-		height: 100%;
-	}
+  .rowhome {
+    width: 100%;
+    margin: 0;
+  }
     
-	.rowhome:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	figure {
-		width: 100%;
-		border: none;
-		margin: 0;
-	}
-	figcaption {
-		height: 7em;
-		padding: .25em;
-	}
+  .columnhome {
+    display: flex;
+    height: 290px;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+    width: 49.99%;
+    border: none;
+  }
     
-	.heroes {
-		width: 100%;
-	}
-	#H2 h2 {
-		text-align: center;
-		font-size: 4em;
-	}
-	.ninjaturtles {
-		display: block;
-		margin: auto;
-		width: 25%;
-		height: 30%;
-	}
-	.us {
-		text-align: center;
-		background-color: #eef;
-		padding-bottom: 1em;
-		padding-top: 1em;
-		margin-top: 0em;
-		margin-bottom: 1em;
-        font-size: 2.5vw;
-	}
+  .rowhome img {
+    width: 100%;
+    height: 100%;
+  }
+    
+  .rowhome:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    
+  figure {
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
+    
+  figcaption {
+    height: 7em;
+    padding: .25em;
+  }
+    
+  .heroes {
+    width: 100%;
+  }
+    
+  #H2 h2 {
+    text-align: center;
+    font-size: 4em;
+  }
+    
+  .ninjaturtles {
+    display: block;
+    margin: auto;
+    width: 25%;
+    height: 30%;
+  }
+    
+  .us {
+    text-align: center;
+    background-color: #eef;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    font-size: 2.5vw;
+  }
     
     
 /* ================================= 
          05.Responsive Gallery
 ==================================== */
     
-	.responsive {
-		padding: 0 6px;
-		float: left;
-		width: 25%;
-        margin: 0;
-	}
-	.heroesgallery {
-		width: 100%;
-        padding-right: 0;
-	}
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+    margin: 0;
+  }
     
-	section.desc {
-		max-width: 100%;
-		margin: 0;
-        margin-top: 1em;
-        font-size: 1.4vw;
-	}
+  .heroesgallery {
+    width: 100%;
+    padding-right: 0;
+  }
     
-	#reszahraa {
-		margin-top: 0;
-	}
+  section.desc {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 1em;
+    font-size: 1.4vw;
+  }
     
-	#resavanti {
-        margin: 0;
-        padding: 0;
-	}
-	
-    #avantidesc {
-        margin-top: 1.1em;
-	}
-	
-    .avanti,
-	.sadiyya,
-	.amina,
-	.zahraa {
-		display: block;
-		margin: auto;
-		width: 70%;
-		height: 100%;
-		padding-left: 0.5em;
-	}    
-   
+  #reszahraa {
+    margin-top: 0;
+  }
+    
+  #resavanti {
+    margin: 0;
+    padding: 0;
+  }
+    
+  #avantidesc {
+    margin-top: 1.1em;
+  }
+    
+  .avanti,
+  .sadiyya,
+  .amina,
+  .zahraa {
+    display: block;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    padding-left: 0.5em;
+  }
+    
     
 /* ================================= 
             06.Google Maps
 ==================================== */
     
-	#map {
-		height: 400px;
-		width: 40%;
-		margin-left: 3em;
-		float: left;
-		margin-top: 1.2em;
-	}
+  #map {
+    height: 400px;
+    width: 40%;
+    margin-left: 3em;
+    float: left;
+    margin-top: 1.2em;
+  }
     
     
 /* ================================= 
            03.Main Styles
 ==================================== */
-	
+    
   #NOW3 {
-		text-align: center;
-		margin-top: 2em;
-        padding: 7em 4em;
-background-color: #a5a5af;
-	color: #fff;	
-    }
+    text-align: center;
+    margin-top: 2em;
+    padding: 7em 4em;
+    background-color: #a5a5af;
+    color: #fff;
+  }
     
-	.current h2 {
-		font-size: 4em;
-	}
+  .current h2 {
+    font-size: 4em;
+  }
     
+  #village {
+    width: 50%;
+    float: right;
+    font-size: 1.7vw;
+    line-height: 1.5em;
+  }
     
-    #village {
-		width: 50%;
-		float: right;
-		font-size: 1.7vw;
-        line-height: 1.5em;
-	}
+  #park,
+  #nationalpark {
+    width: 51%;
+    float: right;
+    font-size: 1.7vw;
+    color: #fff;
+    line-height: 1.5em;
+  }
     
-	#park,
-	#nationalpark {
-		width: 51%;
-		float: right;
-		font-size: 1.7vw;
-		color: #fff;
-        line-height: 1.5em;
-	}
-	.prescontainer {
-		width: 100%;
-        margin-top: -2em;
-	}
-	#presidentspeech {
-		padding: 2em;
-		padding-left: 5em;
-		padding-right: 5em;
-        margin-bottom: 1em;
-	}
+  .prescontainer {
+    width: 100%;
+    margin-top: -2em;
+  }
     
-    #helplinks {
-        padding: 3em;
-        font-size: 2vw;
-        line-height: 1.5em;
-    }
+  #presidentspeech {
+    padding: 2em;
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-bottom: 1em;
+  }
     
-	#helplinks h2 {
-		font-size: 2.7em;
-	}
+  #helplinks {
+    padding: 3em;
+    font-size: 2vw;
+    line-height: 1.5em;
+  }
     
-    .top {
-        display: none;
-    }
+  #helplinks h2 {
+    font-size: 2.7em;
+  }
+    
+  .top {
+    display: none;
+  }
     
     
 /* ================================= 
          meettheturtles.html
 ==================================== */
     
+/* ================================= 
+    Video Header for page 2 and 3
+==================================== */
+  #shortheader {
+    height: 30vh;
+    width: 100%;
+    justify-content: center;
+  }
     
-/* Video header for page 2 and 3 */  
+  #shortheaderwrap {
+    height: 30vh;
+    overflow: hidden;
+  }
     
-    #shortheader {
-        height: 30vh;
-        width: 100%;
-        justify-content: center;
-    }
+  #shortheaderoverlay {
+    height: 30vh;
+  }
 
-	#shortheaderwrap {
-		height: 30vh;
-		overflow: hidden;
-	}
-    
-	#shortheaderoverlay {
-		height: 30vh;
-	}
+/* https://www.youtube.com/watch?v=4S3HazxSi2Y */
+
     
 /* ================================= 
            08.Main Styles
-==================================== */    
-
-	/* https://www.youtube.com/watch?v=4S3HazxSi2Y */
-	.turtlebanner {
-		display: none;
-	}
+==================================== */
     
-    #desktopbanner {
-        display: block;
-		width: 100%;
-        position: absolute;
-        transform: translate(0%, 200%);
-        margin-top: 5.5em;
-	}
+  .turtlebanner {
+    display: none;
+  }
     
+  #desktopbanner {
+    display: block;
+    width: 100%;
+    position: absolute;
+    transform: translate(0%, 200%);
+    margin-top: 5.5em;
+  }
     
-	.turtally {
-		color: #00a3cc;
-		font-size: 3vw;
-		line-height: 2em;
-		background-color: #eef;
-		width: 100%;
-        padding: 3em;
-        padding-top: 3.5em;
-	}
+  .turtally {
+    color: #00a3cc;
+    font-size: 3vw;
+    line-height: 2em;
+    background-color: #eef;
+    width: 100%;
+    padding: 3em;
+    padding-top: 3.5em;
+  }
     
-	.history {
-        margin-top: 1em;
-		width: 100%;
-		color: black;
-	}
+  .history {
+    margin-top: 1em;
+    width: 100%;
+    color: black;
+  }
     
-	.history p {
-        float: none;
-        width: 60%;
-		font-size: 1.7vw;
-	}
+  .history p {
+    float: none;
+    width: 60%;
+    font-size: 1.7vw;
+  }
     
-	.history h2 {
-		font-size: 4vw;
-        padding-bottom: 0.5em;
-	}
+  .history h2 {
+    font-size: 4vw;
+    padding-bottom: 0.5em;
+  }
     
-    #tortuguero {
-        width: 60%;
-    }
+  #tortuguero {
+    width: 60%;
+  }
     
-	#care2 {
-		width: 35%;
-        float: right;
-        transform: translate(27%, 30%);
-	}  
+  #care2 {
+    width: 35%;
+    float: right;
+    transform: translate(27%, 30%);
+  }
     
     
 /* ================================= 
        09.Simple Image Gallery
 ==================================== */
     
+  #OO2 {
+    width: 100%;
+    padding: 4em;
+    line-height: 4em;
+    padding-bottom: 0em;
+  }
     
-	#OO2 {
-		width: 100%;
-        padding: 4em;
-        line-height: 4em;
-        padding-bottom: 0em;
-	}
+  #OO2 h2 {
+    font-size: 4vw;
+  }
     
-	#OO2 h2 {
-		font-size: 4vw;
-	}
+  #OO2 p {
+    font-size: 2vw;
+  }
     
-	#OO2 p {
-		font-size: 2vw;
-	}
-    
-	#columndesktop {
-		display: flex;
-		justify-content: space-around;
-		padding: 0 6px;
-		float: left;
-        transform: translate(0%, 0%);
-	}
+  #columndesktop {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 6px;
+    float: left;
+    transform: translate(0%, 0%);
+  }
     
   .column img {
     width: 19%;
     min-height: 50%;
-      height: 150px;
-      margin: 0;
-}
-
+    height: 150px;
+    margin: 0;
+  }
+    
   .OO2:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+    content: "";
+    display: table;
+    clear: both;
+  }
     
-
+    
 /* ================================= 
            08.Main Styles
 ==================================== */
-    
-    .turtlespecies {
         
-        
-    }
+  #hidedesktop {
+    display: none;
+  }
     
+  #D3 {
+    background-color: white;
+    color: black;
+    font-size: 1.3vw;
+    padding: 3em;
+    width: 100%;
+    margin-top: -1em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
     
+  #D3 ul {
+    width: 60%;
+    font-size: 1.5vw;
+    padding-top: 1em;
+    padding-left: 1em;
+  }
     
-    
-    
-	#hidedesktop {
-		display: none;
-	}
-    
-	#D3 {
-		background-color: white;
-		color: black;
-		font-size: 1.3vw;
-		padding: 3em;
-		width: 100%;
-		margin-top: -1em;
-        padding-bottom: 0;
-        margin-bottom: 0;
-	}
-    
-	#D3 ul {
-		width: 60%;
-        font-size: 1.5vw;
-        padding-top: 1em;
-        padding-left: 1em;
-	}
-    
-    #D3 h2 {
-        font-size: 4vw;
-    }
+  #D3 h2 {
+    font-size: 4vw;
+  }
     
     
 /* ================================= 
            08.Main Styles
 ==================================== */
     
-	#video {
-        display: block;
-		float: right;
-		width: 37%;
-		max-height: 300px;
-        transform: translate(5%, -140%);
-	}
+  #video {
+    display: block;
+    float: right;
+    width: 37%;
+    max-height: 300px;
+    transform: translate(5%, -140%);
+  }
     
-	#wwfturtle {
-		display: block;
-		width: 100%;
-		height: 100%;
-        transform: translate(0%, -50%);
-        padding: 0;
-        margin: 0;
-	}
+  #wwfturtle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: translate(0%, -50%);
+    padding: 0;
+    margin: 0;
+  }
     
     
 /* ================================= 
     10.3D Photo Cube Image Gallery
-==================================== */    
+==================================== */
     
-    .cube-container:first-child {
-		margin-left: 0;
-	}
-	.cube-container:last-child {
-		float: right;
-	}
+  .cube-container:first-child {
+    margin-left: 0;
+  }
     
-	.carouselgallery {
-        margin-top: -8em;
-        padding-top: 0;
-		color: #00a3cc;
-        height: 100%;
-	}
+  .cube-container:last-child {
+    float: right;
+  }
     
-	.carouselgallery h2 {
-		font-size: 4vw;
-		text-align: center;
-	}
+  .carouselgallery {
+    margin-top: -8em;
+    padding-top: 0;
+    color: #00a3cc;
+    height: 100%;
+  }
     
-	.carouselgallery p {
-		font-size: 2.2vw;
-		text-align: center;
-		padding-left: 5em;
-		padding-right: 5em;
-		line-height: 1.5em;
-	}
+  .carouselgallery h2 {
+    font-size: 4vw;
+    text-align: center;
+  }
     
-	.carouselgallery a {
-		line-height: 1.5em;
-		color: #00a3cc;
-		text-decoration: underline;
-	}
+  .carouselgallery p {
+    font-size: 2.2vw;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    line-height: 1.5em;
+  }
     
-	.container {
-		max-width: 100%;
-		margin: auto;
-		/* Align horizontally */
-		float: right;
-		/* Align horizontally */
-		margin-left: 187px;
-        transform: translateX(-32%)
-	}
-
+  .carouselgallery a {
+    line-height: 1.5em;
+    color: #00a3cc;
+    text-decoration: underline;
+  }
+    
+  .container {
+    max-width: 100%;
+    margin: auto;
+    /* Align horizontally */
+    float: right;
+    /* Align horizontally */
+    margin-left: 187px;
+    transform: translateX(-32%)
+  }
+    
+    
 /* ================================= 
               02.Forms
 ==================================== */
     
-    .introforms {
-        margin-top: 2em;
-        color: black;
-        background-color: #eee;
-		line-height: 2em;
-        padding: 4em;
-    }
+  .introforms {
+    margin-top: 2em;
+    color: black;
+    background-color: #eee;
+    line-height: 2em;
+    padding: 4em;
+  }
     
-        .buttonforms {
-        width: 70%;
-        margin:auto;
-        font-size: 1.5vw;
-        margin-top: 8em;
-    }
+  .buttonforms {
+    width: 70%;
+    margin: auto;
+    font-size: 1.5vw;
+    margin-top: 8em;
+  }
     
-    .form1, .form2, .form3 {
-        margin-bottom: 3em;
-        border-radius: 0.3em;
-        background-color: #00BD9D;
-    }
+  .form1,
+  .form2,
+  .form3 {
+    margin-bottom: 3em;
+    border-radius: 0.3em;
+    background-color: #00BD9D;
+  }
     
-     .donationform {
-        width: 60%;
-        margin: auto;
-        font-size: 1.5vw;
-    }
+  .donationform {
+    width: 60%;
+    margin: auto;
+    font-size: 1.5vw;
+  }
     
-     .donationform h2 {
-        text-align: center;
-        text-decoration: underline;
-        font-size: 3.5vw;
-    }    
+  .donationform h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3.5vw;
+  }
     
-    .adoptionform {
-        width: 60%;
-        font-size: 1.5vw;
-    }
+  .adoptionform {
+    width: 60%;
+    font-size: 1.5vw;
+  }
     
-    .adoptionform h2 {
-        text-align: center;
-        text-decoration: underline;
-        font-size: 3.5vw;
-    }
+  .adoptionform h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3.5vw;
+  }
     
-    #adoptionpart3 {
-        border: none;
-    }
+  #adoptionpart3 {
+    border: none;
+  }
     
-       
-    .adoptionimages {
-        display: inline;
-        font-size: 3vw;
-        width: 100%;
-        margin: auto;
-        margin-top: 10em;
-    }
+  .adoptionimages {
+    display: inline;
+    font-size: 3vw;
+    width: 100%;
+    margin: auto;
+    margin-top: 10em;
+  }
     
-    #bonus {
-        font-size: 3.5vw;
-        color: mediumaquamarine;
-    }
+  #bonus {
+    font-size: 3.5vw;
+    color: mediumaquamarine;
+  }
     
-     #argos {
-        width: 20%;
-        height: 100%;
-         margin: auto;
-    }
+  #argos {
+    width: 20%;
+    height: 100%;
+    margin: auto;
+  }
     
-    #cert {
-        width: 20%;
-        height: 50%;
-        margin: auto;
-    }
+  #cert {
+    width: 20%;
+    height: 50%;
+    margin: auto;
+  }
     
-    #factpack {
-        width: 20%;
-        height: 50%;
-        margin: auto;
-    }
-     
-    .messageform {
-        color: #00a3cc;
-        font-size: 1.5vw;
-        width: 100%;
-        background-color: aliceblue;
-        padding: 2em;
-        margin-top: 2em;
-    }
+  #factpack {
+    width: 20%;
+    height: 50%;
+    margin: auto;
+  }
     
-    .messageform fieldset {
-        width: 60%;
-        margin: auto;
-        
-    }
+  .messageform {
+    color: #00a3cc;
+    font-size: 1.5vw;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 2em;
+    margin-top: 2em;
+  }
     
-    #message {
-        border: solid 1px black;
-    }
-    #CU3 {
-        font-size: 4.5vw;
-    }
+  .messageform fieldset {
+    width: 60%;
+    margin: auto;
+  }
     
-     #submitmessage {
-        background-color: #00a3cc;
-    }
+  #message {
+    border: solid 1px black;
+  }
     
-/* Animation from Lab - Turtle sliding back and forth */    
-.moveme {
-  display: block;
-  position: relative;
-  margin-left: -72em;
-  box-sizing: border-box;
-  animation-name: movingBox;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-.moveme img {
+  #CU3 {
+    font-size: 4.5vw;
+  }
+    
+  #submitmessage {
+    background-color: #00a3cc;
+  }
+    
+/* Animation from Lab - Turtle sliding back and forth */
+  .moveme {
+    display: block;
+    position: relative;
+    margin-left: -72em;
+    box-sizing: border-box;
+    animation-name: movingBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+    
+  .moveme img {
     margin-top: 4em;
     width: 5%;
     margin-bottom: 5em;
-}
+  }
     
-@keyframes movingBox {
-  0%   { left: 0px; top: 0px; }
-  100%  { left: calc(100% - 200px); top: 0px; }
-}
+/* Unsure why error is shown for below */    
+  @keyframes movingBox {
+    0% {left: 0px; top: 0px;}
+    100% {left: calc(100% - 200px); top: 0px;}
+  }
     
+  footer {
+    text-align: center;
+    margin-top: -5em;
+  }
     
-    footer {
-        text-align: center;
-        margin-top: -5em;
-    }
-    footer section {
-            background-color: #292c2f;
-    }    
-
-footer h1 {
+  footer section {
+    background-color: #292c2f;
+  }
+    
+  footer h2 {
     display: block;
     padding: 0;
     font-size: 2.8em;
     width: 100%;
-}
+  }
     
-.leftlinks {
+  .leftlinks {
     display: flex;
     flex-direction: row;
     float: none;
     justify-content: center;
-}
+  }
     
-    .leftlinks a{
-        margin-right: 1em;
-        margin-left: 1em;
-    }
+  .leftlinks a {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
     
-    .socialmedia {
-        display: inline-block;
-            width: 100%;
-
-    }
-
-.socialmedia a {
+  .socialmedia {
+    display: inline-block;
+    width: 100%;
+  }
+    
+  .socialmedia a {
     display: inline;
-}
-
-.socialmedia img {
+  }
+    
+  .socialmedia img {
     width: 4%;
     margin: 1.5em;
-}
+  }
     
-    #turtlecartoon {
-        background-color: aliceblue;
-        margin-top: -4em;   
-    }
+  #turtlecartoon {
+    background-color: aliceblue;
+    margin-top: -4em;
+  }
     
-    #turtlecartoon img {
-        margin-bottom: 0em;
-    }
-
-    .involvefooter {
-        margin-top: 0;
-    }
-
-footer::after {
+  #turtlecartoon img {
+    margin-bottom: 0em;
+  }
+    
+  .involvefooter {
+    margin-top: 0;
+  }
+    
+  footer::after {
     clear: both;
-}
-    
-}
-
+  }
+} /* Unsure why error is shown in CSS as this is connected to media queries */
 
 /* END SECOND BREAKPOINT */
