@@ -2274,7 +2274,7 @@ footer::after {
     background-color: #292c2f;
   }
     
-  footer h2 {
+  .footertitle {
     display: block;
     padding: 0;
     font-size: 3em;
