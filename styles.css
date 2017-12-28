@@ -2316,6 +2316,10 @@ footer::after {
     margin-bottom: 0em;
   }
     
+  .footertitle {
+    font-size: 3em;   
+  }
+    
   .involvefooter {
     margin-top: 0;
   }
