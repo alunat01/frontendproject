@@ -985,7 +985,11 @@ footer h2 {
 }
 
 .socialmedia img {
-  width: 100%;
+  width: 80%;
+}
+
+.feedback, #feedbackdesc {
+    display: none;
 }
 
 footer::after {
@@ -1389,6 +1393,7 @@ footer::after {
   }
     
   .socialmedia {
+    width: 50%;
     margin-top: 3em;
     margin-left: -1.8em;
   }
@@ -1405,9 +1410,13 @@ footer::after {
   }
     
   .socialmedia img {
-    width: 50%;
+    width: 70%;
   }
     
+  .feedback, #feedbackdesc {
+    display: none;
+  }
+
   footer::after {
     clear: both;
   }
@@ -2322,6 +2331,18 @@ footer::after {
     
   .involvefooter {
     margin-top: 0;
+  }
+    
+    
+  .feedback {
+    width: 400px;
+    height: 180px;
+    margin: auto;
+    display: block;
+    border: none;
+    max-width: 100%;
+    max-height: 100vh;
+    float: none;
   }
     
   footer::after {

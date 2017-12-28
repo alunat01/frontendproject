@@ -102,7 +102,7 @@ function initMap() {
                 
                 
                 
-Pop-up window for Adoption Form - Help from Dave in Lab
+Modal window for Adoption Form - Help from Dave in Lab
                 
                 
                 
@@ -116,3 +116,4 @@ adoptAlert.addEventListener("click", adopt);
 function adopt() {
 	alert('CONGRATLATIONS! You have officially adopted a Turtle. We will be sending a package in the post with details of the turtle you have adopted and a free turtle toy!');
 }
+
