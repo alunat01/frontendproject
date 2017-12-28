@@ -95,6 +95,7 @@ function initMap() {
 
 }());
 
+/* Unsure why error appears for above line */
 
 /* .................................................... 
 
