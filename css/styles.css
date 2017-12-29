@@ -510,7 +510,7 @@ section.desc h3 {
 ==================================== */
 
 #historyturtles {
-  color: mediumaquamarine;
+  color: black;
   text-decoration: underline;
 }
 
@@ -1240,9 +1240,10 @@ footer::after {
     width: 53%;
   }
     
-  #tortuguero {
+  #moreinfo {
     width: 100%;
     padding: 0;
+    color: black;
   }
     
   #care2 {
@@ -1969,8 +1970,9 @@ footer::after {
     padding-bottom: 0.5em;
   }
     
-  #tortuguero {
+  #moreinfo {
     width: 60%;
+    color: black;
   }
     
   #care2 {

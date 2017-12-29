@@ -41,7 +41,7 @@ CONTRAST: The colours used contrast well as it produces a warm atmosphere to wel
 
 ## Errors I came across and solved:
 
--	There have been many times where I would like content to either flow horizontally and vertically – at first it was difficult as a change in one element would change the positioning of another element to change as well, however, I experimented with:
+1. There have been many times where I would like content to either flow horizontally and vertically – at first it was difficult as a change in one element would change the positioning of another element to change as well, however, I experimented with:
 
 display: flex;
 
@@ -51,4 +51,112 @@ flex-direction: row;
 
 The above code helped with having my content flow horizontally or vertically. 
 
--	Within the donation/adoption forms, there was some errors with the donation amount buttons, as all the buttons were linked. If I clicked on a button within adoption form, then my chosen option in donation form would disappear. The error found was that only one radio button option can be chosen for both donation and adoption form. However, I discovered that the reason for this was because the ‘name’ within input tags were all the same. To fix this, I called the name within donation form input tags ‘select’ and I have called the name within the adoption form input tags ‘monthly donation’. 
+2. Within the donation/adoption forms, there was some errors with the donation amount buttons, as all the buttons were linked. If I clicked on a button within adoption form, then my chosen option in donation form would disappear. The error found was that only one radio button option can be chosen for both donation and adoption form. However, I discovered that the reason for this was because the ‘name’ within input tags were all the same. To fix this, I called the name within donation form input tags ‘select’ and I have called the name within the adoption form input tags ‘monthly donation’. 
+
+## References
+
+### References for information used in content
+
+#### index.html
+
+https://www.wwf.org.uk/
+
+Dr Seuss Quote: https://www.goodreads.com/quotes/109750-and-the-turtles-of-course-all-the-turtles-are-free-as
+
+http://www.tortugueroinfo.com/usa/sea_turtles_tortuguero.htm
+
+
+#### turtles.html
+
+https://www.natgeokids.com/uk/discover/animals/sea-life/turtle-facts/
+
+http://www.rsmas.miami.edu/outreach/explore-and-discover/sea-turtles/history/
+
+https://www.livescience.com/52361-turtle-facts.html
+
+https://conserveturtles.org/information-sea-turtles-species-world/
+
+https://www.youtube.com/embed/t-KmQ6pGxg4?rel=0
+
+
+
+### References for pictures
+
+1. Turtle Banner: http://wildlifefriendly.org/sea-turtle-friendly/
+
+2. Footer social media icons: 
+    Facebook: https://en.facebookbrand.com/assets
+    Twitter: https://about.twitter.com/en_us/company/brand-resources.html
+    Instagram: https://en.instagram-brand.com/assets
+    Snapchat: https://www.snap.com/en-GB/brand-guidelines/
+    
+3. Video Background: https://www.youtube.com/watch?v=4S3HazxSi2Y
+
+4. Turtle Cartoon Animation: https://www.pinterest.com/pin/385620786816998115/
+    
+
+#### index.html
+
+1. 4 Pictures AFTER Dr Seuss quote (under class rowhome): 
+
+    Picture 1: http://animalstime.com/green-sea-turtle-facts-green-sea-turtle-habitat-diet/
+    
+    Picture 2: https://www.natgeokids.com/uk/discover/animals/sea-life/turtle-facts/
+    
+    Picture 3: https://www.natgeokids.com/uk/discover/animals/sea-life/green-sea-turtle-facts/
+    
+    Picture 4: https://www.natgeokids.com/uk/discover/animals/sea-life/loggerhead-turtle-facts/
+
+
+2. Ninja Turtles: http://jonvilma.com/teenage-mutant-ninja-turtles.html# 
+
+3. 4 pictures from 'Meet the team' are personal pictures
+
+4. 2 pictures in 'Take Action' section: 
+    Picture 1: http://www.images-hd.download/images-of-a-turtle/
+    
+    Picture 2: https://www.andbeyond.com/stories/leave-a-legacy/turtle-whisperers/
+    
+5. Desktop ONLY - Our Story picture: https://www.frontier.ac.uk/projects/132/Guatemala-Sea-Turtle-Conservation- 
+(Under tab Extras)
+    
+#### turtles.html
+
+1. Picture in 'History of Turtles': http://www.care2.com/causes/how-the-worlds-largest-cruise-line-can-stand-up-for-sea-turtles.html
+
+2. 12 image picture gallery:
+    
+    Picture 1: http://animalstime.com/green-sea-turtle-facts-green-sea-turtle-habitat-diet/
+    
+    Picture 2: http://www.nmfs.noaa.gov/pr/species/turtles/kempsridley.html
+    
+    Picture 3: http://www.telegraph.co.uk/news/earth/wildlife/8238622/Turtles-cross-ocean-navigation-tracked.html
+    
+    Picture 4 and Picture 12:  https://www.natgeokids.com/uk/discover/animals/sea-life/turtle-facts/
+    
+    Picture 5: 
+    http://www.care2.com/causes/how-the-worlds-largest-cruise-line-can-stand-up-for-sea-turtles.html
+    
+    Picture 6, Picture 7 and Picture 8: http://www.natgeokids.com/za/discover/animals/sea-life/green-sea-turtle-facts/
+    
+    Picture 9, Picture 10 and Picture 11:
+    https://www.natgeokids.com/uk/discover/animals/sea-life/loggerhead-turtle-facts/    
+    
+3. Youtube Video: https://www.youtube.com/watch?v=t-KmQ6pGxg4&feature=youtu.be
+
+4. Pictures in 3D Cube Gallery: Personal pictures from travels
+
+5. Desktop ONLY - Turtle Banner above 'Our Pictures': https://www.exceptionalstays.com/mexico/punta-mita/ocean-activities/sea-turtles
+
+
+#### involve.html
+
+1. Desktop ONLY - Bonus Gifts: 
+
+    Picture 1: http://www.argos.co.uk/product/5299861
+
+    Picture 2: https://www.imms.org/gift-shop-adopt.php
+
+    Picture 3: https://www.amazon.co.uk/Gift-Republic-Adopt-Sea-Turtle/dp/B001HJBHAK
+    
+    
