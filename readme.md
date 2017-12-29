@@ -166,9 +166,13 @@ https://www.youtube.com/embed/t-KmQ6pGxg4?rel=0
 
 2. Navigation Menu: Lab 04
 
+https://www.w3schools.com/css/css3_transitions.asp
+
 3. Turtle Animation: Lab 07
 
 4. Back to Top button: Smooth Scrolling example in Pure CSS by Dave Everitt
+
+5. Slanted Menu: http://generatedcontent.org/post/26407228072/split-feature
 
 
 #### index.html
@@ -194,4 +198,5 @@ Google Maps API was used to show the current location of where the staff and vol
 1. JavaScript used in donation form for user name input to show on page: Lab 3.1
 
 2. Radio Buttons that looks like buttons: https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead
+
 https://codepen.io/adamstuartclark/pen/pbYVYR

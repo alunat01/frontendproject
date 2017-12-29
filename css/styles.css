@@ -16,12 +16,12 @@
 06. Google Maps
 07. Links to forms
 ********** turtles.html ************
-08. Main styles
+08. Back to top button
 09. 3D Photocube Gallery
 ********** involve.html ************
 10. Forms
 11. Radio Squared Buttons
-12. Payment Card Input
+12. Footer
 ==================================== 
   CSS List - Medium Screen Styles
 ====================================
@@ -53,10 +53,15 @@
 ********** turtles.html ************
 08. Main styles
 09. Simple Image Gallery 2
-10. Card Style Image Gallery 2
-11. 3D Photocube Gallery
+10. 3D Photocube Gallery
 ********** involve.html ************
-12. Forms
+11. Forms
+12. Turtle Animation
+13. Footer
+
+
+
+
 /* GLOBAL AND MOBILE STYLES FIRST */
 
 
@@ -332,7 +337,7 @@ figcaption p {
 }
 
 #nationalpark {
-  color: #00BD9D;
+  color: black;
   text-decoration: underline;
 }
 
@@ -477,7 +482,7 @@ section.desc h3 {
 
 
 /* ================================= 
-     03.Main Styles - Back to Top
+           08. Back to Top
 ==================================== */
 
 .top {
@@ -506,7 +511,7 @@ section.desc h3 {
 
 
 /* ================================= 
-           08.Main Styles
+           03.Main Styles
 ==================================== */
 
 #historyturtles {
@@ -712,17 +717,29 @@ tr:hover {
 .donationform,
 .adoptionform,
 .messageform {
-  color: mediumaquamarine;
   padding: 3em 1em 0em 1em;
+}
+
+.donationform {
+  background-color: white;
+  color: #00BD9D;
+}
+
+
+.adoptionform {
+  color: mediumaquamarine;
+  background-color: #eee;
 }
 
 .messageform {
   padding-bottom: 1em;
   padding-top: 4em;
+  background-color: aliceblue;
+  color: #00a3cc;
 }
 
 .introforms {
-  color: mediumaquamarine;
+  color: black;
   padding: 1em;
   font-size: 1.5em;
   line-height: 1.5em;
@@ -752,6 +769,7 @@ tr:hover {
   flex-direction: column;
   margin-left: 20%;
   margin-right: 20%;
+  border-radius: 5px;
 }
 
 .buttonforms a:hover {
@@ -761,7 +779,7 @@ tr:hover {
 
 
 /* ================================= 
-           10.involve.html
+              10.Forms
 ==================================== */
 
 label {
@@ -799,7 +817,7 @@ input[type=email] {
 }
 
 input[type=text]:focus {
-  border-color: mediumaquamarine;
+  border-color: black;
 }
 
 select {
@@ -807,7 +825,8 @@ select {
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: #f1f1f1;
+  background-color: #fff;
+  border: solid 2px #aaa;
 }
 
 input[type=checkbox] {
@@ -816,9 +835,20 @@ input[type=checkbox] {
   margin-left: -10px;
 }
 
+#submitmessage {
+  background-color: #00a3cc;
+}
+
+#adopt-submit {
+  background-color: mediumaquamarine;
+}
+
+#donationpart5 input {
+background-color: #00BD9D
+}
+
 input[type=button],
 input[type=submit] {
-  background-color: mediumaquamarine;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -849,7 +879,6 @@ fieldset {
   flex-flow: row wrap;
   flex: 1;
   flex-direction: column;
-  box-shadow: 10px 10px 10px 10px white;
   margin-top: -10px;
   margin-bottom: -0.5em;
 }
@@ -862,12 +891,19 @@ fieldset {
 
 .donatelabel,
 .plan {
+  background-color: #00BD9D  
+}
+
+.adoptlabel {
+    background-color: mediumaquamarine;
+}
+
+.donatelabel,
+.plan {
   height: 100%;
   display: block;
   color: white;
-  background: mediumaquamarine;
-  border: 2px solid mediumaquamarine;
-  border-radius: 10px;
+  border-radius: 7px;
   text-align: center;
   position: relative;
   padding: 10px;
@@ -893,11 +929,6 @@ input[type="radio"]:checked+.plan {
   background: #ddd;
   color: darkcyan;
 }
-
-
-/* ================================= 
-        12.Payment Card Input
-==================================== */
 
 #amount {
   margin-top: -10px;
@@ -934,6 +965,11 @@ textarea {
 .adoptionimages {
   display: none;
 }
+
+
+/* ================================= 
+               12.Footer
+==================================== */
 
 footer {
   display: block;
@@ -1357,6 +1393,7 @@ footer::after {
     display: flex;
     flex-direction: row;
     margin: 0;
+    padding: 0 2em;
   }
     
   .buttonforms a:hover {
@@ -1367,6 +1404,23 @@ footer::after {
   .adoptionimages {
     display: none;
   }
+    
+  #adoptionpart2, .adoptradio {
+    background-color: #eee;
+  }
+    
+  .adoptionform {
+    margin-bottom: 0;
+    padding-bottom: 3em;  
+  }
+    
+  .messageform {
+    margin-bottom: 0;
+  }
+    
+/* ================================= 
+             12.Footer
+==================================== */
     
   footer h2 {
     padding: 0;
@@ -1887,6 +1941,11 @@ footer::after {
     margin-bottom: 1em;
   }
     
+    
+/* ================================= 
+          07. Button to forms
+==================================== */  
+    
   #helplinks {
     padding: 3em;
     font-size: 2vw;
@@ -2073,7 +2132,7 @@ footer::after {
     
     
 /* ================================= 
-    10.3D Photo Cube Image Gallery
+    11.3D Photo Cube Image Gallery
 ==================================== */
     
   .cube-container:first-child {
@@ -2119,7 +2178,7 @@ footer::after {
     
     
 /* ================================= 
-              02.Forms
+              11.Forms
 ==================================== */
     
   .introforms {
@@ -2169,8 +2228,13 @@ footer::after {
   }
     
   .adoptionform {
-    width: 60%;
+    width: 100%;
     font-size: 1.5vw;
+  }
+    
+  .adoptionform fieldset {
+    width: 60%;
+    margin: auto;
   }
     
   .adoptionform h2 {
@@ -2179,16 +2243,11 @@ footer::after {
     font-size: 3.5vw;
   }
     
-  #adoptionpart3 {
-    border: none;
-  }
-    
   .adoptionimages {
     display: inline;
     font-size: 3vw;
     width: 100%;
-    margin: auto;
-    margin-top: 10em;
+    margin: auto; 
   }
     
   #bonus {
@@ -2240,6 +2299,11 @@ footer::after {
     background-color: #00a3cc;
   }
     
+    
+/* ================================= 
+          12.Turtle Animation
+==================================== */  
+    
 /* Animation from Lab - Turtle sliding back and forth */
   .moveme {
     display: block;
@@ -2264,6 +2328,20 @@ footer::after {
     0% {left: 0px; top: 0px;}
     100% {left: calc(100% - 200px); top: 0px;}
   }
+    
+  #turtlecartoon {
+    background-color: aliceblue;
+    margin-top: -4em;
+  }
+    
+  #turtlecartoon img {
+    margin-bottom: 0em;
+  }
+    
+    
+/* ================================= 
+           13.Footer
+==================================== */  
     
   footer {
     text-align: center;
@@ -2305,15 +2383,6 @@ footer::after {
   .socialmedia img {
     width: 4%;
     margin: 1.5em;
-  }
-    
-  #turtlecartoon {
-    background-color: aliceblue;
-    margin-top: -4em;
-  }
-    
-  #turtlecartoon img {
-    margin-bottom: 0em;
   }
     
   .footertitle {
