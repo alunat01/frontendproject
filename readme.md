@@ -160,3 +160,38 @@ https://www.youtube.com/embed/t-KmQ6pGxg4?rel=0
     Picture 3: https://www.amazon.co.uk/Gift-Republic-Adopt-Sea-Turtle/dp/B001HJBHAK
     
     
+### References for coding that helped me:
+
+1. Video Header Background: https://www.youtube.com/watch?v=Xy3GlrddZFI
+
+2. Navigation Menu: Lab 04
+
+3. Turtle Animation: Lab 07
+
+4. Back to Top button: Smooth Scrolling example in Pure CSS by Dave Everitt
+
+
+#### index.html
+
+1. Blockquotes - q tags: https://www.w3schools.com/tags/tag_q.asp
+
+2. Card Style Image Gallery: Lab 07
+
+3. Responsive Image Gallery: https://www.w3schools.com/css/css_image_gallery.asp
+
+4. Google Maps API: Lab 08 
+Google Maps API was used to show the current location of where the staff and volunteers are working with the Tortuguero National Park. 
+
+
+#### turtles.html
+
+1. Simple Image Gallery: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+
+2. 3D Photo cube Gallery: https://codepen.io/loriprift/pen/OWzBZZ
+
+#### involve.html
+
+1. JavaScript used in donation form for user name input to show on page: Lab 3.1
+
+2. Radio Buttons that looks like buttons: https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead
+https://codepen.io/adamstuartclark/pen/pbYVYR
