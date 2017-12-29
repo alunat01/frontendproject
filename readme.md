@@ -1,16 +1,26 @@
-Introduction: 
+## Introduction: 
+
 My website is for a charity called 'Save the Turtles' with an aim to raise awareness on endangered turtles and for users to donate, adopt or contact the charity. 
+
 Text Editor used: Brackets
+
 My inspiration of the website came from: https://www.wwf.org.uk/ 
 
-Plans/Sketches: 
+
+## Plans/Sketches: 
+
+![mobilescreen1](https://user-images.githubusercontent.com/32508499/34439133-ab0ed6b4-eca3-11e7-9e31-cfb55201680d.jpg)
 
 
 
-PARC:
+## PARC:
+
 PROXIMITY: On my website, the content either have different coloured backgrounds or large pictures to group any related information together. I wanted my website to be organised and neat which is why I have designed it in a way that the visitor reads one block/row at a time.
+
 ALIGNMENT: All content and pictures that are related to each other are placed in close proximity to ensure that a connection between the two is shown.
+
 REPETITION: I have used a marine colour scheme which consists of multiple shades of blues and greens as well as using black, white and grey. The consistent design layout used ensures that the visitor reads the content in the way that it’s supposed to be read, as well as being aesthetically pleasant.
+
 CONTRAST: The colours used contrast well as it produces a warm atmosphere to welcome the visitor as well as being related to the content itself with the marine colour scheme. The headers, mains and footers have different colours and sizes to the actual content to show new sections of information.
 
 Errors I came across and solved:
