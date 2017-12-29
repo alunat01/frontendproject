@@ -1117,7 +1117,6 @@ footer::after {
     width: 100%;
     display: inline-block;
     background: white;
-    margin-bottom: 2em;
   }
     
   .aboutus {
@@ -1362,7 +1361,6 @@ footer::after {
     
   .cube-container {
     float: left;
-    margin-left: 16.6%;
   }
     
     
@@ -1469,10 +1467,6 @@ footer::after {
 /* SECOND BREAKPOINT (DESKTOP SIZE) */
 
 @media screen and (min-width: 1000px) {
-    
-  body {
-    background-color: white;
-  }
   
   * {
     box-sizing: border-box;

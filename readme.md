@@ -53,6 +53,15 @@ The above code helped with having my content flow horizontally or vertically.
 
 2. Within the donation/adoption forms, there was some errors with the donation amount buttons, as all the buttons were linked. If I clicked on a button within adoption form, then my chosen option in donation form would disappear. The error found was that only one radio button option can be chosen for both donation and adoption form. However, I discovered that the reason for this was because the ‘name’ within input tags were all the same. To fix this, I called the name within donation form input tags ‘select’ and I have called the name within the adoption form input tags ‘monthly donation’. 
 
+
+## User Testing
+
+I have created a form using Microsoft Forms and have asked 16 questions. 
+
+Form questions: https://forms.office.com/Pages/ResponsePage.aspx?id=48B4T1DS3027HBXTFFaXzC3sbWseeG1NlkQ9l9-UnTJUOU82TUVSOEJYTlVKSzdPTTczUFdUS1pCRS4u
+
+Form Responses: [Website Survery Responses.docx](https://github.com/alunat01/frontendproject/files/1593911/Website.Survery.Responses.docx)
+
 ## References
 
 ### References for information used in content
@@ -166,7 +175,7 @@ https://www.youtube.com/embed/t-KmQ6pGxg4?rel=0
 
 2. Navigation Menu: Lab 04
 
-https://www.w3schools.com/css/css3_transitions.asp
+    https://www.w3schools.com/css/css3_transitions.asp
 
 3. Turtle Animation: Lab 07
 
@@ -199,4 +208,9 @@ Google Maps API was used to show the current location of where the staff and vol
 
 2. Radio Buttons that looks like buttons: https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead
 
-https://codepen.io/adamstuartclark/pen/pbYVYR
+    https://codepen.io/adamstuartclark/pen/pbYVYR
+    
+    
+## Extra notes
+
+[Extra Notes.docx](https://github.com/alunat01/frontendproject/files/1593928/Extra.Notes.docx)
