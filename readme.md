@@ -24,6 +24,11 @@ Mobile Homepage: https://preview.uxpin.com/06ad31a27f462c457f9900cbd57df3e3adda9
 Desktop Homepage: https://preview.uxpin.com/f6654a77973a31ce52ac54c29b15ad2529c9d722 
 
 
+## Site Diagram 
+
+[Site Diagram.docx](https://github.com/alunat01/frontendproject/files/1593519/Site.Diagram.docx)
+
+
 ## PARC:
 
 PROXIMITY: On my website, the content either have different coloured backgrounds or large pictures to group any related information together. I wanted my website to be organised and neat which is why I have designed it in a way that the visitor reads one block/row at a time.
@@ -34,14 +39,16 @@ REPETITION: I have used a marine colour scheme which consists of multiple shades
 
 CONTRAST: The colours used contrast well as it produces a warm atmosphere to welcome the visitor as well as being related to the content itself with the marine colour scheme. The headers, mains and footers have different colours and sizes to the actual content to show new sections of information.
 
-Errors I came across and solved:
+## Errors I came across and solved:
 
 -	There have been many times where I would like content to either flow horizontally and vertically – at first it was difficult as a change in one element would change the positioning of another element to change as well, however, I experimented with:
 
 display: flex;
-flex-direction: column; 
+
+flex-direction: column;
+
 flex-direction: row;
 
-The above helped with having my content flow horizontally or vertically. 
+The above code helped with having my content flow horizontally or vertically. 
 
 -	Within the donation/adoption forms, there was some errors with the donation amount buttons, as all the buttons were linked. If I clicked on a button within adoption form, then my chosen option in donation form would disappear. The error found was that only one radio button option can be chosen for both donation and adoption form. However, I discovered that the reason for this was because the ‘name’ within input tags were all the same. To fix this, I called the name within donation form input tags ‘select’ and I have called the name within the adoption form input tags ‘monthly donation’. 
